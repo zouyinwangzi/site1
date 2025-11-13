@@ -36,4 +36,9 @@ add_action( 'wp_enqueue_scripts', 'twentytwentyfour_child_enqueue_styles' );
 // 例如，添加新的功能、修改钩子(hooks)、过滤器(filters)等
 
 
+
+
+
+
+
 require_once get_stylesheet_directory() . '/opt.php';
