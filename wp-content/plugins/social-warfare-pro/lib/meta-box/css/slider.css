@@ -1,0 +1,16 @@
+.swpmb-slider-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.swpmb-slider-ui {
+	flex: 1;
+}
+.swpmb-slider-label {
+	margin-left: 8px;
+}
+
+/* Fix slider handle being visible through jQuery panel */
+.ui-slider .ui-slider-handle {
+	z-index: 1;
+}

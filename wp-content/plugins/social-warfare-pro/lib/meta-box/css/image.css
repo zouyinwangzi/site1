@@ -1,0 +1,59 @@
+.swpmb-image-item {
+	position: relative;
+	float: left;
+	margin: 0 12px 12px 0;
+	list-style: none;
+	box-sizing: border-box;
+	cursor: move;
+}
+.swpmb-image-item .swpmb-file-icon {
+	width: 150px;
+	height: 150px;
+	margin-right: 0;
+}
+
+.swpmb-image-actions {
+	position: absolute;
+	z-index: 2;
+	right: 8px;
+	top: 8px;
+	opacity: 0;
+	transition: opacity .2s;
+	color: #fff;
+}
+.swpmb-image-edit,
+.swpmb-image-delete {
+	color: inherit;
+	text-decoration: none;
+}
+.swpmb-image-actions a:hover {
+	color: #fff;
+	opacity: .8;
+}
+.swpmb-image-overlay {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: 0;
+	transition: opacity .2s;
+}
+.swpmb-image-item:hover .swpmb-image-actions {
+	opacity: 1;
+}
+.swpmb-image-item:hover .swpmb-image-overlay {
+	opacity: .6;
+}
+.swpmb-image-item .swpmb-edit-media:after {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.swpmb-image-actions {
+		opacity: 1;
+		z-index: 99;
+	}
+}

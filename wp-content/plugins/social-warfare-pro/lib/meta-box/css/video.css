@@ -1,0 +1,17 @@
+.swpmb-video-item {
+	position: relative;
+	float: left;
+	margin: 0 12px 12px 0;
+	list-style: none;
+	width: 300px;
+	box-sizing: border-box;
+}
+
+.swpmb-video-item video {
+	width: auto;
+	height: 100%;
+}
+
+.swpmb-video-item .swpmb-media-info {
+	margin-top: 12px;
+}

@@ -1,0 +1,29 @@
+.swpmb-toggle-all-wrapper {
+	margin-top: 0;
+}
+.swpmb-input-list {
+	line-height: 1.8;
+}
+.swpmb-input-list.hidden {
+	display: none;
+}
+.swpmb-input-list .swpmb-input-list {
+	margin-left: 20px;
+}
+.swpmb-input-list > label {
+	display: block;
+}
+.swpmb-input-list.swpmb-inline {
+	line-height: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 12px;
+}
+
+/* Media modal */
+.attachment-details .compat-attachment-fields .swpmb-input-list > label > input {
+	margin: 0 0.25rem 0 0;
+}
+.compat-attachment-fields .swpmb-input-list.swpmb-inline {
+	gap: 10px;
+}

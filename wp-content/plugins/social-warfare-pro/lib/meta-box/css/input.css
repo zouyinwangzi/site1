@@ -1,0 +1,29 @@
+.swpmb-input-group {
+	display: flex;
+	align-items: stretch;
+}
+.swpmb-input-group-text {
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	background: #f0f0f0;
+	border: 1px solid #7e8993;
+	border-radius: 4px;
+	white-space: nowrap;
+}
+.swpmb-input-group-text:first-child,
+.swpmb-input-group input:not(:last-child) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.swpmb-input-group-text:last-child,
+.swpmb-input-group input:not(:first-child) {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.swpmb-input-group input {
+	margin: 0;
+}
+.swpmb-input-group.swpmb-input-group.swpmb-input-group :not(:first-child) {
+	margin-left: -1px;
+}

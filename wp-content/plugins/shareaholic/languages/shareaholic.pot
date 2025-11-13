@@ -1,0 +1,3652 @@
+# Copyright (C) 2024 Shareaholic
+# This file is distributed under the same license as the Shareaholic - Grow and Engage Your Audience plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Shareaholic - Grow and Engage Your Audience 9.7.13\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/shareaholic\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-01-19T20:08:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: shareaholic\n"
+
+#. Plugin Name of the plugin
+#: shareaholic.php
+msgid "Shareaholic - Grow and Engage Your Audience"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: shareaholic.php
+msgid "https://www.shareaholic.com/website-tools/"
+msgstr ""
+
+#. Description of the plugin
+#: shareaholic.php
+msgid "Shareaholic's official WordPress plugin allows you to add award-winning and professional Social Share Buttons, Related Posts, Content Analytics, Ad Monetization, and much more to your website."
+msgstr ""
+
+#. Author of the plugin
+#: shareaholic.php
+#: admin.php:473
+#: languages/shareaholic-translations.php:561
+#: utilities.php:133
+msgid "Shareaholic"
+msgstr ""
+
+#. Author URI of the plugin
+#: shareaholic.php
+msgid "https://www.shareaholic.com"
+msgstr ""
+
+#: admin.php:156
+msgid "Hey there! We noticed that you have had  success using "
+msgstr ""
+
+#: admin.php:156
+msgid " — awesome! Could you please do us a BIG favor and give us a quick 5-star rating on WordPress? It would help us spread the word and boost our motivation. We would really appreciate it 🙂 ~ Your friends @ Shareaholic"
+msgstr ""
+
+#: admin.php:159
+msgid "Ok, you deserve it"
+msgstr ""
+
+#: admin.php:160
+msgid "No, not good enough"
+msgstr ""
+
+#: admin.php:161
+msgid "I already did"
+msgstr ""
+
+#: admin.php:162
+msgid "Dismiss"
+msgstr ""
+
+#: admin.php:472
+msgid "Shareaholic Settings"
+msgstr ""
+
+#: admin.php:481
+#: admin.php:482
+#: utilities.php:171
+msgid "Cloud Settings"
+msgstr ""
+
+#: admin.php:489
+#: admin.php:490
+msgid "In-Page Code Blocks"
+msgstr ""
+
+#: admin.php:497
+#: admin.php:498
+#: templates/advanced_settings.php:15
+msgid "Plugin Settings"
+msgstr ""
+
+#: admin.php:506
+#: languages/shareaholic-translations.php:679
+#: utilities.php:111
+msgid "Upgrade"
+msgstr ""
+
+#: admin.php:507
+msgid "<span style=\"color: #FCB214;\">Upgrade to Premium</span>"
+msgstr ""
+
+#: admin.php:524
+#: admin.php:688
+msgid "Settings successfully saved"
+msgstr ""
+
+#: admin.php:682
+msgid "Settings successfully reset. Refresh this page to complete the reset."
+msgstr ""
+
+#: admin.php:918
+msgid "I think I found a bug"
+msgstr ""
+
+#: admin.php:919
+msgid "It's missing a feature I need"
+msgstr ""
+
+#: admin.php:920
+msgid "I couldn't figure out how to do something"
+msgstr ""
+
+#: admin.php:921
+msgid "It's too slow or inefficient"
+msgstr ""
+
+#: admin.php:922
+msgid "I don't want to signup"
+msgstr ""
+
+#: admin.php:923
+msgid "Temporarily deactivating or troubleshooting"
+msgstr ""
+
+#: admin.php:924
+#: languages/shareaholic-translations.php:428
+msgid "Other"
+msgstr ""
+
+#: admin.php:933
+msgid "Quick Feedback"
+msgstr ""
+
+#: admin.php:934
+msgid "If you would be kind enough, please tell us why you are deactivating the plugin:"
+msgstr ""
+
+#: admin.php:936
+msgid "Please share anything you think might be helpful. The more we know about your problem, the faster we'll be able to fix it."
+msgstr ""
+
+#: admin.php:938
+#: languages/shareaholic-translations.php:120
+msgid "Cancel"
+msgstr ""
+
+#: admin.php:939
+msgid "Skip &amp; Deactivate"
+msgstr ""
+
+#: admin.php:940
+msgid "Submit &amp; Deactivate"
+msgstr ""
+
+#: admin.php:941
+#: languages/shareaholic-translations.php:475
+msgid "Please wait..."
+msgstr ""
+
+#: admin.php:942
+msgid "Thank you!"
+msgstr ""
+
+#: admin.php:944
+msgid "Have you visited %1$sthe support forum%2$s and %3$sread the FAQs%2$s for help?"
+msgstr ""
+
+#: admin.php:950
+msgid "If you would like to tell us more, please leave your email here. We will be in touch (only for product feedback, nothing else)."
+msgstr ""
+
+#: languages/shareaholic-translations.php:3
+msgid "(Current plan)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:4
+msgid "+ {number} more"
+msgstr ""
+
+#: languages/shareaholic-translations.php:5
+msgid "- Recipient is not set"
+msgstr ""
+
+#: languages/shareaholic-translations.php:6
+msgid "1. Shorten"
+msgstr ""
+
+#: languages/shareaholic-translations.php:7
+msgid "2. Share"
+msgstr ""
+
+#: languages/shareaholic-translations.php:8
+msgid "3. Capture"
+msgstr ""
+
+#: languages/shareaholic-translations.php:9
+msgid "4. Retarget"
+msgstr ""
+
+#: languages/shareaholic-translations.php:10
+msgid "<span class=\"shr-old-price\">{fullPrice, number, USD}</span>{price, number, USD}/month"
+msgstr ""
+
+#: languages/shareaholic-translations.php:11
+msgid "<strong class=\"dotted_underline\">{domain}</strong> has already been added by "
+msgstr ""
+
+#: languages/shareaholic-translations.php:12
+msgid "<strong class=\"dotted_underline\">{domain}</strong> has already been added by another user"
+msgstr ""
+
+#: languages/shareaholic-translations.php:13
+msgid "<strong>Did you know?</strong> An annual subscription can save you up to 30%. If you are interested, you can view the potential savings and adjust to annual billing via your <a href=\"{managePlans}\">Manage Plans</a> options using the \"Change Plan\" button."
+msgstr ""
+
+#: languages/shareaholic-translations.php:14
+msgid "<strong>{count} unassigned</strong> (of {total})"
+msgstr ""
+
+#: languages/shareaholic-translations.php:15
+msgid "A great way to build online trust and equity in your brand is to create and use your own Branded URL Shortener."
+msgstr ""
+
+#: languages/shareaholic-translations.php:16
+msgid "A {brand} account is free and so is this plugin. We do offer paid upgrades for advanced features and priority support but these are completely optional. If you don't yet have an account, no worries! You can sign in or create an account for free when you click '{title}' below."
+msgstr ""
+
+#: languages/shareaholic-translations.php:17
+msgid "ACH / Check / Wire"
+msgstr ""
+
+#: languages/shareaholic-translations.php:18
+msgid "AFFILIATE LINKS"
+msgstr ""
+
+#: languages/shareaholic-translations.php:19
+msgid "API Tokens"
+msgstr ""
+
+#: languages/shareaholic-translations.php:20
+msgid "Accept Button"
+msgstr ""
+
+#: languages/shareaholic-translations.php:21
+msgid "According to your analytics, your website logged {pvs, number} pageviews across {active_days, number} days in the past month."
+msgstr ""
+
+#: languages/shareaholic-translations.php:22
+msgid "Account"
+msgstr ""
+
+#: languages/shareaholic-translations.php:23
+msgid "Acquire more followers with each share by adding follow buttons to the Post Share Window."
+msgstr ""
+
+#: languages/shareaholic-translations.php:24
+msgid "Actions"
+msgstr ""
+
+#: languages/shareaholic-translations.php:25
+msgid "Actively notify your visitors that your site uses cookies through a message bar at the top or bottom of your page."
+msgstr ""
+
+#: languages/shareaholic-translations.php:26
+msgid "Activity History"
+msgstr ""
+
+#: languages/shareaholic-translations.php:27
+msgid "Ad Manager"
+msgstr ""
+
+#: languages/shareaholic-translations.php:28
+msgid "Ad units"
+msgstr ""
+
+#: languages/shareaholic-translations.php:29
+msgid "Add A New Site"
+msgstr ""
+
+#: languages/shareaholic-translations.php:30
+msgid "Add Custom domain"
+msgstr ""
+
+#: languages/shareaholic-translations.php:31
+msgid "Add Payment Method"
+msgstr ""
+
+#: languages/shareaholic-translations.php:32
+msgid "Add Pixel"
+msgstr ""
+
+#: languages/shareaholic-translations.php:33
+msgid "Add Shareaholic to Shopify"
+msgstr ""
+
+#: languages/shareaholic-translations.php:34
+msgid "Add Sites"
+msgstr ""
+
+#: languages/shareaholic-translations.php:35
+msgid "Add Thumbnail"
+msgstr ""
+
+#: languages/shareaholic-translations.php:36
+msgid "Add Website / Profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:37
+msgid "Add Your First Pixel"
+msgstr ""
+
+#: languages/shareaholic-translations.php:38
+msgid "Add a New Campaign"
+msgstr ""
+
+#: languages/shareaholic-translations.php:39
+msgid "Add a carousel of recommended content to any or all of your pages, presenting targeted visitors with a scrollable list of content to engage with at just the right time."
+msgstr ""
+
+#: languages/shareaholic-translations.php:40
+msgid "Add a payment method"
+msgstr ""
+
+#: languages/shareaholic-translations.php:41
+msgid "Add a pixel"
+msgstr ""
+
+#: languages/shareaholic-translations.php:42
+msgid "Add a role"
+msgstr ""
+
+#: languages/shareaholic-translations.php:43
+msgid "Add metric"
+msgstr ""
+
+#: languages/shareaholic-translations.php:44
+msgid "Add rule"
+msgstr ""
+
+#: languages/shareaholic-translations.php:45
+msgid "Add site"
+msgstr ""
+
+#: languages/shareaholic-translations.php:46
+msgid "Add-ons"
+msgstr ""
+
+#: languages/shareaholic-translations.php:47
+msgid "Added new pixel"
+msgstr ""
+
+#: languages/shareaholic-translations.php:48
+msgid "Advertise"
+msgstr ""
+
+#: languages/shareaholic-translations.php:49
+msgid "Affiliate Links"
+msgstr ""
+
+#: languages/shareaholic-translations.php:50
+msgid "Affiliate"
+msgstr ""
+
+#: languages/shareaholic-translations.php:51
+msgid "Algorithm"
+msgstr ""
+
+#: languages/shareaholic-translations.php:52
+msgid "Alignment"
+msgstr ""
+
+#: languages/shareaholic-translations.php:53
+msgid "All timestamps are in UTC timezone. Current UTC time is {currentTime}. Unless otherwise stated, all data reported is an estimate until finalized and is therefore subject to change. Due to rounding, numbers displayed may not add up precisely to the totals provided and percentages may not precisely reflect the absolute figures."
+msgstr ""
+
+#: languages/shareaholic-translations.php:54
+msgid "An ad that sits at the bottom of the screen. As a user scrolls down the page, it remains \"anchored\" to the bottom."
+msgstr ""
+
+#: languages/shareaholic-translations.php:55
+msgid "An internal error has occurred while processing your request."
+msgstr ""
+
+#: languages/shareaholic-translations.php:56
+#: templates/why_to_sign_up.php:7
+msgid "Analytics"
+msgstr ""
+
+#: languages/shareaholic-translations.php:57
+msgid "Analyze and target your engaged audience on your chosen ad platform."
+msgstr ""
+
+#: languages/shareaholic-translations.php:58
+msgid "Anchor Overlay Ads Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:59
+msgid "Anchor Overlay Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:60
+msgid "Annual {price, number, USD}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:61
+msgid "Annual"
+msgstr ""
+
+#: languages/shareaholic-translations.php:62
+msgid "Annually {price, number, USD} (save <span>{savings, number, USD} / {savingsPercent, number}%</span>)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:63
+msgid "App Block"
+msgstr ""
+
+#: languages/shareaholic-translations.php:64
+msgid "App could not be deleted"
+msgstr ""
+
+#: languages/shareaholic-translations.php:65
+msgid "App could not be updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:66
+msgid "App has been disabled"
+msgstr ""
+
+#: languages/shareaholic-translations.php:67
+msgid "App has been enabled"
+msgstr ""
+
+#: languages/shareaholic-translations.php:68
+msgid "App has been updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:69
+msgid "Apps"
+msgstr ""
+
+#: languages/shareaholic-translations.php:70
+msgid "Are you absolutely sure you want to remove this site profile?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:71
+msgid "Are you absolutely sure?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:72
+msgid "Are you sure that you want to downgrade your plan?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:73
+msgid "Are you sure that you want to remove {cardType} *{cardNumber} from your account?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:74
+msgid "Are you sure you want to cancel the change to {planName}?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:75
+msgid "Are you sure you want to continue?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:76
+msgid "Are you sure you want to delete this {itemType}?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:77
+msgid "Are you sure you want to leave without saving?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:78
+msgid "Are you sure you want to pause this campaign?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:79
+msgid "Are you sure you want to start this campaign?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:80
+msgid "Are you sure?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:81
+msgid "Arrow Style"
+msgstr ""
+
+#: languages/shareaholic-translations.php:82
+msgid "Assign Plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:83
+msgid "At least one service has to be enabled"
+msgstr ""
+
+#: languages/shareaholic-translations.php:84
+msgid "Author Filter"
+msgstr ""
+
+#: languages/shareaholic-translations.php:85
+msgid "BANNER ADS"
+msgstr ""
+
+#: languages/shareaholic-translations.php:86
+msgid "BTW, did you know Shareaholic has amplified over <strong>{pageViewCount}</strong> views on <strong>{domain}</strong> this past month?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:87
+msgid "Back to Profiles"
+msgstr ""
+
+#: languages/shareaholic-translations.php:88
+msgid "Back"
+msgstr ""
+
+#: languages/shareaholic-translations.php:89
+msgid "Background Color"
+msgstr ""
+
+#: languages/shareaholic-translations.php:90
+msgid "Balance"
+msgstr ""
+
+#: languages/shareaholic-translations.php:91
+msgid "Banners"
+msgstr ""
+
+#: languages/shareaholic-translations.php:92
+msgid "Based on this activity, we recommend selecting the {recommended, number} pageviews/month usage tier."
+msgstr ""
+
+#: languages/shareaholic-translations.php:93
+msgid "Billing History"
+msgstr ""
+
+#: languages/shareaholic-translations.php:94
+msgid "Billing Management"
+msgstr ""
+
+#: languages/shareaholic-translations.php:95
+msgid "Billing Period"
+msgstr ""
+
+#: languages/shareaholic-translations.php:96
+msgid "Billing cycle"
+msgstr ""
+
+#: languages/shareaholic-translations.php:97
+msgid "Billing"
+msgstr ""
+
+#: languages/shareaholic-translations.php:98
+msgid "Blog"
+msgstr ""
+
+#: languages/shareaholic-translations.php:99
+msgid "Boost site speed, share counts, and privacy.  This Share Count Proxy speeds up your website by consolidating multiple client-side HTTP requests into a single HTTP/2 enabled request. Also, as all Share Count fetching and caching is offloaded to our specialized proxy servers, your own servers and database run faster as they do less work."
+msgstr ""
+
+#: languages/shareaholic-translations.php:100
+msgid "Boost your content to reach more people"
+msgstr ""
+
+#: languages/shareaholic-translations.php:101
+msgid "Boost"
+msgstr ""
+
+#: languages/shareaholic-translations.php:102
+msgid "Bot"
+msgstr ""
+
+#: languages/shareaholic-translations.php:103
+msgid "Buffer Integration Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:104
+msgid "Buffer integration updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:105
+msgid "Button is disabled because:"
+msgstr ""
+
+#: languages/shareaholic-translations.php:106
+msgid "By clicking 'confirm', you represent and warrant that you have the full right, power and authority to initiate a redemption request for <span class='shr-bold'>{domain}</span> to <span class='shr-bold'>{userName}</span>. In addition, you agree that all activities you undertake in connection are performed in compliance with all applicable laws, rules and regulations."
+msgstr ""
+
+#: languages/shareaholic-translations.php:107
+msgid "By clicking 'confirm', you represent and warrant that you have the full right, power and authority to set the Site Earnings Receipient for <strong>{domain}</strong>. In addition, you agree that all activities you undertake in connection are performed in compliance with all applicable laws, rules and regulations."
+msgstr ""
+
+#: languages/shareaholic-translations.php:108
+msgid "By default we do not count visits to a short URL by known crawler robots like the Google Web Crawler, or Twitter's link unshortening bot. However, you can choose to count these visits, if you'd like."
+msgstr ""
+
+#: languages/shareaholic-translations.php:109
+msgid "By downgrading, you will lose access to the following:"
+msgstr ""
+
+#: languages/shareaholic-translations.php:110
+msgid "By making this purchase, you agree to our <a href=\"/terms target=\"_blank\">Terms of Service</a> and authorize Shareaholic to charge your payment method on a recurring basis until you cancel. Your subscription will automatically renew each {cycle}. You may choose to cancel at any time."
+msgstr ""
+
+#: languages/shareaholic-translations.php:111
+msgid "By"
+msgstr ""
+
+#: languages/shareaholic-translations.php:112
+msgid "Cache time (in minutes)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:113
+msgid "Campaign Added successfully."
+msgstr ""
+
+#: languages/shareaholic-translations.php:114
+msgid "Campaign Paused successfully."
+msgstr ""
+
+#: languages/shareaholic-translations.php:115
+msgid "Campaign Removed successfully."
+msgstr ""
+
+#: languages/shareaholic-translations.php:116
+msgid "Campaign Restarted successfully."
+msgstr ""
+
+#: languages/shareaholic-translations.php:117
+msgid "Campaign Updated successfully."
+msgstr ""
+
+#: languages/shareaholic-translations.php:118
+msgid "Campaigns"
+msgstr ""
+
+#: languages/shareaholic-translations.php:119
+msgid "Cancel Change"
+msgstr ""
+
+#: languages/shareaholic-translations.php:121
+msgid "Cancels on"
+msgstr ""
+
+#: languages/shareaholic-translations.php:122
+msgid "Capture every person that engages with the shared links."
+msgstr ""
+
+#: languages/shareaholic-translations.php:123
+msgid "Card Border Color"
+msgstr ""
+
+#: languages/shareaholic-translations.php:124
+msgid "Center"
+msgstr ""
+
+#: languages/shareaholic-translations.php:125
+msgid "Change Plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:126
+msgid "Change Recipient"
+msgstr ""
+
+#: languages/shareaholic-translations.php:127
+msgid "Chat with us"
+msgstr ""
+
+#: languages/shareaholic-translations.php:128
+msgid "Choose how often you'd like to be billed."
+msgstr ""
+
+#: languages/shareaholic-translations.php:129
+msgid "Click this text to generate your code snippet"
+msgstr ""
+
+#: languages/shareaholic-translations.php:130
+msgid "Close"
+msgstr ""
+
+#: languages/shareaholic-translations.php:131
+msgid "Cloudflare admin"
+msgstr ""
+
+#: languages/shareaholic-translations.php:132
+msgid "Combine http & https protocols"
+msgstr ""
+
+#: languages/shareaholic-translations.php:133
+msgid "Coming soon"
+msgstr ""
+
+#: languages/shareaholic-translations.php:134
+msgid "Compare plans"
+msgstr ""
+
+#: languages/shareaholic-translations.php:135
+msgid "Configure Shareaholic Apps to improve your website experience."
+msgstr ""
+
+#: languages/shareaholic-translations.php:136
+msgid "Confirm new password"
+msgstr ""
+
+#: languages/shareaholic-translations.php:137
+msgid "Confirm plan update"
+msgstr ""
+
+#: languages/shareaholic-translations.php:138
+msgid "Confirm that you own this website to unlock its private data."
+msgstr ""
+
+#: languages/shareaholic-translations.php:139
+msgid "Confirm"
+msgstr ""
+
+#: languages/shareaholic-translations.php:140
+msgid "Confirmation"
+msgstr ""
+
+#: languages/shareaholic-translations.php:141
+msgid "Confirming..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:142
+msgid "Connect Plugin Now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:143
+#: templates/advanced_settings.php:85
+msgid "Connect Plugin"
+msgstr ""
+
+#: languages/shareaholic-translations.php:144
+msgid "Connect a Facebook App for better Facebook share counts."
+msgstr ""
+
+#: languages/shareaholic-translations.php:145
+msgid "Connect now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:146
+msgid "Connect your Google Analytics account to use On Page Analytics Viewer"
+msgstr ""
+
+#: languages/shareaholic-translations.php:147
+msgid "Connect your Google Analytics account to view your analytics directly in Shareaholic"
+msgstr ""
+
+#: languages/shareaholic-translations.php:148
+msgid "Connect your favorite tools to super charge your growth"
+msgstr ""
+
+#: languages/shareaholic-translations.php:149
+msgid "Connect {brand} Plugin to a {brand} Account"
+msgstr ""
+
+#: languages/shareaholic-translations.php:150
+msgid "Connect"
+msgstr ""
+
+#: languages/shareaholic-translations.php:151
+msgid "Connected"
+msgstr ""
+
+#: languages/shareaholic-translations.php:152
+msgid "Connecting your {brand} Plugin to a {brand} account is highly recommended. Doing so will unlock additional features that require authentication such as site ownership verification, team features and site integrations like Google Analytics."
+msgstr ""
+
+#: languages/shareaholic-translations.php:153
+msgid "Connection lost to {brand}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:154
+msgid "Contact <strong>{user}</strong> to upgrade plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:155
+msgid "Content Age Filter"
+msgstr ""
+
+#: languages/shareaholic-translations.php:156
+msgid "Content Analytics"
+msgstr ""
+
+#: languages/shareaholic-translations.php:157
+msgid "Content Category"
+msgstr ""
+
+#: languages/shareaholic-translations.php:158
+msgid "Content Language"
+msgstr ""
+
+#: languages/shareaholic-translations.php:159
+msgid "Content Library"
+msgstr ""
+
+#: languages/shareaholic-translations.php:160
+msgid "Content Pool"
+msgstr ""
+
+#: languages/shareaholic-translations.php:161
+msgid "Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:162
+msgid "Continue to next step"
+msgstr ""
+
+#: languages/shareaholic-translations.php:163
+msgid "Control where Cookie Consent Tabs shows on your site. Cookie Consent Tabs app will only show when any of your \"Show\" rules match and none of your \"Hide\" rules match. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:164
+msgid "Control where Floated Share Buttons shows on your site. Floated Share Buttons app will only show when any of your \"Show\" rules match and none of your \"Hide\" rules match. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:165
+msgid "Control where Follow Buttons In-Page App shows on your site. Follow Buttons In-Page App will only show when any of your \"Show\" rules match and none of your \"Hide\" rules match. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:166
+msgid "Control where Related Content In-Page App shows on your site. Related Content In-Page App will only show when any of your \"Show\" rules match and none of your \"Hide\" rules match. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:167
+msgid "Control where Share Buttons for Images shows on your site. Share Buttons for Images will only show when any of your \"Show\" rules match and none of your \"Hide\" rules match. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:168
+msgid "Control where Share Buttons shows on your site. Share Buttons app will only show when any of your \"Show\" rules match and none of your \"Hide\" rules match. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:169
+msgid "Control where and when {appName} show on your site. {appName} will only show when any of your \"Show\" rules match and none of your \"Hide\" rules match. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:170
+msgid "Control where campaigns will appear on your site. The ordering of the rules does not matter, \"Hide\" rules always trump any \"Show\" rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:171
+msgid "Cookie Consent Prompt"
+msgstr ""
+
+#: languages/shareaholic-translations.php:172
+msgid "Copied!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:173
+msgid "Copy Site Id"
+msgstr ""
+
+#: languages/shareaholic-translations.php:174
+msgid "Copy and paste the URL for your image pixel from your ad serving or analytics partner. This URL always starts with \"https://\" and is the full URL within the quotes after src= within your image pixel code."
+msgstr ""
+
+#: languages/shareaholic-translations.php:175
+msgid "Copy and paste the code snippet below into the <HEAD> of every webpage as one of the first items."
+msgstr ""
+
+#: languages/shareaholic-translations.php:176
+msgid "Copy code to clipboard"
+msgstr ""
+
+#: languages/shareaholic-translations.php:177
+msgid "Copy code"
+msgstr ""
+
+#: languages/shareaholic-translations.php:178
+msgid "Copy"
+msgstr ""
+
+#: languages/shareaholic-translations.php:179
+msgid "Could not create In-Page App"
+msgstr ""
+
+#: languages/shareaholic-translations.php:180
+msgid "Could not load Link Manager settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:181
+msgid "Could not remove team member"
+msgstr ""
+
+#: languages/shareaholic-translations.php:182
+msgid "Could not update Team Role"
+msgstr ""
+
+#: languages/shareaholic-translations.php:183
+msgid "Could not update site settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:184
+msgid "Counter"
+msgstr ""
+
+#: languages/shareaholic-translations.php:185
+msgid "Create Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:186
+msgid "Create a new link"
+msgstr ""
+
+#: languages/shareaholic-translations.php:187
+msgid "Create new token"
+msgstr ""
+
+#: languages/shareaholic-translations.php:188
+msgid "Create your first link"
+msgstr ""
+
+#: languages/shareaholic-translations.php:189
+msgid "Create"
+msgstr ""
+
+#: languages/shareaholic-translations.php:190
+msgid "Created {formattedDateTime}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:191
+msgid "Created"
+msgstr ""
+
+#: languages/shareaholic-translations.php:192
+msgid "Credits"
+msgstr ""
+
+#: languages/shareaholic-translations.php:193
+msgid "Current Plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:194
+msgid "Current password"
+msgstr ""
+
+#: languages/shareaholic-translations.php:195
+msgid "Custom Branded Domain"
+msgstr ""
+
+#: languages/shareaholic-translations.php:196
+msgid "Custom Branded URL Shortener"
+msgstr ""
+
+#: languages/shareaholic-translations.php:197
+msgid "Custom Colors"
+msgstr ""
+
+#: languages/shareaholic-translations.php:198
+msgid "Custom Headline Design"
+msgstr ""
+
+#: languages/shareaholic-translations.php:199
+msgid "Custom Icon Colors"
+msgstr ""
+
+#: languages/shareaholic-translations.php:200
+msgid "Custom domain removed."
+msgstr ""
+
+#: languages/shareaholic-translations.php:201
+msgid "Custom domain verified."
+msgstr ""
+
+#: languages/shareaholic-translations.php:202
+msgid "Custom"
+msgstr ""
+
+#: languages/shareaholic-translations.php:203
+msgid "Customize Analytics"
+msgstr ""
+
+#: languages/shareaholic-translations.php:204
+msgid "Customize the headline at the top of the follow buttons section"
+msgstr ""
+
+#: languages/shareaholic-translations.php:205
+msgid "Customize the headline at the top of the related content section"
+msgstr ""
+
+#: languages/shareaholic-translations.php:206
+msgid "Customize the prompt users see after they share content."
+msgstr ""
+
+#: languages/shareaholic-translations.php:207
+msgid "DNS verified, but certificate generation is queued and may take an hour."
+msgstr ""
+
+#: languages/shareaholic-translations.php:208
+msgid "Dashboard"
+msgstr ""
+
+#: languages/shareaholic-translations.php:209
+msgid "Date"
+msgstr ""
+
+#: languages/shareaholic-translations.php:210
+msgid "Day and name"
+msgstr ""
+
+#: languages/shareaholic-translations.php:211
+msgid "Deactivate my account"
+msgstr ""
+
+#: languages/shareaholic-translations.php:212
+msgid "Debits"
+msgstr ""
+
+#: languages/shareaholic-translations.php:213
+msgid "Delete Custom domain"
+msgstr ""
+
+#: languages/shareaholic-translations.php:214
+msgid "Delete Now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:215
+msgid "Delete Team Member?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:216
+msgid "Delete this token"
+msgstr ""
+
+#: languages/shareaholic-translations.php:217
+msgid "Delete"
+msgstr ""
+
+#: languages/shareaholic-translations.php:218
+msgid "Deleting..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:219
+msgid "Demo"
+msgstr ""
+
+#: languages/shareaholic-translations.php:220
+msgid "Description Color"
+msgstr ""
+
+#: languages/shareaholic-translations.php:221
+msgid "Description"
+msgstr ""
+
+#: languages/shareaholic-translations.php:222
+msgid "Design Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:223
+msgid "Design"
+msgstr ""
+
+#: languages/shareaholic-translations.php:224
+msgid "Desktop"
+msgstr ""
+
+#: languages/shareaholic-translations.php:225
+msgid "Display maximum"
+msgstr ""
+
+#: languages/shareaholic-translations.php:226
+msgid "Displaying promoted content in your Related Content block is a great way to earn money"
+msgstr ""
+
+#: languages/shareaholic-translations.php:227
+msgid "Displaying promoted content in your Related Content block is a great way to monetize your website"
+msgstr ""
+
+#: languages/shareaholic-translations.php:228
+msgid "Do More With Your Links — How It Works"
+msgstr ""
+
+#: languages/shareaholic-translations.php:229
+msgid "Do you need help from a teammate to install Shareaholic?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:230
+msgid "Domain"
+msgstr ""
+
+#: languages/shareaholic-translations.php:231
+msgid "Don't have an account?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:232
+msgid "Don't know how many pageviews you get?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:233
+msgid "Don't know how? Click the button below for easy-install instructions. This <strong>one time</strong> setup won't take more than 10 minutes."
+msgstr ""
+
+#: languages/shareaholic-translations.php:234
+msgid "Don't worry. Regardless of which tier you pick today, for the first month we give you unlimited pageviews to monitor your usage. We'll send you a notification at 80% and 100% usage. You may upgrade your usage tier at any time. Upgrades are pro-rated for the remainder of the billing cycle."
+msgstr ""
+
+#: languages/shareaholic-translations.php:235
+msgid "Don't worry. We'll send you a notification at 80% and 100% usage. You may upgrade your usage tier at any time. Upgrades are pro-rated for the remainder of the billing cycle."
+msgstr ""
+
+#: languages/shareaholic-translations.php:236
+msgid "Download"
+msgstr ""
+
+#: languages/shareaholic-translations.php:237
+msgid "Due now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:238
+msgid "Duplicate"
+msgstr ""
+
+#: languages/shareaholic-translations.php:239
+msgid "Earn Revenue"
+msgstr ""
+
+#: languages/shareaholic-translations.php:240
+msgid "Earn additional revenue by integrating eligible banner ads with the Related & Promoted content app."
+msgstr ""
+
+#: languages/shareaholic-translations.php:241
+msgid "Earn additional revenue by integrating targeted banner ads with the Related Content App."
+msgstr ""
+
+#: languages/shareaholic-translations.php:242
+msgid "Earnings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:243
+msgid "Edit Campaign"
+msgstr ""
+
+#: languages/shareaholic-translations.php:244
+msgid "Edit Profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:245
+msgid "Edit Site Profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:246
+msgid "Edit by clicking on the text directly."
+msgstr ""
+
+#: languages/shareaholic-translations.php:247
+msgid "Either that link does not exist or you do not have access to it."
+msgstr ""
+
+#: languages/shareaholic-translations.php:248
+msgid "Enable if you're converting your site to HTTPS using an SSL certificate"
+msgstr ""
+
+#: languages/shareaholic-translations.php:249
+msgid "End Date"
+msgstr ""
+
+#: languages/shareaholic-translations.php:250
+#: templates/terms_of_service_modal.php:24
+msgid "Engage"
+msgstr ""
+
+#: languages/shareaholic-translations.php:251
+msgid "Enter credit or debit card information"
+msgstr ""
+
+#: languages/shareaholic-translations.php:252
+msgid "Enter new password"
+msgstr ""
+
+#: languages/shareaholic-translations.php:253
+msgid "Error - Content Blocking Detected"
+msgstr ""
+
+#: languages/shareaholic-translations.php:254
+msgid "Error occurred during removal of your payment method. Please try again later."
+msgstr ""
+
+#: languages/shareaholic-translations.php:255
+msgid "Error while deleting Smart Link"
+msgstr ""
+
+#: languages/shareaholic-translations.php:256
+msgid "Error while removing custom domain."
+msgstr ""
+
+#: languages/shareaholic-translations.php:257
+msgid "Error while removing pixel"
+msgstr ""
+
+#: languages/shareaholic-translations.php:258
+msgid "Error while retrieving Buffer profiles"
+msgstr ""
+
+#: languages/shareaholic-translations.php:259
+msgid "Error while retrieving Smart Link analytics"
+msgstr ""
+
+#: languages/shareaholic-translations.php:260
+msgid "Error while retrieving Smart Links"
+msgstr ""
+
+#: languages/shareaholic-translations.php:261
+msgid "Error while retrieving pixels"
+msgstr ""
+
+#: languages/shareaholic-translations.php:262
+msgid "Error while verifying custom domain."
+msgstr ""
+
+#: languages/shareaholic-translations.php:263
+msgid "Estimated Earnings Across Apps"
+msgstr ""
+
+#: languages/shareaholic-translations.php:264
+msgid "Estimated Earnings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:265
+msgid "Estimated Unredeemed Earnings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:266
+msgid "Exclude Specific Pages and Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:267
+msgid "Exit-intent tracks your visitor's mouse and touch behavior to detect the precise moment they appear to be about to leave or \"exit\" the site."
+msgstr ""
+
+#: languages/shareaholic-translations.php:268
+#: templates/advanced_settings.php:157
+msgid "Facebook App ID"
+msgstr ""
+
+#: languages/shareaholic-translations.php:269
+msgid "Facebook App Integration Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:270
+#: templates/advanced_settings.php:168
+msgid "Facebook App Secret"
+msgstr ""
+
+#: languages/shareaholic-translations.php:271
+#: templates/advanced_settings.php:146
+msgid "Facebook"
+msgstr ""
+
+#: languages/shareaholic-translations.php:272
+msgid "Faster"
+msgstr ""
+
+#: languages/shareaholic-translations.php:273
+msgid "First month"
+msgstr ""
+
+#: languages/shareaholic-translations.php:274
+msgid "First usage cycle"
+msgstr ""
+
+#: languages/shareaholic-translations.php:275
+msgid "Floated Share Buttons"
+msgstr ""
+
+#: languages/shareaholic-translations.php:276
+msgid "Follow Buttons"
+msgstr ""
+
+#: languages/shareaholic-translations.php:277
+msgid "Follow our step-by-step guide on how to get your Facebook App ID and Secret."
+msgstr ""
+
+#: languages/shareaholic-translations.php:278
+msgid "Font Color"
+msgstr ""
+
+#: languages/shareaholic-translations.php:279
+msgid "Font Size"
+msgstr ""
+
+#: languages/shareaholic-translations.php:280
+msgid "Font Typeface"
+msgstr ""
+
+#: languages/shareaholic-translations.php:281
+msgid "For Your Website"
+msgstr ""
+
+#: languages/shareaholic-translations.php:282
+msgid "Forgot Password?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:283
+msgid "Free"
+msgstr ""
+
+#: languages/shareaholic-translations.php:284
+msgid "Gathering Data"
+msgstr ""
+
+#: languages/shareaholic-translations.php:285
+msgid "Generate revenue by automatically appending merchant codes to product links on your pages with no change to the reader's experience."
+msgstr ""
+
+#: languages/shareaholic-translations.php:286
+msgid "Generate revenue from your website with personalized ads."
+msgstr ""
+
+#: languages/shareaholic-translations.php:287
+msgid "Generate revenue with targeted content recommendations from our sponsored content marketplace. Each time your readers click through to sponsored articles, you make money."
+msgstr ""
+
+#: languages/shareaholic-translations.php:288
+msgid "Get Related Content Code"
+msgstr ""
+
+#: languages/shareaholic-translations.php:289
+msgid ""
+"Get more followers to grow your social influence on Facebook, Twitter,\n"
+"            Pinterest, YouTube, Instagram and many other social networks."
+msgstr ""
+
+#: languages/shareaholic-translations.php:290
+msgid "Get more shares and viral traffic by automagically adding smart share buttons to the images on your website."
+msgstr ""
+
+#: languages/shareaholic-translations.php:291
+msgid "Go Back"
+msgstr ""
+
+#: languages/shareaholic-translations.php:292
+msgid "Go back to change domain"
+msgstr ""
+
+#: languages/shareaholic-translations.php:293
+msgid "Google Analytics is not connected:"
+msgstr ""
+
+#: languages/shareaholic-translations.php:294
+msgid "Great job, you've successfully verified that this site is yours!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:295
+msgid "Grow your custom retargeting audience with every share"
+msgstr ""
+
+#: languages/shareaholic-translations.php:296
+msgid "Headline Text"
+msgstr ""
+
+#: languages/shareaholic-translations.php:297
+msgid "Headline"
+msgstr ""
+
+#: languages/shareaholic-translations.php:298
+msgid "Help"
+msgstr ""
+
+#: languages/shareaholic-translations.php:299
+msgid "High earnings from Promoted Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:300
+msgid "Hmm, I don't know. Continue without linking"
+msgstr ""
+
+#: languages/shareaholic-translations.php:301
+msgid "Homepage"
+msgstr ""
+
+#: languages/shareaholic-translations.php:302
+msgid "Horizontal Offset"
+msgstr ""
+
+#: languages/shareaholic-translations.php:303
+msgid "How to find my Pixel ID?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:304
+msgid "How-to pick the right social media buttons."
+msgstr ""
+
+#: languages/shareaholic-translations.php:305
+msgid "Human"
+msgstr ""
+
+#: languages/shareaholic-translations.php:306
+msgid "I don't understand how Shareaholic is useful for me."
+msgstr ""
+
+#: languages/shareaholic-translations.php:307
+msgid "I get too many spam emails from Shareaholic"
+msgstr ""
+
+#: languages/shareaholic-translations.php:308
+msgid "I understand the consequences, remove this site profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:309
+msgid "I want to keep these features"
+msgstr ""
+
+#: languages/shareaholic-translations.php:310
+msgid "Icon Padding"
+msgstr ""
+
+#: languages/shareaholic-translations.php:311
+msgid "Identified"
+msgstr ""
+
+#: languages/shareaholic-translations.php:312
+msgid "If so, you're almost done! You can link the {pluginType} to your Shareaholic dashboard in 1-easy step."
+msgstr ""
+
+#: languages/shareaholic-translations.php:313
+msgid "If there is usage above your subscription tier in a given monthly cycle, you will be charged that additional overage fees in the subsequent month (on the day of the month your subscription was setup)."
+msgstr ""
+
+#: languages/shareaholic-translations.php:314
+msgid "If you disconnect this integration you will lose any configuration associated with it. Are you sure you want to continue?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:315
+msgid "If you leave this field blank, we default to the Total Share Count for the URL the code snippet is present on."
+msgstr ""
+
+#: languages/shareaholic-translations.php:316
+msgid "If you proceed to remove it, you will lose all ability to change your Shareaholic settings for this site profile. If you plan to keep this site profile installed on your website, we highly recommend you <strong>do not remove</strong> it."
+msgstr ""
+
+#: languages/shareaholic-translations.php:317
+msgid "Ignoring Robots"
+msgstr ""
+
+#: languages/shareaholic-translations.php:318
+msgid "In addition, you may also connect a Facebook App for better Facebook share counts and because API calls to the various social networks are proxied through this Share Count service, visitor privacy is protected. Site visitors will be able to see how popular your pages are without exposing their data to social networks. The \"original\" share buttons from Facebook, Pinterest and others automatically transmit visitor data to social networks as soon as they visit your website in order to fetch counts."
+msgstr ""
+
+#: languages/shareaholic-translations.php:319
+msgid "In real-time see your critical stats on each of your pages, without leaving your site or opening an app or logging into Google Analytics. Viewable only to you and your team."
+msgstr ""
+
+#: languages/shareaholic-translations.php:320
+msgid "In-Page App created"
+msgstr ""
+
+#: languages/shareaholic-translations.php:321
+msgid "In-Page App"
+msgstr ""
+
+#: languages/shareaholic-translations.php:322
+msgid "In-page Apps are special apps that let you place them exactly where you want in your HTML template code."
+msgstr ""
+
+#: languages/shareaholic-translations.php:323
+msgid "Include a selection of your most popular content in the results. These pages are selected independent of other algorithm rules."
+msgstr ""
+
+#: languages/shareaholic-translations.php:324
+msgid "Include in Total Share Count?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:325
+msgid "Incorrect username or password. Please try again."
+msgstr ""
+
+#: languages/shareaholic-translations.php:326
+msgid "Increase pageviews, engagement and time on site by highlighting relevant content or products that may not otherwise be discovered from across your website."
+msgstr ""
+
+#: languages/shareaholic-translations.php:327
+msgid "Increase sharing activity by 2x or more with Share Buttons that hover on the side of the page, rather than in the page content."
+msgstr ""
+
+#: languages/shareaholic-translations.php:328
+msgid "Increase the visibility of your best content."
+msgstr ""
+
+#: languages/shareaholic-translations.php:329
+msgid "Index Rate"
+msgstr ""
+
+#: languages/shareaholic-translations.php:330
+msgid "Insert this code snippet where you want your Share Counter to appear:"
+msgstr ""
+
+#: languages/shareaholic-translations.php:331
+msgid "Installation Instructions"
+msgstr ""
+
+#: languages/shareaholic-translations.php:332
+msgid "Installation"
+msgstr ""
+
+#: languages/shareaholic-translations.php:333
+msgid "Integration could not be removed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:334
+msgid "Integration has been removed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:335
+msgid "Integration settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:336
+msgid "Integrations"
+msgstr ""
+
+#: languages/shareaholic-translations.php:337
+msgid "Internal Error"
+msgstr ""
+
+#: languages/shareaholic-translations.php:338
+msgid "Invite could not be removed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:339
+msgid "Invite has been sent"
+msgstr ""
+
+#: languages/shareaholic-translations.php:340
+msgid "Invite revoked"
+msgstr ""
+
+#: languages/shareaholic-translations.php:341
+msgid "Invite sent"
+msgstr ""
+
+#: languages/shareaholic-translations.php:342
+msgid "Is this goodbye?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:343
+msgid "It looks like you're using a <strong>Content/Ad Blocking</strong> plugin or similar browser feature that is interfering with Shareaholic and this page. Please disable it on your site or add shareaholic.com to the whitelist to access Shareaholic's admin features."
+msgstr ""
+
+#: languages/shareaholic-translations.php:344
+msgid "It seems that you have changes that are not saved yet. Are you sure you want to continue and lose your changes?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:345
+msgid "Items"
+msgstr ""
+
+#: languages/shareaholic-translations.php:346
+msgid "Keep"
+msgstr ""
+
+#: languages/shareaholic-translations.php:347
+msgid "Label"
+msgstr ""
+
+#: languages/shareaholic-translations.php:348
+msgid "Last 30 days clicks"
+msgstr ""
+
+#: languages/shareaholic-translations.php:349
+msgid "Last 7 days clicks"
+msgstr ""
+
+#: languages/shareaholic-translations.php:350
+msgid "Launch the Shareaholic admin console without ever leaving your website. Also contains quick-links to site analytics, app live editor, help center, and much more to help you manage your site with ease."
+msgstr ""
+
+#: languages/shareaholic-translations.php:351
+msgid "Layout"
+msgstr ""
+
+#: languages/shareaholic-translations.php:352
+msgid "Learn More"
+msgstr ""
+
+#: languages/shareaholic-translations.php:353
+msgid "Learn More..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:354
+msgid "Learn how to fix this"
+msgstr ""
+
+#: languages/shareaholic-translations.php:355
+msgid "Learn how to improve your SEO."
+msgstr ""
+
+#: languages/shareaholic-translations.php:356
+msgid "Learn more on our <a href={path}>Plans Comparison</a>. Need to talk to someone?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:357
+msgid "Left"
+msgstr ""
+
+#: languages/shareaholic-translations.php:358
+msgid "Let us know."
+msgstr ""
+
+#: languages/shareaholic-translations.php:359
+msgid "Lifetime Clicks"
+msgstr ""
+
+#: languages/shareaholic-translations.php:360
+msgid "Lifetime Earnings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:361
+msgid "Limited Time Promo:<br />{message}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:362
+msgid "Link Manager settings could not be updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:363
+msgid "Link Manager settings updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:364
+msgid "Link Manager"
+msgstr ""
+
+#: languages/shareaholic-translations.php:365
+#: templates/advanced_settings.php:149
+msgid "Live"
+msgstr ""
+
+#: languages/shareaholic-translations.php:366
+msgid "Load Pixels for Known Bots"
+msgstr ""
+
+#: languages/shareaholic-translations.php:367
+msgid "Location"
+msgstr ""
+
+#: languages/shareaholic-translations.php:368
+msgid "Log In to your {brand} Account to view this section"
+msgstr ""
+
+#: languages/shareaholic-translations.php:369
+msgid "Log In"
+msgstr ""
+
+#: languages/shareaholic-translations.php:370
+msgid "Log in to your Drupal account and click on <strong>Modules</strong> in the top menu"
+msgstr ""
+
+#: languages/shareaholic-translations.php:371
+msgid "Log in"
+msgstr ""
+
+#: languages/shareaholic-translations.php:372
+msgid "Logo Color"
+msgstr ""
+
+#: languages/shareaholic-translations.php:373
+msgid "Logout"
+msgstr ""
+
+#: languages/shareaholic-translations.php:374
+msgid "Long Link"
+msgstr ""
+
+#: languages/shareaholic-translations.php:375
+msgid "Looks like you have no sites added. Add a site by clicking the link below."
+msgstr ""
+
+#: languages/shareaholic-translations.php:376
+msgid "Low earnings from Promoted Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:377
+msgid "Main Menu"
+msgstr ""
+
+#: languages/shareaholic-translations.php:378
+msgid "Make it 1-click simple to share articles, comments, purchases or other activities from your website to Facebook, Twitter, Pinterest, LinkedIn, and more."
+msgstr ""
+
+#: languages/shareaholic-translations.php:379
+msgid "Manage Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:380
+msgid "Manage Plans"
+msgstr ""
+
+#: languages/shareaholic-translations.php:381
+msgid "Manage Site Profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:382
+msgid "Manage Sites"
+msgstr ""
+
+#: languages/shareaholic-translations.php:383
+msgid "Manage"
+msgstr ""
+
+#: languages/shareaholic-translations.php:384
+msgid "Max Posts"
+msgstr ""
+
+#: languages/shareaholic-translations.php:385
+msgid "Maximum earnings from Promoted Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:386
+msgid "Medium earnings from Promoted Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:387
+msgid "Message"
+msgstr ""
+
+#: languages/shareaholic-translations.php:388
+msgid "Metrics"
+msgstr ""
+
+#: languages/shareaholic-translations.php:389
+msgid "Minimum 8 characters. One numeric character required."
+msgstr ""
+
+#: languages/shareaholic-translations.php:390
+#: templates/advanced_settings.php:151
+msgid "Missing or Invalid Credentials"
+msgstr ""
+
+#: languages/shareaholic-translations.php:391
+msgid "Mobile Screen Width"
+msgstr ""
+
+#: languages/shareaholic-translations.php:392
+msgid "Mobile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:393
+msgid "Monetize every share. Earn revenue by enabling targeted banner ads in the post share prompt. Open up a new revenues stream at no cost or contract."
+msgstr ""
+
+#: languages/shareaholic-translations.php:394
+msgid "Monetize"
+msgstr ""
+
+#: languages/shareaholic-translations.php:395
+msgid "Monthly {price, number, USD}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:396
+msgid "Monthly"
+msgstr ""
+
+#: languages/shareaholic-translations.php:397
+msgid "More Info Button"
+msgstr ""
+
+#: languages/shareaholic-translations.php:398
+msgid "More Options Button"
+msgstr ""
+
+#: languages/shareaholic-translations.php:399
+msgid "My Profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:400
+msgid "My Sites"
+msgstr ""
+
+#: languages/shareaholic-translations.php:401
+msgid "Name Your Pixel (for example: fb-1)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:402
+msgid "Name Your Pixel"
+msgstr ""
+
+#: languages/shareaholic-translations.php:403
+msgid "Name"
+msgstr ""
+
+#: languages/shareaholic-translations.php:404
+msgid "Native UI"
+msgstr ""
+
+#: languages/shareaholic-translations.php:405
+msgid "Never mind, keep my account"
+msgstr ""
+
+#: languages/shareaholic-translations.php:406
+msgid "Never"
+msgstr ""
+
+#: languages/shareaholic-translations.php:407
+msgid "New in-page App"
+msgstr ""
+
+#: languages/shareaholic-translations.php:408
+msgid "Next Bill"
+msgstr ""
+
+#: languages/shareaholic-translations.php:409
+msgid "Next Billing Date"
+msgstr ""
+
+#: languages/shareaholic-translations.php:410
+msgid "Next Step"
+msgstr ""
+
+#: languages/shareaholic-translations.php:411
+msgid "Next Steps"
+msgstr ""
+
+#: languages/shareaholic-translations.php:412
+msgid "Next"
+msgstr ""
+
+#: languages/shareaholic-translations.php:413
+msgid "No Campaigns Added Yet."
+msgstr ""
+
+#: languages/shareaholic-translations.php:414
+msgid "No earnings from Promoted Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:415
+msgid "No let's go back to change domain"
+msgstr ""
+
+#: languages/shareaholic-translations.php:416
+msgid "No payment is due today."
+msgstr ""
+
+#: languages/shareaholic-translations.php:417
+msgid "No, cancel"
+msgstr ""
+
+#: languages/shareaholic-translations.php:418
+msgid "Not sure? It's OK. You can pick the CMS later."
+msgstr ""
+
+#: languages/shareaholic-translations.php:419
+msgid "Numeric"
+msgstr ""
+
+#: languages/shareaholic-translations.php:420
+msgid "On Page Analytics Viewer"
+msgstr ""
+
+#: languages/shareaholic-translations.php:421
+msgid "On exit intent"
+msgstr ""
+
+#: languages/shareaholic-translations.php:422
+msgid "On {formattedDate}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:423
+msgid "Once you have installed the code on your site and your site is publicly accessible, click \"verify\" below."
+msgstr ""
+
+#: languages/shareaholic-translations.php:424
+msgid "Only show share counts when there are at least this many total shares across all services"
+msgstr ""
+
+#: languages/shareaholic-translations.php:425
+msgid "Oops! An unexpected error seems to have occurred!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:426
+msgid "Opacity"
+msgstr ""
+
+#: languages/shareaholic-translations.php:427
+msgid "Open support ticket"
+msgstr ""
+
+#: languages/shareaholic-translations.php:429
+msgid "Outstream Video Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:430
+msgid "Outstream video ads are served outside of a video player, between paragraphs of text, typically with no sound. They are designed to be 100% viewable, magically deploying and playing when the unit is onscreen."
+msgstr ""
+
+#: languages/shareaholic-translations.php:431
+msgid "Over {pageviews, number} pageviews"
+msgstr ""
+
+#: languages/shareaholic-translations.php:432
+msgid "Overage"
+msgstr ""
+
+#: languages/shareaholic-translations.php:433
+msgid "PENDING VERIFICATION"
+msgstr ""
+
+#: languages/shareaholic-translations.php:434
+msgid "PLATFORM"
+msgstr ""
+
+#: languages/shareaholic-translations.php:435
+msgid "PROMOTED CONTENT"
+msgstr ""
+
+#: languages/shareaholic-translations.php:436
+msgid "Page Author"
+msgstr ""
+
+#: languages/shareaholic-translations.php:437
+msgid "Page Body Text"
+msgstr ""
+
+#: languages/shareaholic-translations.php:438
+msgid "Page Categories"
+msgstr ""
+
+#: languages/shareaholic-translations.php:439
+msgid "Page Language"
+msgstr ""
+
+#: languages/shareaholic-translations.php:440
+msgid "Page Tag Filter"
+msgstr ""
+
+#: languages/shareaholic-translations.php:441
+msgid "Page Tags"
+msgstr ""
+
+#: languages/shareaholic-translations.php:442
+msgid "Page Title"
+msgstr ""
+
+#: languages/shareaholic-translations.php:443
+msgid "Password"
+msgstr ""
+
+#: languages/shareaholic-translations.php:444
+msgid "Paste URLs (one per line) that you want excluded. URLs may contain wildcards (*) and if you want to use regular expressions, begin the URL with a caret (^). For example: {regex}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:445
+msgid "Pause Campaign"
+msgstr ""
+
+#: languages/shareaholic-translations.php:446
+msgid "Payment Method"
+msgstr ""
+
+#: languages/shareaholic-translations.php:447
+msgid "Payment for {amount} was requested on {date}. Redemption requests are generally processed within 60 days of the request."
+msgstr ""
+
+#: languages/shareaholic-translations.php:448
+msgid "Payment information for recipient is incomplete."
+msgstr ""
+
+#: languages/shareaholic-translations.php:449
+msgid "Payment method"
+msgstr ""
+
+#: languages/shareaholic-translations.php:450
+msgid "Payment"
+msgstr ""
+
+#: languages/shareaholic-translations.php:451
+msgid "Permission Management"
+msgstr ""
+
+#: languages/shareaholic-translations.php:452
+msgid "Pick a plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:453
+msgid "Pixel ID (for example: 16952500107034220)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:454
+msgid "Pixel ID"
+msgstr ""
+
+#: languages/shareaholic-translations.php:455
+msgid "Pixel URL"
+msgstr ""
+
+#: languages/shareaholic-translations.php:456
+msgid "Pixel changed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:457
+msgid "Pixel could not be saved, please try again"
+msgstr ""
+
+#: languages/shareaholic-translations.php:458
+msgid "Pixel deleted"
+msgstr ""
+
+#: languages/shareaholic-translations.php:459
+msgid "Pixels"
+msgstr ""
+
+#: languages/shareaholic-translations.php:460
+msgid "Plain"
+msgstr ""
+
+#: languages/shareaholic-translations.php:461
+msgid "Plan Owner"
+msgstr ""
+
+#: languages/shareaholic-translations.php:462
+msgid "Plan includes:"
+msgstr ""
+
+#: languages/shareaholic-translations.php:463
+msgid "Plan price is based on your website traffic. How many pageviews do you get per month?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:464
+msgid "Plan transfer is completed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:465
+msgid "Plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:466
+msgid "Plans"
+msgstr ""
+
+#: languages/shareaholic-translations.php:467
+msgid "Platform / CMS"
+msgstr ""
+
+#: languages/shareaholic-translations.php:468
+msgid "Platform"
+msgstr ""
+
+#: languages/shareaholic-translations.php:469
+msgid "Please check back later."
+msgstr ""
+
+#: languages/shareaholic-translations.php:470
+msgid "Please ensure the site's designated <a href='#' id='shr-redemption__recipient'>Redemption Recipient</a> and their <a href={paymentSettingsUrl}>Payment Details</a> are accurate at all times."
+msgstr ""
+
+#: languages/shareaholic-translations.php:471
+msgid "Please ensure the site's designated <a href='#' id='shr-redemption__recipient'>Redemption Recipient</a> and their Payment Details are accurate at all times."
+msgstr ""
+
+#: languages/shareaholic-translations.php:472
+msgid "Please let us know why you are deactivating your account?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:473
+msgid "Please try again after a few minutes or refresh the page."
+msgstr ""
+
+#: languages/shareaholic-translations.php:474
+msgid "Please wait while we gather information about <strong class=\"dotted_underline\">{domain}</strong>"
+msgstr ""
+
+#: languages/shareaholic-translations.php:476
+msgid "Popular Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:477
+msgid "Popular Pages"
+msgstr ""
+
+#: languages/shareaholic-translations.php:478
+msgid "Position"
+msgstr ""
+
+#: languages/shareaholic-translations.php:479
+msgid "Post Share Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:480
+msgid "Post Share Prompt Banner Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:481
+msgid "Post Share Prompt Follow Buttons"
+msgstr ""
+
+#: languages/shareaholic-translations.php:482
+msgid "Post Share Prompt"
+msgstr ""
+
+#: languages/shareaholic-translations.php:483
+msgid "Post name"
+msgstr ""
+
+#: languages/shareaholic-translations.php:484
+msgid "Premium feature"
+msgstr ""
+
+#: languages/shareaholic-translations.php:485
+msgid "Premium feature. Upgrade your plan."
+msgstr ""
+
+#: languages/shareaholic-translations.php:486
+msgid "Premium plans come with team support, more analytics, priority support & more!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:487
+msgid "Preview"
+msgstr ""
+
+#: languages/shareaholic-translations.php:488
+msgid "Price"
+msgstr ""
+
+#: languages/shareaholic-translations.php:489
+msgid "Prioritize matching content in the same language as the page the visitor is on. This setting is perfect for sites with content in multiple languages."
+msgstr ""
+
+#: languages/shareaholic-translations.php:490
+msgid "Privacy Policy Location"
+msgstr ""
+
+#: languages/shareaholic-translations.php:491
+msgid "Product Summary"
+msgstr ""
+
+#: languages/shareaholic-translations.php:492
+msgid "Product"
+msgstr ""
+
+#: languages/shareaholic-translations.php:493
+msgid "Products & Services"
+msgstr ""
+
+#: languages/shareaholic-translations.php:494
+msgid "Promo discount is for the first term. All renewals are at normal price."
+msgstr ""
+
+#: languages/shareaholic-translations.php:495
+msgid "Promoted Content Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:496
+msgid "Promoted"
+msgstr ""
+
+#: languages/shareaholic-translations.php:497
+msgid "Prompts"
+msgstr ""
+
+#: languages/shareaholic-translations.php:498
+msgid "Read more"
+msgstr ""
+
+#: languages/shareaholic-translations.php:499
+msgid "Rebuild Content Index"
+msgstr ""
+
+#: languages/shareaholic-translations.php:500
+msgid "Recipient"
+msgstr ""
+
+#: languages/shareaholic-translations.php:501
+msgid "Recommendations Analytics"
+msgstr ""
+
+#: languages/shareaholic-translations.php:502
+msgid "Recommendations Bar"
+msgstr ""
+
+#: languages/shareaholic-translations.php:503
+msgid "Recommendations"
+msgstr ""
+
+#: languages/shareaholic-translations.php:504
+msgid "Reconnect now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:505
+msgid "Reconnect with your Google Analytics account to view your analytics directly in Shareaholic"
+msgstr ""
+
+#: languages/shareaholic-translations.php:506
+msgid "Reconnect your {shortener} account."
+msgstr ""
+
+#: languages/shareaholic-translations.php:507
+msgid "Reconnect"
+msgstr ""
+
+#: languages/shareaholic-translations.php:508
+msgid "Reconnecting {reconnectionNotice}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:509
+msgid "Redeem"
+msgstr ""
+
+#: languages/shareaholic-translations.php:510
+msgid "Redemption Request"
+msgstr ""
+
+#: languages/shareaholic-translations.php:511
+msgid "Refresh"
+msgstr ""
+
+#: languages/shareaholic-translations.php:512
+msgid "Related Content Banner Ads"
+msgstr ""
+
+#: languages/shareaholic-translations.php:513
+msgid "Related Content or Products"
+msgstr ""
+
+#: languages/shareaholic-translations.php:514
+#: templates/settings.php:69
+msgid "Related Content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:515
+msgid "Remove Payment Method?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:516
+msgid "Remove Site"
+msgstr ""
+
+#: languages/shareaholic-translations.php:517
+msgid "Remove"
+msgstr ""
+
+#: languages/shareaholic-translations.php:518
+msgid "Renews on"
+msgstr ""
+
+#: languages/shareaholic-translations.php:519
+msgid "Reorder or remove by clicking/dragging directly."
+msgstr ""
+
+#: languages/shareaholic-translations.php:520
+msgid "Reports"
+msgstr ""
+
+#: languages/shareaholic-translations.php:521
+msgid "Required valid url"
+msgstr ""
+
+#: languages/shareaholic-translations.php:522
+msgid "Required"
+msgstr ""
+
+#: languages/shareaholic-translations.php:523
+msgid "Resend invitation"
+msgstr ""
+
+#: languages/shareaholic-translations.php:524
+msgid "Retrying in {numberOfSeconds} seconds."
+msgstr ""
+
+#: languages/shareaholic-translations.php:525
+msgid "Right"
+msgstr ""
+
+#: languages/shareaholic-translations.php:526
+msgid "Role changed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:527
+msgid "Role"
+msgstr ""
+
+#: languages/shareaholic-translations.php:528
+msgid "SMS Share Template"
+msgstr ""
+
+#: languages/shareaholic-translations.php:529
+msgid "SSL Enabled"
+msgstr ""
+
+#: languages/shareaholic-translations.php:530
+#: templates/advanced_settings.php:184
+#: templates/advanced_settings.php:229
+#: templates/settings.php:107
+msgid "Save Changes"
+msgstr ""
+
+#: languages/shareaholic-translations.php:531
+msgid "Save"
+msgstr ""
+
+#: languages/shareaholic-translations.php:532
+msgid "Saving..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:533
+msgid "Scanning {domain}..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:534
+msgid "Search by site name, domain, or site profile ID"
+msgstr ""
+
+#: languages/shareaholic-translations.php:535
+msgid "Select Buttons"
+msgstr ""
+
+#: languages/shareaholic-translations.php:536
+msgid "Select Social Networks"
+msgstr ""
+
+#: languages/shareaholic-translations.php:537
+msgid "Select a Site Profile to transfer the Plan to:"
+msgstr ""
+
+#: languages/shareaholic-translations.php:538
+msgid "Send email to"
+msgstr ""
+
+#: languages/shareaholic-translations.php:539
+msgid "Send installation instructions"
+msgstr ""
+
+#: languages/shareaholic-translations.php:540
+msgid "Send instructions »"
+msgstr ""
+
+#: languages/shareaholic-translations.php:541
+msgid "Send them an email"
+msgstr ""
+
+#: languages/shareaholic-translations.php:542
+msgid "Sensitivity:"
+msgstr ""
+
+#: languages/shareaholic-translations.php:543
+msgid "Set Recipient"
+msgstr ""
+
+#: languages/shareaholic-translations.php:544
+msgid "Settings below apply to all Related Content Apps sitewide"
+msgstr ""
+
+#: languages/shareaholic-translations.php:545
+msgid "Settings could not be saved, please try again"
+msgstr ""
+
+#: languages/shareaholic-translations.php:546
+#: utilities.php:109
+msgid "Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:547
+msgid "Setup Site Apps"
+msgstr ""
+
+#: languages/shareaholic-translations.php:548
+msgid "Setup instructions for"
+msgstr ""
+
+#: languages/shareaholic-translations.php:549
+#: templates/why_to_sign_up.php:11
+msgid "Share Buttons for Images"
+msgstr ""
+
+#: languages/shareaholic-translations.php:550
+msgid "Share Buttons"
+msgstr ""
+
+#: languages/shareaholic-translations.php:551
+msgid "Share Count Recovery"
+msgstr ""
+
+#: languages/shareaholic-translations.php:552
+msgid "Share your shortened links across your marketing channels, or anywhere."
+msgstr ""
+
+#: languages/shareaholic-translations.php:553
+msgid "Shareaholic Branding"
+msgstr ""
+
+#: languages/shareaholic-translations.php:554
+msgid "Shareaholic Logo"
+msgstr ""
+
+#: languages/shareaholic-translations.php:555
+msgid "Shareaholic Onsite Growth Toolkit"
+msgstr ""
+
+#: languages/shareaholic-translations.php:556
+msgid "Shareaholic Share Count Proxy API"
+msgstr ""
+
+#: languages/shareaholic-translations.php:557
+msgid "Shareaholic UI"
+msgstr ""
+
+#: languages/shareaholic-translations.php:558
+msgid "Shareaholic doesn't have a feature I need / I'm using something else."
+msgstr ""
+
+#: languages/shareaholic-translations.php:559
+msgid "Shareaholic is too slow or frustrating."
+msgstr ""
+
+#: languages/shareaholic-translations.php:560
+msgid "Shareaholic tries to scrape and index as many of your site's pages as we can without overwhelming your server's bandwidth. If Shareaholic's Bot is slowing your site, you can change the index rate (the speed of Shareaholic's requests). Don't limit index rate unless Shareaholic is slowing down your server."
+msgstr ""
+
+#: languages/shareaholic-translations.php:562
+msgid "Shareaholic's content index for your site may become out of date due to a variety of reasons. When this occurs, some content may not show up in the Content Library as expected. Rebuilding the content index can take a few hours as we will re-index and re-crawl all the content on your site. Please consider performing your re-index after hours."
+msgstr ""
+
+#: languages/shareaholic-translations.php:563
+msgid "Sharing"
+msgstr ""
+
+#: languages/shareaholic-translations.php:564
+msgid "Shopify admin"
+msgstr ""
+
+#: languages/shareaholic-translations.php:565
+msgid "Shorten your link with the URL shortener of your choice."
+msgstr ""
+
+#: languages/shareaholic-translations.php:566
+msgid "Shortener Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:567
+msgid "Show only content published in the past"
+msgstr ""
+
+#: languages/shareaholic-translations.php:568
+msgid "Showcase the number of shares your content has received."
+msgstr ""
+
+#: languages/shareaholic-translations.php:569
+msgid "Showing {firstLink}-{lastLink} of {totalLinks} links"
+msgstr ""
+
+#: languages/shareaholic-translations.php:570
+msgid "Sign Up Free"
+msgstr ""
+
+#: languages/shareaholic-translations.php:571
+msgid "Sign up"
+msgstr ""
+
+#: languages/shareaholic-translations.php:572
+msgid "Signing into your {brand} account is highly recommended. Doing so will unlock sections that require authentication such as analytics, team features and site integrations like Google Analytics."
+msgstr ""
+
+#: languages/shareaholic-translations.php:573
+msgid "Site Apps"
+msgstr ""
+
+#: languages/shareaholic-translations.php:574
+msgid "Site ID is automatically assigned and you can't change it"
+msgstr ""
+
+#: languages/shareaholic-translations.php:575
+msgid "Site ID"
+msgstr ""
+
+#: languages/shareaholic-translations.php:576
+msgid "Site ID: {siteId}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:577
+msgid "Site Name"
+msgstr ""
+
+#: languages/shareaholic-translations.php:578
+msgid "Site Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:579
+msgid "Site plan is changed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:580
+msgid "Site settings updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:581
+msgid "Site statistics could not be loaded"
+msgstr ""
+
+#: languages/shareaholic-translations.php:582
+msgid "Site {domain} has been deleted"
+msgstr ""
+
+#: languages/shareaholic-translations.php:583
+msgid "Size"
+msgstr ""
+
+#: languages/shareaholic-translations.php:584
+msgid "Slower"
+msgstr ""
+
+#: languages/shareaholic-translations.php:585
+msgid "Smart Link can not be saved"
+msgstr ""
+
+#: languages/shareaholic-translations.php:586
+msgid "Smart Link created"
+msgstr ""
+
+#: languages/shareaholic-translations.php:587
+msgid "Smart Link deleted"
+msgstr ""
+
+#: languages/shareaholic-translations.php:588
+msgid "Smart Link updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:589
+msgid "Smart Link"
+msgstr ""
+
+#: languages/shareaholic-translations.php:590
+msgid "Social Referrals"
+msgstr ""
+
+#: languages/shareaholic-translations.php:591
+msgid "Social"
+msgstr ""
+
+#: languages/shareaholic-translations.php:592
+msgid "Something may not be right..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:593
+msgid "Specify the URL to display share counts for"
+msgstr ""
+
+#: languages/shareaholic-translations.php:594
+msgid "Start App Setup"
+msgstr ""
+
+#: languages/shareaholic-translations.php:595
+msgid "Start Campaign"
+msgstr ""
+
+#: languages/shareaholic-translations.php:596
+msgid "Start Date"
+msgstr ""
+
+#: languages/shareaholic-translations.php:597
+msgid "Status: {statusLabel}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:598
+msgid "Still fetching data… Reload in {numberOfSeconds} seconds."
+msgstr ""
+
+#: languages/shareaholic-translations.php:599
+msgid "Still fetching data…"
+msgstr ""
+
+#: languages/shareaholic-translations.php:600
+msgid "Subscriptions not assigned to Site Profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:601
+msgid "Surface important actionable metrics including insights into how your content is performing, who's sharing it, and through which channels."
+msgstr ""
+
+#: languages/shareaholic-translations.php:602
+msgid "Sync accounts with Buffer"
+msgstr ""
+
+#: languages/shareaholic-translations.php:603
+msgid "Syncing"
+msgstr ""
+
+#: languages/shareaholic-translations.php:604
+msgid "Targeting Rules"
+msgstr ""
+
+#: languages/shareaholic-translations.php:605
+msgid "Team Management"
+msgstr ""
+
+#: languages/shareaholic-translations.php:606
+msgid "Team Role added"
+msgstr ""
+
+#: languages/shareaholic-translations.php:607
+msgid "Team Role removed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:608
+msgid "Team Role updated"
+msgstr ""
+
+#: languages/shareaholic-translations.php:609
+msgid "Team member added"
+msgstr ""
+
+#: languages/shareaholic-translations.php:610
+msgid "Team member removed"
+msgstr ""
+
+#: languages/shareaholic-translations.php:611
+msgid "Team"
+msgstr ""
+
+#: languages/shareaholic-translations.php:612
+msgid "Teaser of analytics with blog.shareaholic.com data"
+msgstr ""
+
+#: languages/shareaholic-translations.php:613
+msgid "Tell us a bit about your website and goals, so we can tailor your experience."
+msgstr ""
+
+#: languages/shareaholic-translations.php:614
+msgid "Text Block"
+msgstr ""
+
+#: languages/shareaholic-translations.php:615
+msgid "Text Color"
+msgstr ""
+
+#: languages/shareaholic-translations.php:616
+msgid "The Content Pool refers to the list of content that are candidates for selection. It is easy to omit specific authors, categories, tags and pages. You can even restrict by the publish date."
+msgstr ""
+
+#: languages/shareaholic-translations.php:617
+msgid "The On Page Analytics Viewer is only visible to team members that have permission to view analytics and when they are signed into Shareaholic."
+msgstr ""
+
+#: languages/shareaholic-translations.php:618
+msgid "The URL of your homepage. This can be different from your website domain. Ex: myawesomesite.com/blog"
+msgstr ""
+
+#: languages/shareaholic-translations.php:619
+msgid "The benefit of using your own short domain is that the domain will carry your brand, driving brand impressions, visibility, and, higher click-through rates (CTR). Studies have shown that branded short domains drive up to a 34% increase in CTR when compared to unbranded links. It is the... smart thing to do."
+msgstr ""
+
+#: languages/shareaholic-translations.php:620
+msgid "The billing cycle for your plan is scheduled to be adjusted from annual to monthly at the end of the current billing cycle. Your next billing cycle starts on {renewal}. You can choose to upgrade your plan at any time, including between now and {renewal}."
+msgstr ""
+
+#: languages/shareaholic-translations.php:621
+msgid "Theme"
+msgstr ""
+
+#: languages/shareaholic-translations.php:622
+msgid "There are no site profiles associated with any subscription."
+msgstr ""
+
+#: languages/shareaholic-translations.php:623
+msgid "These are the default Monetization settings for all your Related Content In-Page App locations. You can override these by setting individual preferences for each In-Page App."
+msgstr ""
+
+#: languages/shareaholic-translations.php:624
+msgid "These are your estimated unredeemed earnings. Unless otherwise noted, all data reported is an estimate until finalized and is therefore subject to change."
+msgstr ""
+
+#: languages/shareaholic-translations.php:625
+msgid "These tokens will allow you to authenticate API requests."
+msgstr ""
+
+#: languages/shareaholic-translations.php:626
+msgid "This PRO plan site profile belongs to you."
+msgstr ""
+
+#: languages/shareaholic-translations.php:627
+msgid "This action <strong>cannot</strong> be undone. It will permanently remove this site profile and any analytics, history and team associations linked to it."
+msgstr ""
+
+#: languages/shareaholic-translations.php:628
+msgid "This code gets updated each time you customize a setting below. Please copy the code snippet after all your customizations."
+msgstr ""
+
+#: languages/shareaholic-translations.php:629
+msgid "This field is required"
+msgstr ""
+
+#: languages/shareaholic-translations.php:630
+msgid "This field requires number"
+msgstr ""
+
+#: languages/shareaholic-translations.php:631
+msgid "This is an estimated amount that has not yet been reconciled or verified as valid by Shareaholic. It is important to note that this is just an estimate and is subject to change. We reserve the right to withhold or adjust amounts that arise from invalid activity or is in violation of our Terms of Service."
+msgstr ""
+
+#: languages/shareaholic-translations.php:632
+msgid "This is the domain or subdomain where people can or will be able to access your site when it is live, meaning someone can view it on the internet. If you need to update this, please contact support."
+msgstr ""
+
+#: languages/shareaholic-translations.php:633
+msgid "This is the domain or subdomain where people can or will be able to access your site when it is live, meaning someone can view it on the internet. Your site is not publicly accessible if it is hosted locally on your computer (ex. localhost), development server or if it's on a private intranet."
+msgstr ""
+
+#: languages/shareaholic-translations.php:634
+msgid "This is where you customize the content match algorithm and can control exactly what and how much content meta data is used to compute the match score. There are quite a few possible setting combinations for you to tweak to make the matched results the most relevant for your site visitors!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:635
+msgid "This plan is scheduled to be changed to the {name} plan at the end of the current billing cycle on {date}. You can choose to cancel the change at any time, including between now and {date}."
+msgstr ""
+
+#: languages/shareaholic-translations.php:636
+msgid "This site profile is on the <strong>Free plan</strong>"
+msgstr ""
+
+#: languages/shareaholic-translations.php:637
+msgid "This table shows you the DNS entries needed to setup your Custom Domain URL Shortener. Log in to the domain provider to manage these settings."
+msgstr ""
+
+#: languages/shareaholic-translations.php:638
+msgid "This will immediately remove this site from your account."
+msgstr ""
+
+#: languages/shareaholic-translations.php:639
+msgid "This {name} plan will automatically renew each {cycle}. You will be charged {price, number, USD} on each renewal. Your next renewal is on {renewal}."
+msgstr ""
+
+#: languages/shareaholic-translations.php:640
+msgid "Thumbnail"
+msgstr ""
+
+#: languages/shareaholic-translations.php:641
+msgid "Tips to increase social referrals to your content."
+msgstr ""
+
+#: languages/shareaholic-translations.php:642
+msgid "Title Color"
+msgstr ""
+
+#: languages/shareaholic-translations.php:643
+msgid "Title"
+msgstr ""
+
+#: languages/shareaholic-translations.php:644
+msgid "Token"
+msgstr ""
+
+#: languages/shareaholic-translations.php:645
+msgid "Tools Badge"
+msgstr ""
+
+#: languages/shareaholic-translations.php:646
+msgid "Total Share Count"
+msgstr ""
+
+#: languages/shareaholic-translations.php:647
+msgid "Total Share Counter"
+msgstr ""
+
+#: languages/shareaholic-translations.php:648
+msgid "Total"
+msgstr ""
+
+#: languages/shareaholic-translations.php:649
+msgid "Totals across all content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:650
+msgid "Track Click Analytics for Known Bots"
+msgstr ""
+
+#: languages/shareaholic-translations.php:651
+msgid "Traffic Analytics"
+msgstr ""
+
+#: languages/shareaholic-translations.php:652
+msgid "Traffic"
+msgstr ""
+
+#: languages/shareaholic-translations.php:653
+msgid "Transfer Plan Now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:654
+msgid "Transfer Plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:655
+msgid "Type or paste a link (URL)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:656
+msgid "Type"
+msgstr ""
+
+#: languages/shareaholic-translations.php:657
+msgid "URL Shortener"
+msgstr ""
+
+#: languages/shareaholic-translations.php:658
+msgid "URL you entered is invalid."
+msgstr ""
+
+#: languages/shareaholic-translations.php:659
+msgid "URL"
+msgstr ""
+
+#: languages/shareaholic-translations.php:660
+msgid "Unable to Retrieve {prop}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:661
+msgid "Unable to create token"
+msgstr ""
+
+#: languages/shareaholic-translations.php:662
+msgid "Unable to delete token"
+msgstr ""
+
+#: languages/shareaholic-translations.php:663
+msgid "Unable to update token"
+msgstr ""
+
+#: languages/shareaholic-translations.php:664
+msgid "Unanticipated Error"
+msgstr ""
+
+#: languages/shareaholic-translations.php:665
+msgid "Uncategorized"
+msgstr ""
+
+#: languages/shareaholic-translations.php:666
+msgid "Under {pageviews, number} pageviews"
+msgstr ""
+
+#: languages/shareaholic-translations.php:667
+msgid "Unlimited pageviews"
+msgstr ""
+
+#: languages/shareaholic-translations.php:668
+msgid "Unlock Share Count Recovery to recover your lost share counts now."
+msgstr ""
+
+#: languages/shareaholic-translations.php:669
+msgid "Update Billing Information"
+msgstr ""
+
+#: languages/shareaholic-translations.php:670
+msgid "Update Thumbnail"
+msgstr ""
+
+#: languages/shareaholic-translations.php:671
+msgid "Update payment method"
+msgstr ""
+
+#: languages/shareaholic-translations.php:672
+msgid "Update"
+msgstr ""
+
+#: languages/shareaholic-translations.php:673
+msgid "Upgrade Subscription"
+msgstr ""
+
+#: languages/shareaholic-translations.php:674
+msgid "Upgrade Your Plan"
+msgstr ""
+
+#: languages/shareaholic-translations.php:675
+msgid "Upgrade to Remove Branding"
+msgstr ""
+
+#: languages/shareaholic-translations.php:676
+msgid "Upgrade your plan now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:677
+msgid "Upgrade your plan to add more Custom domains"
+msgstr ""
+
+#: languages/shareaholic-translations.php:678
+msgid "Upgrade your plan to get <strong>share count recovery, more analytics, priority support</strong> & more!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:680
+msgid "Upon confirmation, this plan will be scheduled to be changed to the {name} plan at the end of the current billing cycle on {date}."
+msgstr ""
+
+#: languages/shareaholic-translations.php:681
+msgid "Usage tier"
+msgstr ""
+
+#: languages/shareaholic-translations.php:682
+msgid "Use native sharing mechanism of the device when available"
+msgstr ""
+
+#: languages/shareaholic-translations.php:683
+msgid "Use this to filter content written by specific authors or whitelist your best."
+msgstr ""
+
+#: languages/shareaholic-translations.php:684
+msgid "Use this to filter entire page categories, page types (ex. post, page) and page tags."
+msgstr ""
+
+#: languages/shareaholic-translations.php:685
+msgid "Use this to filter old content automatically. For example, setting this filter to 365 days will exclude all content that was published more than a year ago. Very useful for news, forums and deal sites."
+msgstr ""
+
+#: languages/shareaholic-translations.php:686
+msgid "Use your own Bitly account to shorten and track links"
+msgstr ""
+
+#: languages/shareaholic-translations.php:687
+msgid "User"
+msgstr ""
+
+#: languages/shareaholic-translations.php:688
+msgid "Username or Email"
+msgstr ""
+
+#: languages/shareaholic-translations.php:689
+msgid "VIA SOCIAL"
+msgstr ""
+
+#: languages/shareaholic-translations.php:690
+msgid "VIEWS"
+msgstr ""
+
+#: languages/shareaholic-translations.php:691
+msgid "Valid path is required"
+msgstr ""
+
+#: languages/shareaholic-translations.php:692
+msgid "Verification is the process of proving that you own the site that you claim to own. We need to confirm ownership because once you are verified for a site you will have access to its private data, such as site analytics."
+msgstr ""
+
+#: languages/shareaholic-translations.php:693
+msgid "Verified Bot"
+msgstr ""
+
+#: languages/shareaholic-translations.php:694
+msgid "Verified Human"
+msgstr ""
+
+#: languages/shareaholic-translations.php:695
+msgid "Verified"
+msgstr ""
+
+#: languages/shareaholic-translations.php:696
+msgid "Verify Ownership"
+msgstr ""
+
+#: languages/shareaholic-translations.php:697
+msgid "Verify Site Now"
+msgstr ""
+
+#: languages/shareaholic-translations.php:698
+msgid "Verify your ownership of {domain}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:699
+msgid "Verify"
+msgstr ""
+
+#: languages/shareaholic-translations.php:700
+msgid "Verifying Site..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:701
+msgid "Verifying"
+msgstr ""
+
+#: languages/shareaholic-translations.php:702
+msgid "Vertical Offset"
+msgstr ""
+
+#: languages/shareaholic-translations.php:703
+msgid "Vertical offset is the distance from the edge of the page."
+msgstr ""
+
+#: languages/shareaholic-translations.php:704
+msgid "View Instructions on how to link your {pluginType}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:705
+msgid "View Product Features"
+msgstr ""
+
+#: languages/shareaholic-translations.php:706
+msgid "View all sites"
+msgstr ""
+
+#: languages/shareaholic-translations.php:707
+msgid "View installation instructions"
+msgstr ""
+
+#: languages/shareaholic-translations.php:708
+msgid "View plans"
+msgstr ""
+
+#: languages/shareaholic-translations.php:709
+msgid "View"
+msgstr ""
+
+#: languages/shareaholic-translations.php:710
+msgid "Views from all traffic sources"
+msgstr ""
+
+#: languages/shareaholic-translations.php:711
+msgid "Views from social"
+msgstr ""
+
+#: languages/shareaholic-translations.php:712
+msgid "Views from your top social networks"
+msgstr ""
+
+#: languages/shareaholic-translations.php:713
+msgid "Warning: this site profile does not belong to you. Tread lightly."
+msgstr ""
+
+#: languages/shareaholic-translations.php:714
+msgid "We are currently rebuilding your content indexes<br /> from scratch. Need help?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:715
+msgid "We are rebuilding your content library indexes from scratch"
+msgstr ""
+
+#: languages/shareaholic-translations.php:716
+msgid "We default to the total share count across all social networks. You can also customize specific social networks to include."
+msgstr ""
+
+#: languages/shareaholic-translations.php:717
+msgid "We have not gathered enough information as yet. When ready, this report will provide detailed, accurate audience information."
+msgstr ""
+
+#: languages/shareaholic-translations.php:718
+msgid "We just checked <strong>{domain}</strong> and detected that this Shareaholic site profile is still installed on your website."
+msgstr ""
+
+#: languages/shareaholic-translations.php:719
+msgid "We want your Shareaholic experience to be perfect."
+msgstr ""
+
+#: languages/shareaholic-translations.php:720
+msgid "We were unable to access {domain} to complete verification. Please make sure that your site is publicly accessible, and try again. Also, if you have a firewall setting that may for some reason block our requests, please unblock us."
+msgstr ""
+
+#: languages/shareaholic-translations.php:721
+msgid "We were unable to retrieve data from the server at this time due to exessive load."
+msgstr ""
+
+#: languages/shareaholic-translations.php:722
+msgid "We&#39;re Hiring!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:723
+msgid "We'd love to help."
+msgstr ""
+
+#: languages/shareaholic-translations.php:724
+msgid "We're sorry to see you go. Are you sure you do not want to reconsider? This will immediately deactivate your account and you will lose all your profiles. There will be no way to restore your account."
+msgstr ""
+
+#: languages/shareaholic-translations.php:725
+msgid "Website"
+msgstr ""
+
+#: languages/shareaholic-translations.php:726
+msgid "What is your custom domain name?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:727
+msgid "What is your website URL?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:728
+msgid "When To Show"
+msgstr ""
+
+#: languages/shareaholic-translations.php:729
+msgid "When you click the button below, if you aren't already, you will be asked to sign into your {pluginType} admin dashboard."
+msgstr ""
+
+#: languages/shareaholic-translations.php:730
+msgid "Whenever you are charged, we will send the receipt to <strong>{email}</strong>. You can also view and download all your receipts from <a href=\"/user-settings/billing/history\">Billing History</a> at any time."
+msgstr ""
+
+#: languages/shareaholic-translations.php:731
+msgid "Which <strong>CMS</strong> or <strong>platform</strong> is <span class=\"dotted_underline\">{domain}</span> on?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:732
+msgid "Who To Show It To"
+msgstr ""
+
+#: languages/shareaholic-translations.php:733
+msgid "Why not try reloading this page? A reload fixes things 9 times out of 10. We do monitor all errors automatically and have also been notified of the problem. If the issue persists, please <a href=\"{contact}\">let us know</a>."
+msgstr ""
+
+#: languages/shareaholic-translations.php:734
+msgid "With Shareaholic, you have the option of using your own custom short domain, meaning that your shortened URLs will use your custom branded domain instead of a default domain (For example, bitly.com)."
+msgstr ""
+
+#: languages/shareaholic-translations.php:735
+msgid "Write a short message to go with instructions..."
+msgstr ""
+
+#: languages/shareaholic-translations.php:736
+msgid "Yes, I have! Link my {pluginType} (recommended)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:737
+msgid "Yes, continue anyway"
+msgstr ""
+
+#: languages/shareaholic-translations.php:738
+msgid "Yes, disconnect {integration}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:739
+msgid "You are requesting <span class='shr-bold'>{formattedMoney}</span> from the Earnings balance of <span class='shr-bold'>{domain}</span> to be sent to <span class='shr-bold'>{userName}</span>. Redemption requests are typically processed within 60 days of request. All redemptions are final once processed."
+msgstr ""
+
+#: languages/shareaholic-translations.php:740
+msgid "You can optionally use your own {shortener} account."
+msgstr ""
+
+#: languages/shareaholic-translations.php:741
+msgid "You do not have permission to access this section"
+msgstr ""
+
+#: languages/shareaholic-translations.php:742
+msgid "You do not have permission to access this site profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:743
+msgid "You do not have permission to view {name} for {domain}."
+msgstr ""
+
+#: languages/shareaholic-translations.php:744
+msgid "You don't have any smart links yet. Why not create one now?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:745
+msgid "You have already added <strong class=\"dotted_underline\">{domain}</strong> to         your dashboard."
+msgstr ""
+
+#: languages/shareaholic-translations.php:746
+msgid "You have no In-Page {appName} setup"
+msgstr ""
+
+#: languages/shareaholic-translations.php:747
+msgid "You have unsaved changes"
+msgstr ""
+
+#: languages/shareaholic-translations.php:748
+msgid "You have {percentage}% apps enabled"
+msgstr ""
+
+#: languages/shareaholic-translations.php:749
+msgid "You will be charged {quote, number, USD} on confirmation."
+msgstr ""
+
+#: languages/shareaholic-translations.php:750
+msgid "You're missing out"
+msgstr ""
+
+#: languages/shareaholic-translations.php:751
+msgid "You're saving {amount, number, USD} ({percent, number}%)"
+msgstr ""
+
+#: languages/shareaholic-translations.php:752
+msgid "Your DNS Settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:753
+msgid "Your account is missing a payment method."
+msgstr ""
+
+#: languages/shareaholic-translations.php:754
+msgid "Your accounts"
+msgstr ""
+
+#: languages/shareaholic-translations.php:755
+msgid "Your current plan is scheduled to be downgraded to the {name} plan at the end of the current billing cycle on {renewal}. You can choose to upgrade your plan at any time, including between now and {renewal}."
+msgstr ""
+
+#: languages/shareaholic-translations.php:756
+msgid "Your estimated usage is {estimated, number} pageviews/month."
+msgstr ""
+
+#: languages/shareaholic-translations.php:757
+msgid "Your feedback matters. How could we have done better?"
+msgstr ""
+
+#: languages/shareaholic-translations.php:758
+msgid "Your most popular content"
+msgstr ""
+
+#: languages/shareaholic-translations.php:759
+msgid "Your plan includes {limitFormatted} monthly clicks. Once your plan limit is reached your links will continue to work, but pixels will not be loaded until the next cycle when your click limit is reset."
+msgstr ""
+
+#: languages/shareaholic-translations.php:760
+msgid "Your search did not return any results. Please try a different time range or try again later."
+msgstr ""
+
+#: languages/shareaholic-translations.php:761
+msgid "Your search did not return any results. Please try different keywords or try again later."
+msgstr ""
+
+#: languages/shareaholic-translations.php:762
+msgid "Your session has expired! Please sign in again."
+msgstr ""
+
+#: languages/shareaholic-translations.php:763
+msgid "Your site is very popular!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:764
+msgid "Your update is confirmed!"
+msgstr ""
+
+#: languages/shareaholic-translations.php:765
+msgid "Z Index"
+msgstr ""
+
+#: languages/shareaholic-translations.php:766
+msgid "code"
+msgstr ""
+
+#: languages/shareaholic-translations.php:767
+msgid "coming soon"
+msgstr ""
+
+#: languages/shareaholic-translations.php:768
+msgid "domain.com"
+msgstr ""
+
+#: languages/shareaholic-translations.php:769
+msgid "from the top"
+msgstr ""
+
+#: languages/shareaholic-translations.php:770
+msgid "seconds"
+msgstr ""
+
+#: languages/shareaholic-translations.php:771
+msgid "settings"
+msgstr ""
+
+#: languages/shareaholic-translations.php:772
+msgid "since {formattedDateTime}"
+msgstr ""
+
+#: languages/shareaholic-translations.php:773
+msgid "teammember@domain.com"
+msgstr ""
+
+#: languages/shareaholic-translations.php:774
+msgid "this section"
+msgstr ""
+
+#: languages/shareaholic-translations.php:775
+msgid "you"
+msgstr ""
+
+#: languages/shareaholic-translations.php:776
+msgid "{current} of {max} seats used"
+msgstr ""
+
+#: languages/shareaholic-translations.php:777
+msgid "{date}: {clicksFormatted} / {limitFormatted} clicks"
+msgstr ""
+
+#: languages/shareaholic-translations.php:778
+msgid "{longUrl} has been identified as being potentially problematic."
+msgstr ""
+
+#: languages/shareaholic-translations.php:779
+msgid "{number} seconds between requests"
+msgstr ""
+
+#: languages/shareaholic-translations.php:780
+msgid "{percentage}% Complete"
+msgstr ""
+
+#: languages/shareaholic-translations.php:781
+msgid "{price, number, USD} per 1k pageviews"
+msgstr ""
+
+#: languages/shareaholic-translations.php:782
+msgid "{price, number, USD}/month"
+msgstr ""
+
+#: languages/shareaholic-translations.php:783
+msgid "{price} per site profile"
+msgstr ""
+
+#: languages/shareaholic-translations.php:784
+msgid "{pvs} pageviews/month"
+msgstr ""
+
+#: templates/advanced_settings.php:21
+msgid "After changing any Shareaholic plugin setting, it is good practice to clear any WordPress caching plugins like W3 Total Cache or WP Super Cache."
+msgstr ""
+
+#: templates/advanced_settings.php:25
+msgid "%1$sLearn the basics of how to get started and configure Shareaholic through our popular WordPress plugin.%2$s"
+msgstr ""
+
+#: templates/advanced_settings.php:25
+msgid "If you are upgrading from an earlier version of Shareaholic for WordPress and need help, have a question or have a bug to report, please %1$slet us know%2$s."
+msgstr ""
+
+#: templates/advanced_settings.php:32
+msgid "Server Connectivity"
+msgstr ""
+
+#: templates/advanced_settings.php:35
+msgid "Shareaholic.com Cloud servers are reachable"
+msgstr ""
+
+#: templates/advanced_settings.php:36
+msgid "Shareaholic plugin should be working correctly."
+msgstr ""
+
+#: templates/advanced_settings.php:36
+msgid "All Shareaholic Cloud servers are accessible."
+msgstr ""
+
+#: templates/advanced_settings.php:38
+msgid "Unable to reach any Shareaholic server"
+msgstr ""
+
+#: templates/advanced_settings.php:38
+#: templates/advanced_settings.php:47
+msgid "Checking..."
+msgstr ""
+
+#: templates/advanced_settings.php:38
+#: templates/advanced_settings.php:47
+msgid "Re-check"
+msgstr ""
+
+#: templates/advanced_settings.php:44
+msgid "Server-side Share Counts API is reachable"
+msgstr ""
+
+#: templates/advanced_settings.php:45
+msgid "The server-side Share Counts API should be working correctly."
+msgstr ""
+
+#: templates/advanced_settings.php:45
+msgid "All servers and services needed by the API are accessible."
+msgstr ""
+
+#: templates/advanced_settings.php:47
+msgid "Unable to reach the server-side Share Count API"
+msgstr ""
+
+#: templates/advanced_settings.php:57
+msgid "Shareaholic Site Profile ID"
+msgstr ""
+
+#: templates/advanced_settings.php:64
+msgid "This Site Profile ID is invalid. Try <a href=\"%1$s\"\">resetting the plugin to fix this issue</a>."
+msgstr ""
+
+#: templates/advanced_settings.php:68
+msgid "Not set."
+msgstr ""
+
+#: templates/advanced_settings.php:81
+msgid "Connect Shareaholic Account"
+msgstr ""
+
+#: templates/advanced_settings.php:83
+msgid "Connecting this plugin to a free Shareaholic account is highly recommended. Doing so will unlock additional functionality that requires authentication such as site ownership verification, team features and site integrations like Google Analytics."
+msgstr ""
+
+#: templates/advanced_settings.php:96
+msgid "Plugin &harr; Shareaholic Cloud Sync"
+msgstr ""
+
+#: templates/advanced_settings.php:108
+msgid "Plugin In-Page Block settings are in-sync with Shareaholic Cloud"
+msgstr ""
+
+#: templates/advanced_settings.php:110
+msgid "Plugin In-Page Block settings are NOT in-sync with Shareaholic Cloud."
+msgstr ""
+
+#: templates/advanced_settings.php:110
+msgid "Try refreshing this page to sync settings. If a refresh does not work, %1$splease contact Shareaholic support for help%2$s."
+msgstr ""
+
+#: templates/advanced_settings.php:112
+msgid "Cloud Sync status is unknown."
+msgstr ""
+
+#: templates/advanced_settings.php:112
+msgid "Please contact Shareaholic support for help."
+msgstr ""
+
+#: templates/advanced_settings.php:124
+msgid "Social Share Counts"
+msgstr ""
+
+#: templates/advanced_settings.php:132
+msgid "Enable <code>&percnt;author&percnt;</code> permalink tag for Share Count Recovery"
+msgstr ""
+
+#: templates/advanced_settings.php:140
+msgid "Disable Local Share Count Proxy."
+msgstr ""
+
+#: templates/advanced_settings.php:140
+msgid "When enabled, Share Counts will be fetched and cached locally by your server. This local proxy enhances user privacy and share counts but uses your server resources. Retrieving, caching and serving Share Counts can be a server and database intensive activity which can test even the best of web hosts. You can save on your hosting bill by offloading this heavy lifting to Shareaholic Cloud servers instead, <a href=\"%s\" target=\"_blank\">learn more</a>."
+msgstr ""
+
+#: templates/advanced_settings.php:179
+msgid "Required for better Facebook Share Counts. Please %1$sfollow documentation%2$s to get your Facebook App ID and Secret."
+msgstr ""
+
+#: templates/advanced_settings.php:184
+#: templates/advanced_settings.php:229
+#: templates/settings.php:107
+msgid "Saving Changes..."
+msgstr ""
+
+#: templates/advanced_settings.php:189
+msgid "To enable Shareaholic Hosted Share Count Proxy, visit the %1$sCloud Settings%2$s section."
+msgstr ""
+
+#: templates/advanced_settings.php:198
+msgid "Advanced"
+msgstr ""
+
+#: templates/advanced_settings.php:205
+msgid "Disable <code>Open Graph</code> tags"
+msgstr ""
+
+#: templates/advanced_settings.php:205
+msgid "(it is recommended NOT to disable open graph tags)"
+msgstr ""
+
+#: templates/advanced_settings.php:212
+msgid "Disable Admin Bar Menu (requires page refresh)"
+msgstr ""
+
+#: templates/advanced_settings.php:219
+msgid "Disable Review Notice"
+msgstr ""
+
+#: templates/advanced_settings.php:226
+msgid "Disable Debugger (it is recommended NOT to disable the debugger)"
+msgstr ""
+
+#: templates/advanced_settings.php:245
+#: templates/advanced_settings.php:249
+msgid "Reset Plugin"
+msgstr ""
+
+#: templates/advanced_settings.php:247
+msgid "This will reset all of your settings and start you from scratch. This can not be undone."
+msgstr ""
+
+#: templates/advanced_settings.php:249
+msgid "Resetting Plugin..."
+msgstr ""
+
+#: templates/failed_to_create_api_key.php:6
+msgid "Action required: You've installed Shareaholic for WordPress.  We're ready when you are. %1$sGet started now &raquo;%2$s"
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:2
+msgid "Setup Shareaholic"
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:6
+msgid "There is a syncing issue between the plugin and Shareaholic Cloud servers that requires a plugin reset to fix. To reset the plugin, please visit %1$sPlugin Settings%2$s."
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:9
+msgid "It appears that we are having some trouble communicating with Shareaholic Cloud servers right now. This is usually temporary. Please revisit this section after a few minutes or click \"retry\" now."
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:11
+msgid "Retrying..."
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:11
+msgid "Retry"
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:15
+msgid "or, try again later."
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:19
+msgid "If you continue to get this prompt for more than a few minutes, ensure that you have the latest version of the plugin installed. If you still continue to get this prompt, then check \"Shareaholic Server Connectivity Status\" or reset the plugin. Both are available under %1$sPlugin Settings%2$s."
+msgstr ""
+
+#: templates/failed_to_create_api_key_modal.php:19
+msgid "If you are stuck, have a question or have a bug to report, please %1$slet us know%2$s."
+msgstr ""
+
+#: templates/footer.php:4
+msgid "%sShareaholic for WordPress v"
+msgstr ""
+
+#: templates/footer.php:7
+msgid "If you like our work, please show some love and %1$sleave a ⭐️⭐️⭐️⭐️⭐️ review%2$s. It would help us out a lot and we would really appreciate it."
+msgstr ""
+
+#: templates/meta_boxes.php:6
+msgid "Hide Share Buttons"
+msgstr ""
+
+#: templates/meta_boxes.php:16
+msgid "Hide Related Content"
+msgstr ""
+
+#: templates/meta_boxes.php:26
+msgid "Exclude from Related Content"
+msgstr ""
+
+#: templates/meta_boxes.php:36
+msgid "Do not include Open Graph tags"
+msgstr ""
+
+#: templates/settings.php:33
+msgid "To customize settings for each In-Page App Code Block, visit the %1$sCloud Settings%2$s section."
+msgstr ""
+
+#: templates/settings.php:36
+msgid "In-Page Share Buttons"
+msgstr ""
+
+#: templates/settings.php:37
+#: templates/settings.php:70
+msgid "- Pick where you want your In-Page code blocks to be inserted"
+msgstr ""
+
+#: templates/settings.php:100
+msgid "Note: Shareaholic offloads Related Posts processing to the cloud, which means there is no additional load on your server or database, giving you the fastest and most efficient Related Posts solution on the market. The %1$scloud API%2$s starts working as soon as your site is live. Until the cloud-based system starts, we use a basic placeholder API powered by this plugin. This placeholder API is temporary and does not respect advanced settings such as content exclusion rules."
+msgstr ""
+
+#: templates/terms_of_service_modal.php:6
+msgid "Welcome to Shareaholic"
+msgstr ""
+
+#: templates/terms_of_service_modal.php:9
+msgid "%1$sThe Most Powerful WordPress Social Plugin & Toolkit%2$s"
+msgstr ""
+
+#: templates/terms_of_service_modal.php:12
+msgid "Shareaholic provides you with a comprehensive set of marketing tools to engage with your audience, get found on social, and grow your following. The toolkit includes Award-Winning Social Share Buttons, Related Posts, Analytics, Ad Monetization, and more. Customize what is right for your website from the Shareaholic App Manager."
+msgstr ""
+
+#: templates/terms_of_service_modal.php:25
+msgid "Increase traffic, time on site and repeat visits."
+msgstr ""
+
+#: templates/terms_of_service_modal.php:29
+msgid "Discover"
+msgstr ""
+
+#: templates/terms_of_service_modal.php:30
+msgid "Understand your audience with our easy-to-use analytics dashboard."
+msgstr ""
+
+#: templates/terms_of_service_modal.php:34
+msgid "Earn"
+msgstr ""
+
+#: templates/terms_of_service_modal.php:35
+msgid "Generate revenue with personalized, unobtrusive native ads."
+msgstr ""
+
+#: templates/terms_of_service_modal.php:39
+msgid "Acquire"
+msgstr ""
+
+#: templates/terms_of_service_modal.php:40
+msgid "Reach over 400 million people with native ads and promoted content."
+msgstr ""
+
+#: templates/terms_of_service_modal.php:48
+msgid "Setting up..."
+msgstr ""
+
+#: templates/terms_of_service_modal.php:48
+msgid "Get Started →"
+msgstr ""
+
+#: templates/terms_of_service_modal.php:49
+msgid "By clicking \"Get Started\" you agree to Shareholic's %1$sTerms of Service%2$s and %3$sPrivacy Policy%4$s."
+msgstr ""
+
+#: templates/terms_of_service_notice.php:7
+msgid "You've added Shareaholic - Welcome! Action required: %1$sComplete Installation &raquo;%2$s"
+msgstr ""
+
+#: templates/why_to_sign_up.php:4
+msgid "Link to Shareaholic.com to unlock:"
+msgstr ""
+
+#: templates/why_to_sign_up.php:8
+msgid "Floating Share buttons"
+msgstr ""
+
+#: templates/why_to_sign_up.php:9
+msgid "Social Share Count Recovery"
+msgstr ""
+
+#: templates/why_to_sign_up.php:10
+msgid "Follow buttons"
+msgstr ""
+
+#: templates/why_to_sign_up.php:12
+msgid "Earnings Dashboard"
+msgstr ""
+
+#: templates/why_to_sign_up.php:13
+msgid "...lots more!"
+msgstr ""
+
+#: templates/why_to_sign_up.php:15
+msgid "Shareaholic Dashboard"
+msgstr ""
+
+#: templates/why_to_sign_up.php:17
+msgid "Already have a Shareaholic account? Click the button above to log in."
+msgstr ""
+
+#: utilities.php:113
+msgid "Support & Documentation"
+msgstr ""
+
+#: utilities.php:160
+msgid "Check Share Counts"
+msgstr ""
+
+#: utilities.php:180
+msgid "Shareaholic.com"
+msgstr ""
+
+#: utilities.php:190
+msgid "Support & FAQ"
+msgstr ""
