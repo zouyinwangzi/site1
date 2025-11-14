@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<title>Ajuda principal - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Ajuda principal</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<strong><a href="main.html" data-fns-tip="main">Principal</a></strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Condições de seleção</a><a href="shipping_costs.html" data-fns-tip="shipping_costs">Custos de envio</a><a href="group_by.html" data-fns-tip="group_by">Agrupa por</a><a href="special_actions.html" data-fns-tip="special_actions">Acções especiais</a><a href="other_fields.html" data-fns-tip="other_fields">Outros campos e registos</a><a href="pro.html" data-fns-tip="pro">Gratuito vs PRO</a><a href="help.html" data-fns-tip="help">Ajuda e suporte</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Nota:</strong><br/> Esta documentação parte do princípio de que já sabes como funcionam <strong>as zonas de expedição do WooCommerce</strong>. Caso contrário, lê primeiro este artigo: <a href="https://www.wp-centrics.com/how-to-configure-zone-shipping-in-woocommerce/" target="_blank">Configurar as zonas de expedição</a></p>
+</div>
+
+<h2>Resumidamente, em poucas palavras</h2>
+
+<p>Advanced Shipping Rates for WooCommerce é um plugin para calcular os custos de envio de forma fácil e flexível para lojas que funcionam com o <strong>WooCommerce</strong>.</p>
+
+<p><strong>Baseados em regras</strong>, são analisados consecutivamente, de cima para baixo.</p>
+
+<p>Cada regra está dividida em <strong>três secções</strong>: Condições de seleção, Custos de envio e Acções especiais. Se as condições de seleção forem cumpridas, os custos da seleção serão aplicados e as acções especiais, se existirem, serão acionadas. </p>
+
+<p>Quer uma regra se aplique ou não, as seguintes regras serão analisadas:</p>
+
+<p class="img"><a href="../img/main-1.png" target="_blank"><img src="../img/main-1.png" width="918" height="295" alt="Regras de execução de ordens"/></a></p>
+
+<h3>Tutoriais em vídeo</h3>
+<p><a href="https://www.youtube.com/watch?v=wRsoUYiHQRY&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-1.png" width="232" height="130"/><span>Visão geral</span></a><a href="https://www.youtube.com/watch?v=sjQKbt2Nn7k&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-2.png" width="232" height="130"/><span>Breve tutorial</span></a><a href="https://www.youtube.com/watch?v=y2EJFluXx9Q&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-3.png" width="232" height="130"/><span>Caixas de transporte</span></a></p>
+				
+<h3>Um exemplo simples</h3>
+<p>Imagina uma loja de roupa. Queremos definir os custos de envio com base no peso e no volume total do carrinho. Estas são as condições para os cálculos:  </p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th></th>
+		<th>Peso máximo:</th><th>Volume máximo:</th><th style="width:45%">Custo</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>#1</td><td>Até 2000 g.</td><td>Qualquer volume</td><td>5€</td>
+	</tr>
+	<tr>
+		<td>#2</td>
+		<td>2000 g. ou mais </td>
+		<td>Até 20000 cm<sup>3</sup></td><td>10€</td>
+	</tr>
+	<tr>
+		<td>#3</td>
+		<td>2000 g. ou mais </td>
+		<td>Entre 20000 e 40000 cm<sup>3</sup></td><td>15€</td>
+	</tr>
+	<tr>
+		<td>#4</td><td>Qualquer peso</td><td>Mais de 40000 cm<sup>3</sup></td>
+		<td><strong class="abort">30€</strong>. Esta transportadora torna-se demasiado cara e não queremos oferecer este método de envio. </td>
+	</tr>
+	</tbody>
+	</table>
+
+<p>Cada condição exposta pode ser transformada numa regra. As regras <strong>#2</strong> e <strong>#3</strong> precisam de duas condições: uma para o peso e outra para o volume (repara que têm um <strong>WHERE</strong> e um <strong>AND</strong>): </p>
+
+<p class="img"><a href="../img/main-3-mks.png" target="_blank"><img src="../img/main-3-mks.png" width="1670" height="555" alt="Regras para a loja de roupa"/></a></p>
+<p>Imagina este carrinho de compras:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produto</th>
+		<th>Quantidade</th>
+		<th>Peso</th>
+		<th>Volume</th>
+		<th class="align_center">Peso total:</th>
+		<th class="align_center">Volume total:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="2" class="grouped">1350 g.</td>
+		<td rowspan="2" class="grouped last_right">15000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Calças</td><td>1</td><td>900 g.</td><td>11000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>Com um peso inferior a 2000 g, apenas a regra n. <strong>º 1</strong> é cumprida:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produto</th>
+		<th class="align_center">Peso total:</th>
+		<th class="align_center">Volume total:</th>
+		<th class="align_center">Regra nº 1</th>
+		<th class="align_center">Regra nº 2</th>
+		<th class="align_center">Regra nº 3</th>
+		<th class="align_center">Regra nº 4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td><td rowspan="2" class="grouped">1350 g.</td><td rowspan="2" class="grouped last_right">15000 cm<sup>3</sup></td><td rowspan="2" class="gray_grouped rule match"> max. 2000 g.: <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="2" class="gray_grouped rule">  min. 2000 g.:  <br/><span class="dashicons dashicons-dismiss"></span><br/>  max. 20000 cm<sup>3</sup>:   <br/><span class="dashicons dashicons-yes-alt"></span>
+		</td>
+		 <td rowspan="2" class="gray_grouped rule"> min. 2000 g.: <br/><span class="dashicons dashicons-dismiss"></span><br/> min. 20000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-dismiss"></span></td><td rowspan="2" class="gray_grouped rule"> min. 40000 cm<sup>3</sup> <br/><span class="dashicons dashicons-dismiss"></span><br/></td>
+	</tr>
+	<tr>
+		<td>Calças</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Custos de envio:</th><td class="align_center"><strong>5€</strong></td><td class="align_center">(não aplicável)</td><td class="align_center">(não aplicável)</td><td class="align_center">(não aplicável)</td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Custo total: <strong>5 euros</strong></p>
+
+<h3>Acrescenta uma segunda calça</h3>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produto</th>
+		<th>Quantidade</th>
+		<th>Peso</th>
+		<th>Volume</th>
+		<th class="align_center">Peso total:</th>
+		<th class="align_center">Volume total:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="2" class="grouped">2250 g.</td>
+		<td rowspan="2" class="grouped last_right">26000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Calças</td><td>2</td><td>900 g.</td><td>11000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>O novo peso impede que cumpras a Regra nº 1 e o novo volume impede que cumpras a Regra nº 2:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produto</th>
+		<th class="align_center">Peso total:</th>
+		<th class="align_center">Volume total:</th>
+		<th class="align_center">Regra nº 1</th>
+		<th class="align_center">Regra nº 2</th>
+		<th class="align_center">Regra nº 3</th>
+		<th class="align_center">Regra nº 4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td><td rowspan="2" class="grouped">2250 g.</td><td rowspan="2" class="grouped last_right">26000 cm<sup>3</sup></td><td rowspan="2" class="gray_grouped rule"> max. 2000 g.: <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td rowspan="2" class="gray_grouped rule">  min. 2000 g.:  <br/><span class="dashicons dashicons-yes-alt"></span><br/>  max. 20000 cm<sup>3</sup>:   <br/><span class="dashicons dashicons-dismiss"></span>
+		</td>
+		 <td rowspan="2" class="gray_grouped rule match"> min. 2000 g.: <br/><span class="dashicons dashicons-yes-alt"></span><br/> min. 20000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-yes-alt"></span></td><td rowspan="2" class="gray_grouped rule"> min. 40000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-dismiss"></span><br/></td>
+	</tr>
+	<tr>
+		<td>Calças</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Custos de envio:</th><td class="align_center">(não aplicável)</td><td class="align_center">(não aplicável)</td><td class="align_center"><strong>15€</strong></td><td class="align_center">(não aplicável)</td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Custo total: <strong>15 euros</strong></p>
+
+<h3>Adiciona um produto volumoso</h3>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produto</th>
+		<th>Quantidade</th>
+		<th>Peso</th>
+		<th>Volume</th>
+		<th class="align_center">Peso total:</th>
+		<th class="align_center">Volume total:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="3" class="grouped">3600 g.</td>
+		<td rowspan="3" class="grouped last_right">56000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Calças</td><td>2</td><td>900 g.</td><td>11000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Casaco</td><td>1</td><td>1350 g.</td><td>30000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>O novo volume fará com que a regra <strong> nº 4</strong> seja cumprida:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produto</th>
+		<th class="align_center">Peso total:</th>
+		<th class="align_center">Volume total:</th>
+		<th class="align_center">Regra nº 1</th>
+		<th class="align_center">Regra nº 2</th>
+		<th class="align_center">Regra nº 3</th>
+		<th class="align_center">Regra nº 4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td><td rowspan="3" class="grouped">3600 g.</td><td rowspan="3" class="grouped last_right">56000 cm<sup>3</sup></td><td rowspan="3" class="gray_grouped rule"> max. 2000 g.: <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td rowspan="3" class="gray_grouped rule">  min. 2000 g.:  <br/><span class="dashicons dashicons-yes-alt"></span><br/>  max. 20000 cm<sup>3</sup>:   <br/><span class="dashicons dashicons-dismiss"></span>
+		</td>
+		 <td rowspan="3" class="gray_grouped rule"> min. 2000 g.: <br/><span class="dashicons dashicons-yes-alt"></span><br/> min. 20000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-yes-alt"></span></td><td rowspan="3" class="gray_grouped rule stop"> min. 40000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-yes-alt"></span><br/></td>
+	</tr>
+	<tr><td>Calças</td></tr><tr><td>Casaco</td></tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Custos de envio:</th><td class="align_center off">(não aplicável)</td><td class="align_center off">(não aplicável)</td><td class="align_center off">15€</td>
+		<td class="align_center"><strong class="abort">[ABORT]</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Apesar de a Regra n.º 3 ainda estar cumprida, a Regra n.º 4 aceita o <strong class="abort">método de envio Abortar</strong> Ação Especial, anulando quaisquer outras regras. Este método de envio <strong>não será oferecido ao cliente</strong>. </p>
+
+<h2>Até agora... fácil?</h2>
+
+<p>Esperamos que sim... na <strong>Wp-Centrics</strong> temos trabalhado arduamente para desenvolver uma ferramenta simples mas poderosa... Talvez ainda não pareça suficiente ... por favor lê a próxima secção sobre métodos de seleção, para começares a ver todo o seu potencial: </p>
+
+<p class="fns_do_actions"><a href="sel_conditions.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="sel_conditions">Condições de seleção</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

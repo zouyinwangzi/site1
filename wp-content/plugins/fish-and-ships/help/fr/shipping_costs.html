@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Calcul des frais de port - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Calcul des frais de port</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Principale</a><a href="sel_conditions.html" data-fns-tip="sel_conditions">Conditions de sélection</a><strong><a href="shipping_costs.html" data-fns-tip="shipping_costs">Frais d'expédition</a></strong><a href="group_by.html" data-fns-tip="group_by">Groupe par</a><a href="special_actions.html" data-fns-tip="special_actions">Actions spéciales</a><a href="other_fields.html" data-fns-tip="other_fields">Autres champs et journaux</a><a href="pro.html" data-fns-tip="pro">Gratuit vs PRO</a><a href="help.html" data-fns-tip="help">Aide et support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Calcul de base / par fourchette</h2>
+
+<p>Les frais de port seront appliqués <strong>pour chaque règle correspondant aux</strong> critères de sélection.</p>
+
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>(une fois) :</h3></td>
+		<td>
+<p>Le coût sera appliqué <strong>une seule fois</strong>, quel que soit le nombre de produits correspondant à la règle.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [qty]:</h3></td>
+		<td>
+<p>Le coût calculé sera le résultat de la multiplication de la <strong>quantité de produits</strong> correspondant aux critères de sélection par la valeur saisie.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* poids :</h3></td>
+		<td>
+<p>Le coût calculé sera le résultat de la multiplication du <strong>poids des produits</strong> correspondant aux critères de sélection par la valeur saisie.</p>
+<p>Attention : si vous devez utiliser des poids arrondis pour le calcul, vous devez utiliser des fourchettes (voir ci-dessous).</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [group]:</h3></td>
+		<td>
+<p>Le coût calculé sera le résultat de la multiplication du nombre de groupes correspondants (voir la section d'aide <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> ) par la valeur introduite.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>% (pourcentage) :</h3></td>
+		<td>
+<p>Le pourcentage sera calculé sur la base du prix du produit. S'il existe un prix de vente, il sera utilisé à la place.</p>
+<p>Indépendamment du paramètre WooCommerce "Prix saisis avec taxe" (peut être taxe incluse ou taxe exclue), les prix des produits <strong>seront pris tels qu'ils ont été saisis</strong> dans la page d'édition.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Composite :</h3></td>
+		<td>
+<p>Nous pouvons définir les <strong>cinq calculs précédents en une seule fois</strong>: une fois, * qty, * weight, * group et %. Ceux qui sont définis avec la valeur 0 n'influenceront pas le calcul.</p>
+<p class="img"><a href="../img/simple-composite-costs-5.png" target="_blank"><img src="../img/simple-composite-costs-5.png" width="615" height="225" alt="Frais d'expédition simples ou composites"/></a></p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Gammes&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+<p>Grâce à cette fonctionnalité avancée, vous pouvez fixer des prix en fonction du poids, du volume, de la quantité ou des dimensions, en définissant facilement des fourchettes de prix, des prix forfaitaires et bien d'autres choses encore. Il est accompagné d'un aperçu interactif.</p>
+		 <p>Vous pouvez en savoir plus en lisant cet article : <a href="https://www.wp-centrics.com/shipping-rates-by-weight-chart-in-woocommerce/" target="_blank">Tableau des tarifs d'expédition par poids : Les fourchettes de poids en toute simplicité</a></p>
+<p class="img"><a href="img/range-settings.png" target="_blank"><img src="../img/range-settings.png" width="700" height="435" alt="Réglages de la gamme"/></a></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Soyez attentif au paramètre "group-by" :</strong><br/> Gardez à l'esprit que le paramètre group-by (global ou dans chaque règle) n'agira que pour les conditions de sélection (règles de gauche), pas pour le calcul des frais de port, sauf pour le <strong>* [group]</strong>, bien sûr. (voir la section d'aide <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> ).</p>
+<p>A ne pas confondre avec le paramètre group-by de <strong>la boîte de dialogue Range settings</strong>: Cela aura l'effet escompté sur le calcul des prix par plage.</p>
+</div>
+
+
+<h2>Plus !</h2>
+<p>Les différents critères de regroupement vous donneront la flexibilité nécessaire pour couvrir toutes les possibilités :</p>
+<p class="fns_do_actions"><a href="group_by.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="group_by">Groupe par</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

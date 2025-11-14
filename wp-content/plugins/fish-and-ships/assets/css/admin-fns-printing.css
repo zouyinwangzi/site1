@@ -1,0 +1,110 @@
+html.wc-fish-and-ships-html {
+  padding-top: 0;
+}
+html.wc-fish-and-ships-html body {
+  background: #fff;
+}
+html.wc-fish-and-ships-html .notice,
+html.wc-fish-and-ships-html div.error,
+html.wc-fish-and-ships-html div.updated,
+html.wc-fish-and-ships-html .notice-success,
+html.wc-fish-and-ships-html .woocommerce-store-alerts,
+html.wc-fish-and-ships-html .nav-tab-wrapper,
+html.wc-fish-and-ships-html #screen-meta-links {
+  display: none;
+}
+html.wc-fish-and-ships-html #adminmenumain,
+html.wc-fish-and-ships-html .woocommerce-layout__header {
+  display: none;
+}
+html.wc-fish-and-ships-html #wpcontent,
+html.wc-fish-and-ships-html #wpfooter {
+  margin-left: 0;
+}
+html.wc-fish-and-ships-html #wpbody-content {
+  padding-bottom: 0;
+}
+html.wc-fish-and-ships-html .woocommerce-help-tip {
+  display: none !important;
+}
+html.wc-fish-and-ships-html #wc-fns-freemium-panel,
+html.wc-fish-and-ships-html #logs_wrapper {
+  display: none;
+}
+html.wc-fish-and-ships-html #wc-fns-table_envelope {
+  margin: 0;
+}
+html.wc-fish-and-ships-html #woocommerce_fish_n_ships_write_logs + .description {
+  display: none;
+}
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns .add-selector,
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns .fns-range-config-bt,
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns .add-action,
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns .fns_open_fields_popup,
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns a.delete {
+  display: none !important;
+}
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns .manage-column,
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns .check-column,
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns .column-handle,
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns tfoot {
+  display: none !important;
+}
+html.wc-fish-and-ships-html #wrapper-shipping-rules-table-fns td.order-number {
+  color: #000 !important;
+}
+html.wc-fish-and-ships-html p.submit {
+  display: none;
+}
+html.wc-fish-and-ships-html #woocommerce_fish_n_ships_special_rate + p {
+  display: none;
+}
+html.wc-fish-and-ships-html #logs_wrapper + p {
+  display: none;
+}
+html.wc-fish-and-ships-html .dropdown-submenu-wrapper.dropdown-submenu-skin {
+  width: auto !important;
+}
+html.wc-fish-and-ships-html .dropdown-field-watch .dropdown-arrow {
+  display: none;
+}
+html.wc-fish-and-ships-html .dropdown-submenu-skin .dropdown-field-watch {
+  border: 0;
+  background: none;
+  width: auto;
+  display: inline-block;
+  padding: 0;
+}
+html.wc-fish-and-ships-html .css-conditions-table-fns .field-multiple,
+html.wc-fish-and-ships-html .select2-container {
+  width: auto !important;
+}
+html.wc-fish-and-ships-html .select2-selection {
+  background: none;
+  border: 0;
+}
+html.wc-fish-and-ships-html .field-multiple {
+  display: inline !important;
+}
+html.wc-fish-and-ships-html .select2-search--inline {
+  display: none;
+}
+html.wc-fish-and-ships-html .currency-fns-field input {
+  background: none;
+  border: 0;
+  padding: 0;
+  width: auto !important;
+}
+html.wc-fish-and-ships-html .css-conditions-table-fns .selection_wrapper:last-child,
+html.wc-fish-and-ships-html .css-conditions-table-fns .action_wrapper:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+html.wc-fish-and-ships-html .action_wrapper {
+  width: 180px !important;
+}
+@media (max-width: 1000px) {
+  html.wc-fish-and-ships-html .action_wrapper {
+    width: 130px !important;
+  }
+}

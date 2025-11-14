@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Ryhmittele (ostoskori) tuotteet - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Ryhmittele (ostoskori) tuotteet</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Main</a><a href="sel_conditions.html" data-fns-tip="sel_conditions">Valintaehdot</a><a href="shipping_costs.html" data-fns-tip="shipping_costs">Toimituskustannukset</a><strong><a href="group_by.html" data-fns-tip="group_by">Group-by</a></strong><a href="special_actions.html" data-fns-tip="special_actions">Erityistoiminnot</a><a href="other_fields.html" data-fns-tip="other_fields">Muut kentät ja lokit</a><a href="pro.html" data-fns-tip="pro">Ilmainen vs PRO</a><a href="help.html" data-fns-tip="help">Apua ja tukea</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Tuotteiden ryhmittely muuttaa toimituskuluja</h2>
+
+<p>Voimme analysoida ostoskorin tuotteita, <strong>jotka on ryhmitelty eri kriteerien mukaan</strong>, määrittääksemme, vastaako se yhtä sääntöä ja soveltuuko se siten toimituskulujen laskentaan.</p>
+
+<p class="img"><a href="../img/group-by-4.png" target="_blank"><img src="../img/group-by-4.png" width="634" height="205" alt="Ostoskorin kohteiden ryhmittelyvaihtoehdot"/></a></p>
+<p>Mahdollisia ryhmittelyperusteita ovat:</p>
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>Ei ole [no grouping]:</h3></td>
+		<td>
+<p>Jokainen tuote analysoidaan <strong>erikseen</strong>, vaikka niillä olisi sama viitearvo.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Per ID / SKU:</h3></td>
+		<td>
+<p>Tuotteet, joilla on <strong>sama viite</strong>, ryhmitellään.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Tuotekohtaisesti [group variations]:</h3></td>
+		<td>
+<p>Jokainen <strong>mukana oleva tuotevariaatio</strong> ryhmitellään</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Kuljetusluokkaa kohti:</h3></td>
+		<td>
+<p>Kaikki tuotteet, joilla on <strong>sama lähetysluokka</strong>, ryhmitellään.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Kaikki on ryhmitelty yhdeksi:</h3></td>
+		<td>
+<p>Koko ostoskorin tuotteet <strong>muodostavat ainoan ryhmän</strong>.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<h2>Toinen yksinkertainen esimerkki</h2>
+
+<p>Näytetään, miten eri ryhmittelykriteerit muuttavat sitä, miten ostoskoria käsitellään toimituskulujen laskemiseksi:</p>
+
+<p>Oletetaan, että haluamme veloittaa <strong>1 euron</strong> toimituskulut tuotteista, jotka <strong>painavat</strong> vähintään <strong>500 grammaa</strong>:</p>
+
+<p class="img"><a href="../img/group-by-1b-mks.png" target="_blank"><img src="../img/group-by-1b-mks.png" width="930" height="182" alt="Aseta 1€ puoli kiloa painoa kohti"/></a></p>
+<p>Tarkastellaanpa tätä kärryä:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th><th>Määrä</th><th>Paino</th><th>Lähetysluokka</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita (koko S)</td><td>1</td><td>225 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>2</td><td>280 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Ulkoinen kiintolevy</td><td>1</td><td>425 g.</td><td>Tietokoneet</td>
+	</tr>
+	</tbody>
+</table>
+
+<h2>Ryhmittely Ei ole  [no grouping]</h2>
+
+<p>Jokainen ostoskorin tuote analysoidaan erikseen:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th><th>Määrä</th><th>Paino</th><th class="align_center">Sääntö #1</th><th class="align_center">Kustannukset</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita (koko S)</td><td>1</td><td>225 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Ulkoinen kiintolevy</td><td>1</td><td>425 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th>Sääntö #1 kustannukset:</th>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="rule stop"><span class="dashicons dashicons-dismiss"></span></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Huomaa, että jopa kaksi L-kokoista paitaa analysoidaan erikseen. <strong class="abort">Tätä sääntöä ei oteta</strong>, koska mikään tuote ei vastaa valintaperustetta.</p>
+
+<p><strong>Tärkeää:</strong> Jos mitään sääntöjä ei sovelleta, koska mikään tuote ei vastaa valintaperusteita, toimitustapa poistetaan käytöstä kyseisestä ostoskorista.</p>
+
+<h2>Ryhmittely ID:tä / SKU:ta kohti</h2>
+
+<p>ID / SKU -kriteerin avulla variaatiot analysoidaan edelleen erikseen, mutta <strong>identtiset </strong> tuotteet ryhmitellään:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th>Määrä</th>
+		<th>Paino</th>
+		<th class="align_center">Ryhmitelty paino</th>
+		<th class="align_center">Sääntö #1</th>
+		<th class="align_center">Kustannukset</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita (koko S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td class="align_center">225 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td>
+		<td>1</td>
+		<td>280 g.</td>
+		<td rowspan="2" class="grouped last_right">560 g.</td>
+		<td class="rule match gray_grouped" rowspan="2">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="2" class="rule gray_grouped last_right">1€ * 2 = <br/> 2€</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Polo</td>
+		<td>1</td>
+		<td>360 g.</td>
+		<td class="align_center">360 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Ulkoinen kiintolevy</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="5">Sääntö #1 kustannukset:</th><td class="rule"><strong>2€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Huomaa, että vain valintaperusteet täyttävät tuotteet <strong>vaikuttavat</strong> säännön <strong>kustannuksiin</strong>.</p>
+
+<p>Jos yksi tai useampi tuote (tässä tapauksessa ryhmä) vastaa valintaa, sääntöä sovelletaan, ja se <strong>ottaa käyttöön</strong> toimitustavan kyseiselle ostoskorille.</p>
+
+<h2>Ryhmittely Tuotetta kohti  [group variations]</h2>
+
+<p>Per tuote [group variations] -kriteerin avulla samankaltaiset tuotteet, <strong>myös variaatiot</strong>, ryhmitellään yhteen:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th>Määrä</th>
+		<th>Paino</th>
+		<th class="align_center">Ryhmitelty paino</th>
+		<th class="align_center">Sääntö #1</th>
+		<th class="align_center">Kustannukset</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita (koko S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td rowspan="3" class="grouped last_right">785 g.</td>
+		<td class="rule match gray_grouped" rowspan="3">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="3" class="rule gray_grouped last_right">1€ * 3 = <br/> 3€</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Polo</td>
+		<td>1</td>
+		<td>360 g.</td>
+		<td class="align_center">360 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Ulkoinen kiintolevy</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="5">Sääntö #1 kustannukset:</th><td class="rule"><strong>3€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+<p>Huomaa, että S-kokoinen paita ei itsessään täytä valintaperustetta, mutta jos se ryhmitellään kahden muun L-kokoisen paidan kanssa, se täyttää valintaperusteen.</p>
+
+<h2>Ryhmittely lähetysluokittain</h2>
+
+<p>Per lähetysluokka -kriteerillä <strong>kaikki vaatteet</strong> analysoidaan yhtenä ryhmänä ja kiintolevy toisena ryhmänä:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th>Määrä</th>
+		<th>Paino</th>
+		<th>Lähetysluokka</th>
+		<th class="align_center">Ryhmitelty paino</th>
+		<th class="align_center">Sääntö #1</th>
+		<th class="align_center">Kustannukset</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita (koko S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td>Vaatteet</td>
+		<td rowspan="4" class="grouped last_right">1145 g.</td>
+		<td class="rule match gray_grouped" rowspan="4">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="4" class="rule gray_grouped last_right">1€ * 4 = <br/> 4€</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Ulkoinen kiintolevy</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td>Tietokoneet</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="6">Sääntö #1 kustannukset:</th><td class="rule"><strong>4€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<h2>Ryhmittely Kaikki ryhmitellään yhdeksi</h2>
+<p>Ja lopuksi, kun kriteerinä on Kaikki ryhmitelty yhdeksi, <strong>koko ostoskori</strong> ryhmitellään yhdeksi:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th>Määrä</th>
+		<th>Paino</th>
+		<th>Lähetysluokka</th>
+		<th class="align_center">Ryhmitelty paino</th>
+		<th class="align_center">Sääntö #1</th>
+		<th class="align_center">Kustannukset</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita (koko S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td>Vaatteet</td>
+		<td rowspan="5" class="grouped last_right">1570 g.</td>
+		<td class="rule match gray_grouped" rowspan="5">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="5" class="rule gray_grouped last_right">1€ * 5 = <br/> 5€</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Paita (koko L vaihtelee)</td><td>1</td><td>280 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Vaatteet</td>
+	</tr>
+	<tr>
+		<td>Ulkoinen kiintolevy</td><td>1</td><td>425 g.</td><td>Tietokoneet</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="6">Sääntö #1 kustannukset:</th><td class="rule"><strong>5€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<h2>Entä ... entä muut valintamenetelmät?</h2>
+
+<table class="wp-list-table widefat tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th style="background:#f9f9f9;"><p>Tuotteet voidaan ryhmitellä <strong>samaan tapaan</strong> kuin painon kohdalla:</p></th>
+		<th class="left_border" style="background:#f9f9f9;"><p>Eikä <strong>niitä voi ryhmitellä</strong> (ota tuotteet aina yksitellen) seuraaviin:</p></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td style="width:50%;">
+			<p><strong>Tuotetiedot:</strong></p>
+			<ul>
+			<li>Hinta</li>
+			<li>Paino</li>
+			<li>Volume</li>
+			<li>Volumetrinen&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			<li>Volumetrinen sarja&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			</ul>
+			<p><strong>Edistynyt:</strong></p>
+			<ul>
+			<li>Korin kohteet</li>
+			<li>Ryhmien lukumäärä</li>
+			</ul>
+		</td>
+		<td class="left_border">
+			<p><strong>Tuotetiedot:</strong></p>
+			<ul>
+			<li>Min / Mid / Max ulottuvuus</li>
+			<li>Pituus+Leveys+Korkeus&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			<li>Pituus + ympärysmitta (L + 2W + 2H)&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			</ul>
+			<p><strong>Kaikki tuotetyyppivalitsimet</strong></p>
+			<p><strong>Edistynyt:</strong></p>
+			<ul>
+			<li>Ostoskori yhteensä</li>
+			<li>Käyttäjän roolit</li>
+			</ul>
+			<p><strong>Kaikki data&time-valitsimet</strong></p>
+			<p><strong>Kaikki toimitusosoitteen valitsijat</strong></p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>Miksi niitä ei voi ryhmitellä? Tuotteiden mittoja ei olisi järkevää laskea yhteen niiden koon perusteella. Ja mitä tulee taksonomioihin, eri tuotteet voivat kuulua eri taksonomioihin, joten niitä ei voida tarkastella yhdessä. <strong>Joka tapauksessa se otetaan tuote tuotteelta</strong>.  </p>
+
+<h2>Eri ryhmittelykriteerit kussakin tilassa&nbsp;<span class="fns-pro-icon darker">PRO</span></h2>
+<p>PRO-versiossa <strong>jokaiselle ehdolle</strong> voidaan asettaa <strong>erilainen ryhmittely</strong>.</p>
+<p>Sanotaan, että haluamme asettaa kiinteän <strong>10 euron</strong> toimituskulun, jos ostoskorissa on yli 4 tuotetta, ja hylätä yli 500 grammaa painavat tuotteet:</p>
+<p>Sinun on ensin poistettava valintamerkintä ryhmäytyminen globaalisti -vaihtoehdosta:</p>
+<p class="img"><a href="../img/group-by-3.png" target="_blank"><img src="../img/group-by-3.png" width="686" height="56" alt="Poista valintamerkki globaalista group-by"/></a></p>
+<p>Ja tämä olisi toimitussääntötaulukko, jossa on <strong>eriytetyt</strong> ryhmittelyvaihtoehdot:</p>
+<p class="img"><a href="../img/group-by-2-mks.png" target="_blank"><img src="../img/group-by-2-mks.png" width="1047" height="306" alt="Toimitussäännöt, joissa on eri ryhmittelyvaihtoehtoja"/></a></p>
+<h2>Kaikki valvonta</h2>
+<p>Erikoistoimintojen avulla voit muuttaa sääntöjen suorittamista tai lähettää viestejä asiakkaille:</p>
+<p class="fns_do_actions"><a href="special_actions.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="special_actions">Erityistoimet</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

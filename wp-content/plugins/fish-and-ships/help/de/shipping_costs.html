@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Berechnung der Versandkosten - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Berechnung der Versandkosten</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Haupt</a><a href="sel_conditions.html" data-fns-tip="sel_conditions">Bedingungen für die Auswahl</a><strong><a href="shipping_costs.html" data-fns-tip="shipping_costs">Versandkosten</a></strong><a href="group_by.html" data-fns-tip="group_by">Gruppieren nach</a><a href="special_actions.html" data-fns-tip="special_actions">Besondere Aktionen</a><a href="other_fields.html" data-fns-tip="other_fields">Andere Felder & Protokolle</a><a href="pro.html" data-fns-tip="pro">Kostenlos vs. PRO</a><a href="help.html" data-fns-tip="help">Hilfe und Support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Basis / Pro Bereich Berechnung</h2>
+
+<p>Die Versandkosten werden <strong>für jede Regel</strong> angewendet <strong>, die den</strong> Auswahlkriterien <strong>entspricht</strong>.</p>
+
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>(einmal):</h3></td>
+		<td>
+<p>Die Kosten werden <strong>nur einmal</strong> erhoben, unabhängig davon, wie viele Produkte der Regel entsprechen.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [qty]:</h3></td>
+		<td>
+<p>Die berechneten Kosten sind das Ergebnis der Multiplikation der <strong>Anzahl der Produkte</strong>, die den Auswahlkriterien entsprechen, mit dem eingegebenen Wert.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* Gewicht:</h3></td>
+		<td>
+<p>Die berechneten Kosten ergeben sich aus der Multiplikation des <strong>Gewichts der Produkte</strong>, die den Auswahlkriterien entsprechen, mit dem eingegebenen Wert.</p>
+<p>Beachten Sie: Wenn Sie gerundete Gewichte für die Berechnung benötigen, müssen Sie Bereiche verwenden (siehe unten).</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [group]:</h3></td>
+		<td>
+<p>Die berechneten Kosten ergeben sich aus der Multiplikation der Anzahl der übereinstimmenden Gruppen (siehe Hilfeabschnitt <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> ) mit dem eingegebenen Wert.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>% (Prozentsatz):</h3></td>
+		<td>
+<p>Der Prozentsatz wird auf der Grundlage des Produktpreises berechnet. Wenn es einen Verkaufspreis gibt, wird dieser stattdessen verwendet. </p>
+<p>Unabhängig von der WooCommerce-Einstellung "Preise mit Steuer" (kann mit oder ohne Steuer sein) werden die Preise der Produkte <strong>so übernommen, wie sie</strong> auf der Editionsseite <strong>eingegeben wurden</strong>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Komposit:</h3></td>
+		<td>
+<p>Wir können die <strong>fünf vorherigen Berechnungen auf einmal</strong> einstellen: einmal, * Menge, * Gewicht, * Gruppe und %. Diejenigen, die mit dem Wert 0 eingestellt sind, haben keinen Einfluss auf die Berechnung. </p>
+<p class="img"><a href="../img/simple-composite-costs-5.png" target="_blank"><img src="../img/simple-composite-costs-5.png" width="615" height="225" alt="Einfache oder zusammengesetzte Versandkosten"/></a></p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Ranges&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+<p>Mit dieser fortschrittlichen Funktion können Sie Preise auf der Grundlage von Gewicht, Volumen, volumetrisch, Menge oder Abmessungen festlegen, einfach Preisspannen, Pauschalanteile und vieles mehr einstellen. Es wird mit einer interaktiven Vorschau geliefert. </p>
+		 <p>Mehr darüber erfahren Sie in diesem Beitrag: <a href="https://www.wp-centrics.com/shipping-rates-by-weight-chart-in-woocommerce/" target="_blank">Versandtarife nach Gewicht: Gewichtsspannen leicht gemacht</a></p>
+<p class="img"><a href="img/bereich-einstellungen.png" target="_blank"><img src="../img/range-settings.png" width="700" height="435" alt="Bereich Einstellungen"/></a></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Seien Sie vorsichtig mit der Einstellung group-by:</strong><br/> Beachten Sie, dass die Group-by-Einstellung (global oder in jeder Regel) nur für die Auswahlbedingungen (Regeln auf der linken Seite) gilt, nicht aber für die Berechnung der Versandkosten, mit Ausnahme der <strong>* [group]</strong>, versteht sich. (siehe den Abschnitt <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> Hilfe). </p>
+<p>Nicht zu verwechseln mit der Einstellung Gruppieren nach <strong>in der Dialogbox Bereichseinstellungen</strong>: Dies hat die erwartete Auswirkung auf die Preisberechnung nach Bereichen.</p>
+</div>
+
+
+<h2>Mehr!</h2>
+<p>Die verschiedenen Gruppierungskriterien geben Ihnen die Flexibilität, die Sie brauchen, um alle Möglichkeiten abzudecken:</p>
+<p class="fns_do_actions"><a href="group_by.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="group_by">Gruppieren nach</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

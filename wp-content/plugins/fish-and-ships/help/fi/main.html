@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Tärkein apu - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Tärkein apu</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<strong><a href="main.html" data-fns-tip="main">Main</a></strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Valintaehdot</a><a href="shipping_costs.html" data-fns-tip="shipping_costs">Toimituskustannukset</a><a href="group_by.html" data-fns-tip="group_by">Group-by</a><a href="special_actions.html" data-fns-tip="special_actions">Erityistoiminnot</a><a href="other_fields.html" data-fns-tip="other_fields">Muut kentät ja lokit</a><a href="pro.html" data-fns-tip="pro">Ilmainen vs PRO</a><a href="help.html" data-fns-tip="help">Apua ja tukea</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Huomautus:</strong><br/> Tässä dokumentaatiossa oletetaan, että tiedät jo, miten <strong>WooCommerce Shipping Zones</strong> toimii, jos et tiedä, lue ensin tämä artikkeli: <a href="https://www.wp-centrics.com/how-to-configure-zone-shipping-in-woocommerce/" target="_blank">Shipping Zones -lähetysvyöhykkeiden määrittäminen</a>.</p>
+</div>
+
+<h2>Lyhyesti ja ytimekkäästi</h2>
+
+<p>Advanced Shipping Rates for WooCommerce on lisäosa, jolla voit laskea toimituskulut helposti ja joustavasti <strong>WooCommercen</strong> alla toimiville myymälöille.</p>
+
+<p><strong>Sääntöihin perustuva</strong>, niitä analysoidaan peräkkäin, ylhäältä alaspäin.</p>
+
+<p>Kukin sääntö on jaettu <strong>kolmeen osaan</strong>: Valintaehdot, toimituskustannukset ja erityistoimet. Jos valintaehdot täyttyvät, valinnan kustannuksia sovelletaan ja mahdolliset erityistoimet käynnistetään. </p>
+
+<p>Seuraavat säännöt analysoidaan riippumatta siitä, sovelletaanko sääntöä vai ei:</p>
+
+<p class="img"><a href="../img/main-1.png" target="_blank"><img src="../img/main-1.png" width="918" height="295" alt="Säännöt toimeksiannon toteuttaminen"/></a></p>
+
+<h3>Video-oppaat</h3>
+<p><a href="https://www.youtube.com/watch?v=wRsoUYiHQRY&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-1.png" width="232" height="130"/><span>Yleiskatsaus</span></a><a href="https://www.youtube.com/watch?v=sjQKbt2Nn7k&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-2.png" width="232" height="130"/><span>Lyhyt opetusohjelma</span></a><a href="https://www.youtube.com/watch?v=y2EJFluXx9Q&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-3.png" width="232" height="130"/><span>Laatikot</span></a></p>
+				
+<h3>Yksinkertainen esimerkki</h3>
+<p>Kuvitellaanpa vaatekauppa. Haluamme asettaa toimituskulut ostoskorin kokonaispainon ja tilavuuden perusteella. Nämä ovat laskelmien ehdot:  </p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th></th>
+		<th>Enimmäispaino:</th><th>Enimmäistilavuus:</th><th style="width:45%">Kustannukset</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>#1</td><td>Enintään 2000 g.</td><td>Mikä tahansa tilavuus</td><td>5€</td>
+	</tr>
+	<tr>
+		<td>#2</td>
+		<td>vähintään 2000 g </td>
+		<td>Jopa 20000 cm<sup>3</sup></td><td>10€</td>
+	</tr>
+	<tr>
+		<td>#3</td>
+		<td>vähintään 2000 g </td>
+		<td>20000-40000 cm<sup>3</sup></td><td>15€</td>
+	</tr>
+	<tr>
+		<td>#4</td><td>Mikä tahansa paino</td><td>Yli 40000 cm<sup>3</sup></td>
+		<td><strong class="abort">30€</strong>. Tämä operaattori tulee liian kalliiksi, emmekä halua tarjota tätä toimitustapaa. </td>
+	</tr>
+	</tbody>
+	</table>
+
+<p>Kukin altistunut ehto voidaan muuntaa säännöksi. Säännöt <strong>#2</strong> ja <strong>#3</strong> tarvitsevat kaksi ehtoa: yksi painolle ja toinen tilavuudelle (huomaa, että niissä on <strong>WHERE</strong> ja <strong>AND</strong>): </p>
+
+<p class="img"><a href="../img/main-3-mks.png" target="_blank"><img src="../img/main-3-mks.png" width="1670" height="555" alt="Vaatekaupan säännöt"/></a></p>
+<p>Kuvitellaanpa tämä ostoskori:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th>Määrä</th>
+		<th>Paino</th>
+		<th>Volume</th>
+		<th class="align_center">Kokonaispaino:</th>
+		<th class="align_center">Kokonaistilavuus:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="2" class="grouped">1350 g.</td>
+		<td rowspan="2" class="grouped last_right">15000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Housut</td><td>1</td><td>900 g.</td><td>11000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>Jos paino on alle 2000 g, vain sääntö <strong> nro 1</strong> täyttyy:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th class="align_center">Kokonaispaino:</th>
+		<th class="align_center">Kokonaistilavuus:</th>
+		<th class="align_center">Sääntö #1</th>
+		<th class="align_center">Sääntö nro 2</th>
+		<th class="align_center">Sääntö nro 3</th>
+		<th class="align_center">Sääntö #4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita</td><td rowspan="2" class="grouped">1350 g.</td><td rowspan="2" class="grouped last_right">15000 cm<sup>3</sup></td><td rowspan="2" class="gray_grouped rule match"> max. 2000 g.: <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="2" class="gray_grouped rule">  min. 2000 g:  <br/><span class="dashicons dashicons-dismiss"></span><br/>  max. 20000 cm<sup>3</sup>:   <br/><span class="dashicons dashicons-yes-alt"></span>
+		</td>
+		 <td rowspan="2" class="gray_grouped rule"> min. 2000 g: <br/><span class="dashicons dashicons-dismiss"></span><br/> min. 20000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-dismiss"></span></td><td rowspan="2" class="gray_grouped rule"> min. 40000 cm<sup>3</sup> <br/><span class="dashicons dashicons-dismiss"></span><br/></td>
+	</tr>
+	<tr>
+		<td>Housut</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Toimituskulut:</th><td class="align_center"><strong>5€</strong></td><td class="align_center">(ei sovelleta)</td><td class="align_center">(ei sovelleta)</td><td class="align_center">(ei sovelleta)</td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Kokonaiskustannukset: <strong>5€</strong></p>
+
+<h3>Lisätään toinen housu</h3>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th>Määrä</th>
+		<th>Paino</th>
+		<th>Volume</th>
+		<th class="align_center">Kokonaispaino:</th>
+		<th class="align_center">Kokonaistilavuus:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="2" class="grouped">2250 g.</td>
+		<td rowspan="2" class="grouped last_right">26000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Housut</td><td>2</td><td>900 g.</td><td>11000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>Uusi paino estää säännön nro 1 noudattamisen ja uusi tilavuus estää säännön nro 2 noudattamisen:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th class="align_center">Kokonaispaino:</th>
+		<th class="align_center">Kokonaistilavuus:</th>
+		<th class="align_center">Sääntö #1</th>
+		<th class="align_center">Sääntö nro 2</th>
+		<th class="align_center">Sääntö nro 3</th>
+		<th class="align_center">Sääntö #4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita</td><td rowspan="2" class="grouped">2250 g.</td><td rowspan="2" class="grouped last_right">26000 cm<sup>3</sup></td><td rowspan="2" class="gray_grouped rule"> max. 2000 g.: <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td rowspan="2" class="gray_grouped rule">  min. 2000 g:  <br/><span class="dashicons dashicons-yes-alt"></span><br/>  max. 20000 cm<sup>3</sup>:   <br/><span class="dashicons dashicons-dismiss"></span>
+		</td>
+		 <td rowspan="2" class="gray_grouped rule match"> min. 2000 g: <br/><span class="dashicons dashicons-yes-alt"></span><br/> min. 20000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-yes-alt"></span></td><td rowspan="2" class="gray_grouped rule"> min. 40000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-dismiss"></span><br/></td>
+	</tr>
+	<tr>
+		<td>Housut</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Toimituskulut:</th><td class="align_center">(ei sovelleta)</td><td class="align_center">(ei sovelleta)</td><td class="align_center"><strong>15€</strong></td><td class="align_center">(ei sovelleta)</td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Kokonaiskustannukset: <strong>15€</strong></p>
+
+<h3>Lisätään tilaa vievä tuote</h3>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th>Määrä</th>
+		<th>Paino</th>
+		<th>Volume</th>
+		<th class="align_center">Kokonaispaino:</th>
+		<th class="align_center">Kokonaistilavuus:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="3" class="grouped">3600 g.</td>
+		<td rowspan="3" class="grouped last_right">56000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Housut</td><td>2</td><td>900 g.</td><td>11000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Takki</td><td>1</td><td>1350 g.</td><td>30000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>Uusi tilavuus, tekee säännön <strong>#4</strong> täyttämisen:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Tuote</th>
+		<th class="align_center">Kokonaispaino:</th>
+		<th class="align_center">Kokonaistilavuus:</th>
+		<th class="align_center">Sääntö #1</th>
+		<th class="align_center">Sääntö nro 2</th>
+		<th class="align_center">Sääntö nro 3</th>
+		<th class="align_center">Sääntö #4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Paita</td><td rowspan="3" class="grouped">3600 g.</td><td rowspan="3" class="grouped last_right">56000 cm<sup>3</sup></td><td rowspan="3" class="gray_grouped rule"> max. 2000 g.: <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td rowspan="3" class="gray_grouped rule">  min. 2000 g:  <br/><span class="dashicons dashicons-yes-alt"></span><br/>  max. 20000 cm<sup>3</sup>:   <br/><span class="dashicons dashicons-dismiss"></span>
+		</td>
+		 <td rowspan="3" class="gray_grouped rule"> min. 2000 g: <br/><span class="dashicons dashicons-yes-alt"></span><br/> min. 20000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-yes-alt"></span></td><td rowspan="3" class="gray_grouped rule stop"> min. 40000 cm<sup>3</sup>: <br/><span class="dashicons dashicons-yes-alt"></span><br/></td>
+	</tr>
+	<tr><td>Housut</td></tr><tr><td>Takki</td></tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Toimituskulut:</th><td class="align_center off">(ei sovelleta)</td><td class="align_center off">(ei sovelleta)</td><td class="align_center off">15€</td>
+		<td class="align_center"><strong class="abort">[ABORT]</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Vaikka sääntö #3 on edelleen täytetty, sääntö #4 ottaa käyttöön erityistoiminnon <strong class="abort">Abort-toimitusmenetelmän</strong>, joka mitätöi kaikki muut säännöt. Tätä toimitustapaa <strong>ei tarjota asiakkaalle</strong>. </p>
+
+<h2>Toistaiseksi... helppoa?</h2>
+
+<p>Toivomme kyllä ... <strong>Wp-Centrics</strong> on työskennellyt kovasti kehittää yksinkertainen mutta tehokas työkalu ... Ehkä se ei vielä tunnu riittävältä ... lue seuraava osio valintamenetelmistä, niin näet sen koko potentiaalin: </p>
+
+<p class="fns_do_actions"><a href="sel_conditions.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="sel_conditions">Valintaehdot</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+html.wc-fish-and-ships-html {
+	
+	// WordPress stuff:
+	
+	padding-top: 0;
+	
+	body {
+		background: #fff;
+	}
+	
+	.notice, div.error, div.updated, .notice-success,
+	.woocommerce-store-alerts,
+	.nav-tab-wrapper,
+	#screen-meta-links {
+		display: none;
+	}
+	#adminmenumain,
+	.woocommerce-layout__header {
+		display: none;
+	}
+	#wpcontent, #wpfooter {
+		margin-left: 0;
+	}
+	#wpbody-content {
+		padding-bottom: 0;
+	}
+	.woocommerce-help-tip {
+		display: none !important;
+	}
+
+	// Fish and Ships stuff:
+	#wc-fns-freemium-panel,
+	#logs_wrapper {
+		display: none;
+	}
+	#wc-fns-table_envelope {
+		margin: 0;
+	}
+	#woocommerce_fish_n_ships_write_logs + .description {
+		display: none;
+	}
+	#wrapper-shipping-rules-table-fns {
+
+		// Hide buttons
+		.add-selector,
+		.fns-range-config-bt,
+		.add-action,
+		.fns_open_fields_popup,
+		a.delete {
+			display: none !important;
+		}
+		
+		.manage-column,
+		.check-column,
+		.column-handle,
+		tfoot {
+			display: none !important;
+		}
+		td.order-number {
+			color: #000 !important;
+		}
+	}
+	p.submit {
+		display: none;
+	}
+	
+	// help buttons
+	#woocommerce_fish_n_ships_special_rate + p {
+		display: none;
+	}
+
+	// 7 days text
+	#logs_wrapper + p {
+		display: none;
+	}
+	
+	// Selects
+	.dropdown-submenu-wrapper.dropdown-submenu-skin {
+		width: auto !important;
+	}
+	.dropdown-field-watch .dropdown-arrow {
+		display: none;
+	}
+	.dropdown-submenu-skin .dropdown-field-watch {
+		border: 0;
+		background: none;
+		width: auto;
+		display: inline-block;
+		padding: 0;
+	}
+	
+	// Selects 2
+	.css-conditions-table-fns .field-multiple,
+	.select2-container {
+		width: auto !important;
+	}
+	.select2-selection {
+		background: none;
+		border: 0;
+	}
+	.field-multiple {
+		display: inline !important;
+	}
+	.select2-search--inline {
+		display: none;
+	}
+	
+	// Price
+	.currency-fns-field input {
+		background: none;
+		border: 0;
+		padding: 0;
+		width: auto !important;
+	}
+	
+	// Bottom line + spacer
+	.css-conditions-table-fns .selection_wrapper:last-child, 
+	.css-conditions-table-fns .action_wrapper:last-child {
+		border: 0;
+		padding-bottom: 0;
+	}
+	
+	.action_wrapper {
+		width: 180px !important;
+	}
+	@media (max-width: 1000px) { // Vertical
+		.action_wrapper {
+			width: 130px !important;
+		}
+	}
+
+}

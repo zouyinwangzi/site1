@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Mètodes de selecció condicionals - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Mètodes de selecció condicionals</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Principal</a> <strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Condicions de selecció</a></strong> <a href="shipping_costs.html" data-fns-tip="shipping_costs">Despeses d'enviament</a> <a href="group_by.html" data-fns-tip="group_by">Agrupació per</a> <a href="special_actions.html" data-fns-tip="special_actions">Accions especials</a> <a href="other_fields.html" data-fns-tip="other_fields">Altres camps i registres</a> <a href="help.html" data-fns-tip="help">Ajuda i suport</a> <a href="pro.html" data-fns-tip="pro">gratuït vs PRO</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<div class="float_img">
+	<a href="../img/selection-options.png" target="_blank">
+		<img src="../img/selection-options.png" width="313" height="410" alt="Les condicions de selecció"/>
+	</a>
+</div>
+<h2>32 mètodes de selecció condicionals sobre les normes d'enviament</h2>
+<p>Les Advanced Shipping Rates for WooCommerce inclouen una àmplia gamma de <strong>mètodes de selecció</strong> , aquests són:</p>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Selectors basats en dades de producte</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Preu:</h3></td>
+		<td>
+			<p>Preu del producte. Si hi ha un preu de venda, s'utilitzarà. </p>
+			<p>Independentment de la configuració de WooCommerce "Preus introduïts amb impostos" (pot incloure impostos o no incloure impostos), els preus dels productes <strong>es prendran tal com s'han introduït</strong> a la pàgina d'edició.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title">
+			<h3>Pes:</h3>
+		</td>
+		<td>
+			<p>Si els productes no tenen pes establert, es prendrà 0.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Volum:</h3></td>
+		<td>
+			<p>El valor pres serà la multiplicació de <strong>Amplada x Alçada x Longitud</strong> . Si no s'ha definit la mida, es prendrà 0. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Volumètric&nbsp;<span class="fns-pro-icon darker">PRO</span> ,<br/> Conjunt volumètric&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+<p>Per als mètodes basats en <strong>el pes volumètric</strong> , es tindran en compte dos valors: el pes real i el pes volumètric, i s'utilitzarà el valor més alt. Quan seleccioneu el pes volumètric, <a href="#volumetric">apareix un camp nou</a> a sota de la taula de regles perquè pugueu introduir el <strong>factor de pes volumètric</strong> , haureu d'obtenir-lo a la vostra agència de transport. </p>
+		<p>NOTA: El conjunt volumètric tindrà en compte tots els productes de volum enfront de tots els productes de pes del grup, a diferència del volum volumètric, que compararà el pes amb el producte de volum per producte i SUMA el resultat després.</p>
+		 <p>Podeu llegir més sobre <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/" target="_blank">les taxes de pes volumètric</a> en aquesta publicació.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Dimensió mínima,<br/> Mitjana dimensió,<br/> Dimensió màxima:</h3></td>
+		<td>
+			<p>Cadascun d'ells tindrà en compte, respectivament, la <strong>petita, mitjana i gran dimensió</strong> dels productes. No importa si les mides s'han introduït de petit a gran, o de gran a petit, en un producte de: 10x15x1 o 15x1x10, la dimensió màxima sempre serà 15, la mitjana 10 i la mínima 1.  Aquest mètode pren sempre els productes un per un, independentment del mètode d'agrupació escollit. Si un producte no té la mida establerta, es prendrà el valor 0. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Longitud + Amplada + Altura&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>El valor agafat serà la suma de les dimensions. En un producte de: 10x15x1, serà: <strong>10+15+1 = 26</strong> .  Aquest mètode pren sempre els productes un per un, independentment del mètode d'agrupació escollit. Si un producte no té la mida establerta, es prendrà el valor 0. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Longitud + Circonferència&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>El valor obtingut serà el resultat de la fórmula: <strong>Longitud + 2 * Amplada + 2 * Alçada</strong> de les dimensions del producte. En un producte de: 10x15x1, serà: <strong>10+2x15+2x1 = 42</strong> .  Aquest mètode pren sempre els productes un per un, independentment del mètode d'agrupació escollit. Si un producte no té la mida establerta, es prendrà el valor 0. </p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Selectors basats en tipus de producte</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>En categoria,<br/> NO a la categoria&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+		<p>Podeu establir quins productes coincidiran amb la regla, en funció de la seva <strong>categoria de producte</strong> . Es prendrà la categoria, no <strong>els seus fills</strong> . Heu d'incloure també els nens si voleu que coincideixi.    <br/>Aquest mètode pren sempre els productes un per un, independentment del mètode d'agrupació escollit.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Etiquetat com a,<br/> NO etiquetat com&nbsp;<span class="fns-pro-icon darker">a PRO</span> :</h3></td>
+		<td>
+		<p>Podeu establir quins productes coincidiran amb la regla, en funció de les seves <strong>etiquetes de producte</strong> .<br/> Aquest mètode pren sempre els productes un per un, independentment del mètode d'agrupació escollit.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>En classe d'enviament,<br/> NO a la classe d'enviament:</h3></td>
+		<td>
+		<p>Podeu establir quins productes coincidiran amb la regla, en funció de la seva <strong>classe d'enviament</strong> .<br/> Aquest mètode pren sempre els productes un per un, independentment del mètode d'agrupació escollit.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Selectors avançats</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Articles del carretó:</h3></td>
+		<td>
+			<p>Es prendrà el <strong>nombre de productes</strong> al carretó, excepte si s'ha fet servir l'acció especial que exclou els productes de les regles següents, o aquesta opció dins de les Caixes d'Enviament: En aquest cas, la quantitat es reduirà.</p>
+			<p>Tingueu en compte que els criteris d'agrupació poden ser confús aquí! Per exemple: si s'estableix com a no grup, els productes es prendran un per un, de manera que la quantitat es converteix sempre en 1 per a la comparació. (veure <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">grup per</a> ).  </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Carret total&nbsp;<span class="fns-pro-icon darker">PRO</span><br/> (IVA inclòs/excl.):</h3></td>
+		<td>
+			<p><strong>El preu subtotal.</strong>  La diferència entre l'ús de Productes Price (amb una estratègia de grup) i aquest selector, és que aquí podem obtenir el preu subtotal després de l'aplicació dels cupons, hi ha: l'import real del carretó abans de les tarifes d'enviament.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Nombre de grups:</h3></td>
+		<td>
+			<p>El nombre de grups, en funció de l'estratègia grup per. Per exemple: si hi ha 10 productes al carretó de dues classes d'enviament diferents, si configureu l'agrupació per classe d'enviament, el valor serà 2. Si el configureu com a cap grup, el valor serà 10, i si ho establiu group-by a tots agrupats, el valor serà 1.  </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Rol d'usuari&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu definir quins rols d'usuari coincidiran amb aquesta regla (també usuaris no registrats).</p>
+			 <p>Podeu obtenir més informació sobre <a href="https://www.wp-centrics.com/shipping-rates-by-user-roles-in-woocommerce/" target="_blank">les tarifes d'enviament per rols d'usuari</a> en aquesta publicació.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Selectors de data i hora</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Dia de la setmana&nbsp;<span class="fns-pro-icon darker">PRO</span> ,<br/> Mes&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu seleccionar en quins dies de la setmana/mesos de l'any es complirà la regla.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Dia del mes&nbsp;<span class="fns-pro-icon darker">PRO</span><br/> (IVA inclòs/excl.):</h3></td>
+		<td>
+			<p>Podeu establir un/s dies del mes on es complirà la regla.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Any&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu establir un interval d'anys on es complirà la regla.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Data&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu establir un interval de dates on es complirà la regla.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Dia de l'any&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu establir un interval de dies on es complirà la regla. A diferència del selector de dates, aquest selector cobrirà un període anual. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Temps&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu establir un interval de temps on es complirà la regla.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Selectors d'adreces d'enviament</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>A les regions de la zona&nbsp;<span class="fns-pro-icon darker">PRO</span> ,<br/> NO a les regions de la zona&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu utilitzar-lo de la mateixa manera que les zones d'enviament de WooCommerce. Útil per evitar la creació de massa zones d'enviament. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>A ZIP/Codis Postals&nbsp;<span class="fns-pro-icon darker">PRO</span><br/> NO a ZIP/Codis Postals&nbsp;<span class="fns-pro-icon darker">PRO</span> :</h3></td>
+		<td>
+			<p>Podeu utilitzar-lo de la mateixa manera que ho fan les zones d'enviament de WooCommerce. Útil per establir normes per proximitat. </p>
+			<p>Podeu utilitzar comodins i rangs de la mateixa manera que ho fa WC. Podeu obtenir més informació sobre <a href="" target="">les tarifes per ZIP/codis postals</a> en aquesta publicació. </p>
+		</td>
+	</tr>
+</tbody></table>
+				
+				
+<h2>Major que / Major que o igual a & Menor que / Menor o igual a</h2>
+				
+<p>La majoria dels mètodes de selecció utilitzen camps de valor mínim i màxim.</p>
+
+<p>Per a tots aquests selectors, podeu triar com es compararan els valors MIN i MAX, canviant al símbol adequat a cada regla segons necessiteu.</p>
+
+<p>A la taula següent, s'estableix la comparació MIN com a <strong>MÉS O IGUAL A</strong> 5 € i la comparació MÀXIMA com a <strong>INFERIOR O IGUAL A</strong> 30 €</p>
+				
+<p><img src="../img/min-max-new-1-euros.png" width="700" height="101" alt="SUPERIOR O IGUAL A"/></p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		 <td class="rule"><span class="dashicons dashicons-dismiss"></span>4,99€</td> <td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span><strong>5,00€</strong></td> <td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span><strong>30,00€</strong></td> <td class="rule"><span class="dashicons dashicons-dismiss"></span>30,01 €</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>A la segona taula, s'estableix la comparació MÍNIMA com <strong>MÉS DE</strong> 30 € i la comparació MÀXIMA com a <strong>MENYS DE</strong> 100 €, hi ha: els valors iguals no coincidiran amb aquesta regla:</p>
+
+<p><img src="../img/min-max-new-2-euros.png" width="700" height="101" alt="MÉS GRAN QUE"/></p>
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		 <td class="rule"><span class="dashicons dashicons-dismiss"></span>30,00€</td> <td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span><strong>30,01 €</strong></td> <td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span><strong>99,99 €</strong></td> <td class="rule"><span class="dashicons dashicons-dismiss"></span>100,00€</td>
+	</tr>
+	</tbody>
+</table>				
+
+<p>Tingueu en compte que <strong>30,00 €</strong> coincideixen a la regla núm. 1 perquè la comparació del camp MAX és <strong>MENOR O IGUAL A</strong> , i no coincideix amb la regla núm. 2 perquè el MIN fa la comparació amb <strong>MÀXIM QUE</strong> .</p>
+
+<p>D'altra banda, <strong>100 €</strong> no coincideixen amb la regla núm. 2 perquè la comparació del camp MAX és <strong>MENYS QUE</strong> .</p>
+				
+<p>Podeu llegir més sobre <a href="https://www.wp-centrics.com/comparison-operators-on-shipping-rules/" target="_blank">els operadors de comparació</a> en aquesta publicació.</p>
+
+<h2 id="volumetric">Els càlculs volumètrics</h2>
+
+			<p class="img">
+			<a href="../img/volumetric-mks.png" target="_blank"><img src="../img/volumetric-mks.png" width="659" height="245" alt="Factor de pes volumètric"/></a></p>
+			<p>Com funciona? Posem per cas un factor de pes volumètric de 50 kg/metre <sup>3</sup> . El nostre exemple de botiga està configurat per funcionar amb centímetres i grams, convertit, és: 0,05 grams per centímetre cúbic, (aquí teniu <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/#volumetric-weight-conversor" target="_blank">un convertidor en línia d'unitats</a> de volum/pes):  </p>
+			
+			<table class="wp-list-table widefat striped tags" style="max-width:800px">
+				<thead>
+				<tr>
+					<th>Producte</th>
+					<th>Pes</th>
+					<th>Mida</th>
+					<th>Volum</th>
+					<th>Pes volumètric</th>
+					<th class="align_center">Valor pres</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Abric</td>
+					<td class="align_center">1500 g.</td>
+					<td>50x50x14 cm</td>
+					<td>35000 cm<sup>3</sup></td>
+					<td class="grouped last_right">35000 * 0,05 =<br/> <strong>1750 g.</strong></td>
+					<td class="align_center"><strong>1750 g.</strong></td>
+				</tr>
+				<tr>
+					<td>Portàtil</td>
+					<td class="grouped last_right"><strong>2500 g.</strong></td>
+					<td>40x46x18 cm</td>
+					<td>33120 cm<sup>3</sup></td>
+					<td class="align_center">33120 * 0,05 =<br/> 1656 g.</td>
+					<td class="align_center"><strong>2500 g.</strong></td>
+				</tr>
+				</tbody>
+			</table>
+			<p>En productes lleugers, el valor pres serà el pes volumètric calculat. En productes pesats, es prendrà el valor del pes. <strong>Sempre el valor més alt</strong> . </p>
+<h2>I... ara?</h2>
+<p>Acabem de veure els mètodes de selecció. Ara, en saber com funcionen els costos d'enviament, podem fer un ús bàsic de les Advanced Shipping Rates for WooCommerce: </p>
+<p class="fns_do_actions"><a href="shipping_costs.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="shipping_costs">Despeses d'enviament</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Méthodes de sélection conditionnelle - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Méthodes de sélection conditionnelle</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Principale</a><strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Conditions de sélection</a></strong><a href="shipping_costs.html" data-fns-tip="shipping_costs">Frais d'expédition</a><a href="group_by.html" data-fns-tip="group_by">Groupe par</a><a href="special_actions.html" data-fns-tip="special_actions">Actions spéciales</a><a href="other_fields.html" data-fns-tip="other_fields">Autres champs et journaux</a><a href="pro.html" data-fns-tip="pro">Gratuit vs PRO</a><a href="help.html" data-fns-tip="help">Aide et support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<div class="float_img">
+	<a href="../img/selection-options.png" target="_blank">
+		<img src="../img/selection-options.png" width="313" height="410" alt="Les conditions de sélection"/>
+	</a>
+</div>
+<h2>32 méthodes de sélection conditionnelle sur les règles d'expédition</h2>
+<p>Advanced Shipping Rates for WooCommerce est livré avec un large éventail de <strong>méthodes de sélection</strong>:</p>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Sélecteurs basés sur les données de produits</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Le prix :</h3></td>
+		<td>
+			<p>Prix du produit. S'il existe un prix de vente, il sera utilisé. </p>
+			<p>Indépendamment du paramètre WooCommerce "Prix saisis avec taxe" (peut être taxe incluse ou taxe exclue), les prix des produits <strong>seront pris tels qu'ils ont été saisis</strong> dans la page d'édition.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title">
+			<h3>Poids :</h3>
+		</td>
+		<td>
+			<p>Si les produits n'ont pas été pesés, 0 sera pris.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Volume :</h3></td>
+		<td>
+			<p>La valeur prise sera la multiplication de la <strong>largeur x la hauteur x la longueur</strong>. Si la taille n'a pas été définie, la valeur retenue est 0. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Volumetric&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br/>Ensemble volumétrique&nbsp;<span class="fns-pro-icon darker">PRO :</span></h3></td>
+		<td>
+<p>Pour les méthodes basées sur le <strong>poids volumétrique</strong>, deux valeurs sont prises en compte : le poids réel et le poids volumétrique, et la valeur la plus élevée est retenue. Lorsque vous sélectionnez le poids volumétrique, un <a href="#volumetric">nouveau champ apparaît</a> sous le tableau des règles afin que vous puissiez saisir le <strong>facteur de poids volumétrique</strong>, que vous devez obtenir auprès de votre agence de transport. </p>
+		<p>NOTE : L'ensemble volumétrique considérera tous les produits en volume par rapport à tous les produits en poids du groupe, contrairement à l'ensemble volumétrique qui comparera les produits en poids par rapport aux produits en volume pour chaque produit et fera la SOMME du résultat.</p>
+		 <p>Vous pouvez en savoir plus sur les <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/" target="_blank">taux de poids volumétriques</a> dans cet article.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Dimension minimale, <br/>Dimension moyenne, <br/>Dimension maximale :</h3></td>
+		<td>
+			<p>Chacun d'entre eux prendra en compte, respectivement, la <strong>petite, la moyenne et la grande dimension</strong> des produits. Peu importe que les dimensions aient été introduites de petit à grand, ou de grand à petit, dans un produit de : 10x15x1 ou 15x1x10, la dimension maximale sera toujours de 15, la moyenne de 10 et la minimale de 1.  Cette méthode prend toujours les produits un par un, quelle que soit la méthode de regroupement choisie. Si un produit n'a pas de taille définie, la valeur 0 sera prise. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Longueur+largeur+hauteur&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>La valeur retenue sera la somme des dimensions. Dans un produit de : 10x15x1, ce sera : <strong>10+15+1 = 26</strong>.  Cette méthode prend toujours les produits un par un, quelle que soit la méthode de regroupement choisie. Si un produit n'a pas de taille définie, la valeur 0 sera prise. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Longueur+taille&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>La valeur prise sera le résultat de la formule : <strong>Longueur + 2 * Largeur + 2 * Hauteur</strong> des dimensions du produit. Dans un produit de : 10x15x1, ce sera : <strong>10+2x15+2x1 = 42</strong>.  Cette méthode prend toujours les produits un par un, quelle que soit la méthode de regroupement choisie. Si un produit n'a pas de taille définie, la valeur 0 sera prise. </p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Sélecteurs basés sur le type de produit</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Dans la catégorie,<br/> PAS dans la catégorie&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+		<p>Vous pouvez définir les produits qui répondront à la règle, en fonction de sa <strong>catégorie de produits</strong>. La catégorie est prise en compte, mais pas <strong>les enfants</strong>. Vous devez également inclure les enfants si vous voulez que la règle s'applique.    <br/>Cette méthode prend toujours les produits un par un, quelle que soit la méthode de regroupement choisie.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Étiqueté comme, <br/> NON Étiqueté comme&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+		<p>Vous pouvez définir les produits qui correspondront à la règle, en fonction de leur <strong>(s) étiquette(s) de produit</strong>. <br/>Cette méthode prend toujours les produits un par un, quelle que soit la méthode de regroupement choisie.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>En classe d'expédition, <br/> PAS En classe d'expédition :</h3></td>
+		<td>
+		<p>Vous pouvez définir les produits qui répondront à la règle, en fonction de leur <strong>classe d'expédition</strong>. <br/>Cette méthode prend toujours les produits un par un, quelle que soit la méthode de regroupement choisie.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Sélecteurs avancés</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Articles du panier :</h3></td>
+		<td>
+			<p>Le <strong>nombre de produits</strong> dans le panier sera pris en compte, sauf si vous avez utilisé l'action spéciale qui exclut les produits des règles suivantes, ou cette option dans les boîtes d'expédition : Dans ce cas, la quantité sera diminuée.</p>
+			<p>Notez que le critère "group-by" peut prêter à confusion ! Par exemple : si vous choisissez de ne pas grouper, les produits seront pris un par un, de sorte que la quantité sera toujours égale à 1 pour la comparaison. (voir <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a>).  </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Total du panier&nbsp;<span class="fns-pro-icon darker">PRO</span><br/>(taxes incluses/excl.) :</h3></td>
+		<td>
+			<p><strong>Le prix total partiel.</strong>  La différence entre l'utilisation de Products Price (avec une stratégie gruped-all) et ce sélecteur, c'est qu'ici nous pouvons obtenir le prix total après l'application des coupons, c'est-à-dire le montant réel du panier avant les frais d'expédition.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Nombre de groupes :</h3></td>
+		<td>
+			<p>Le nombre de groupes, en fonction de la stratégie group-by. Par exemple : s'il y a 10 produits dans le panier de deux classes d'expédition distinctes, si vous définissez la stratégie group-by par classe d'expédition, la valeur sera de 2. Si vous ne définissez aucun groupe, la valeur sera de 10, et si vous définissez la stratégie group-by sur tous les produits regroupés, la valeur sera de 1.  </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Rôle de l'utilisateur&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Vous pouvez définir quels rôles d'utilisateur correspondront à cette règle (y compris les utilisateurs non connectés).</p>
+			 <p>Pour en savoir plus sur les <a href="https://www.wp-centrics.com/shipping-rates-by-user-roles-in-woocommerce/" target="_blank">tarifs d'expédition en fonction du rôle de l'utilisateur</a>, consultez cet article.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Sélecteurs de date et d'heure</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Jour de la semaine&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br/>Mois&nbsp;<span class="fns-pro-icon darker">PRO :</span></h3></td>
+		<td>
+			<p>Vous pouvez sélectionner les jours de la semaine/mois de l'année où la règle s'appliquera.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Jour du mois&nbsp;<span class="fns-pro-icon darker">PRO</span><br/>(taxe incluse/excl.) :</h3></td>
+		<td>
+			<p>Vous pouvez définir un/des jour(s) du mois où la règle s'appliquera.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Année&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Vous pouvez définir une fourchette d'années où la règle s'appliquera.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Date&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Vous pouvez définir une fourchette de dates à laquelle la règle s'appliquera.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Jour de l'année&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Vous pouvez définir une plage de jours où la règle s'appliquera. Contrairement au sélecteur de date, ce sélecteur couvre une période annuelle. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Temps&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Vous pouvez définir une plage horaire où la règle s'appliquera.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Sélecteurs d'adresse de livraison</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Dans les régions de la zone&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br/>NOT Dans les régions de la zone&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Vous pouvez l'utiliser de la même manière que les zones d'expédition de WooCommerce. Utile pour éviter la création d'un trop grand nombre de zones d'expédition. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Dans ZIP/Postcodes&nbsp;<span class="fns-pro-icon darker">PRO</span><br/>NOT Dans ZIP/Postcodes&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Vous pouvez l'utiliser de la même manière que les zones d'expédition de WooCommerce. Utile pour établir des règles de proximité. </p>
+			<p>Vous pouvez utiliser des caractères génériques et des intervalles de la même manière que WC. Vous pouvez en savoir plus sur les <a href="" target="">tarifs par code postal</a> dans cet article. </p>
+		</td>
+	</tr>
+</tbody></table>
+				
+				
+<h2>Supérieur à / Supérieur ou égal à & Inférieur à / Inférieur ou égal à</h2>
+				
+<p>La plupart des méthodes de sélection utilisent des champs de valeurs minimales et maximales.</p>
+
+<p>Pour tous ces sélecteurs, vous pouvez choisir la manière dont les valeurs MIN et MAX seront comparées, en passant au symbole approprié pour chaque règle, selon vos besoins.</p>
+
+<p>Dans le tableau suivant, nous avons fixé la comparaison MIN comme étant <strong>SUPERIEURE OU ÉGALE</strong> À 5€, et la comparaison MAX comme étant <strong>INFÉRIEURE OU ÉGALE</strong> À 30€.</p>
+				
+<p><img src="../img/min-max-new-1-euros.png" width="700" height="101" alt="SUPÉRIEUR OU ÉGAL À"/></p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		 <td class="rule"><span class="dashicons dashicons-dismiss"></span> 4.99€</td><td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span> <strong>5.00€</strong></td><td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span> <strong>30.00€</strong></td><td class="rule"><span class="dashicons dashicons-dismiss"></span> 30.01€</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>Dans le deuxième tableau, nous avons fixé la comparaison MIN à <strong>PLUS DE</strong> 30€, et la comparaison MAX à <strong>MOINS DE</strong> 100€, il y a : les valeurs égales ne correspondront pas à cette règle :</p>
+
+<p><img src="../img/min-max-new-2-euros.png" width="700" height="101" alt="PLUS GRAND QUE"/></p>
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		 <td class="rule"><span class="dashicons dashicons-dismiss"></span> 30.00€</td><td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span> <strong>30.01€</strong></td><td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span> <strong>99.99€</strong></td><td class="rule"><span class="dashicons dashicons-dismiss"></span> 100.00€</td>
+	</tr>
+	</tbody>
+</table>				
+
+<p>Notez que <strong>30.00€</strong> correspond à la règle n°1 parce que la comparaison du champ MAX est <strong>LESS THAN OR EQUAL TO</strong>, et ne correspond pas à la règle n°2 parce que le champ MIN fait la comparaison avec <strong>GREATER THAN</strong>.</p>
+
+<p>D'autre part, <strong>100€</strong> ne correspond pas à la règle n°2 car le champ de comparaison MAX est <strong>MOINS QUE.</strong></p>
+				
+<p>Vous trouverez plus d'informations sur les <a href="https://www.wp-centrics.com/comparison-operators-on-shipping-rules/" target="_blank">opérateurs de comparaison</a> dans cet article.</p>
+
+<h2 id="volumetric">Les calculs volumétriques</h2>
+
+			<p class="img">
+			<a href="../img/volumetric-mks.png" target="_blank"><img src="../img/volumetric-mks.png" width="659" height="245" alt="Facteur de poids volumétrique"/></a></p>
+			<p>Comment cela fonctionne-t-il ? Supposons un facteur de poids volumétrique de 50 <sup>kg/mètre3</sup>. Notre exemple de magasin est configuré pour travailler avec des centimètres et des grammes, convertis, est : 0,05 grammes par centimètre cube, (ici vous avez <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/#volumetric-weight-conversor" target="_blank">un convertisseur en ligne unités</a> pour le volume/poids) :  </p>
+			
+			<table class="wp-list-table widefat striped tags" style="max-width:800px">
+				<thead>
+				<tr>
+					<th>Produit</th>
+					<th>Poids</th>
+					<th>Taille</th>
+					<th>Volume</th>
+					<th>Poids volumétrique</th>
+					<th class="align_center">Valeur prise</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Manteau</td>
+					<td class="align_center">1500 g.</td>
+					<td>50x50x14 cm</td>
+					<td>35000 cm<sup>3</sup></td>
+					<td class="grouped last_right">35000 * 0,05 = <br/><strong>1750 g.</strong></td>
+					<td class="align_center"><strong>1750 g.</strong></td>
+				</tr>
+				<tr>
+					<td>Ordinateur portable</td>
+					<td class="grouped last_right"><strong>2500 g.</strong></td>
+					<td>40x46x18 cm</td>
+					<td>33120 cm<sup>3</sup></td>
+					<td class="align_center">33120 * 0,05 = <br/>1656 g.</td>
+					<td class="align_center"><strong>2500 g.</strong></td>
+				</tr>
+				</tbody>
+			</table>
+			<p>Pour les produits légers, la valeur prise en compte sera le poids volumétrique calculé. Pour les produits lourds, c'est la valeur du poids qui est prise en compte. Il <strong>s'agit toujours de la valeur la plus élevée</strong>. </p>
+<h2>Et ... maintenant ?</h2>
+<p>Nous venons de voir les méthodes de sélection. Maintenant, en apprenant comment les frais d'expédition fonctionnent, nous pouvons faire une utilisation de base des Advanced Shipping Rates for WooCommerce : </p>
+<p class="fns_do_actions"><a href="shipping_costs.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="shipping_costs">Frais d'expédition</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

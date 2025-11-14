@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<title>Cálculo dos custos de envio - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Cálculo dos custos de envio</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Principal</a><a href="sel_conditions.html" data-fns-tip="sel_conditions">Condições de seleção</a><strong><a href="shipping_costs.html" data-fns-tip="shipping_costs">Custos de envio</a></strong><a href="group_by.html" data-fns-tip="group_by">Agrupa por</a><a href="special_actions.html" data-fns-tip="special_actions">Acções especiais</a><a href="other_fields.html" data-fns-tip="other_fields">Outros campos e registos</a><a href="pro.html" data-fns-tip="pro">Gratuito vs PRO</a><a href="help.html" data-fns-tip="help">Ajuda e suporte</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Cálculo básico / por intervalos</h2>
+
+<p>Os custos de envio serão aplicados <strong>a cada regra que corresponda aos</strong> critérios de seleção.</p>
+
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>(uma vez):</h3></td>
+		<td>
+<p>O custo será aplicado <strong>uma vez</strong>, independentemente do número de produtos que correspondam à regra.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [qty]:</h3></td>
+		<td>
+<p>O custo calculado será o resultado da multiplicação da <strong>quantidade de produtos</strong> que correspondem aos critérios de seleção pelo valor introduzido.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* peso:</h3></td>
+		<td>
+<p>O custo calculado será o resultado da multiplicação do <strong>peso dos produtos</strong> que correspondem aos critérios de seleção pelo valor introduzido.</p>
+<p>Atenção: se precisares de utilizar pesos arredondados para o cálculo, tens de utilizar intervalos (ver abaixo).</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [group]:</h3></td>
+		<td>
+<p>O custo calculado será o resultado da multiplicação do número de grupos correspondentes (ver a secção de ajuda <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> ) pelo valor introduzido.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>% (percentagem):</h3></td>
+		<td>
+<p>A percentagem será calculada com base no preço do produto. Se existir um preço de venda, este será utilizado. </p>
+<p>Independentemente da definição "Preços introduzidos com imposto" do WooCommerce (pode ser imposto incluído ou imposto excluído), os preços dos produtos <strong>serão considerados como introduzidos</strong> na página de edição.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Composto:</h3></td>
+		<td>
+<p>Podemos definir os <strong>cinco cálculos anteriores de uma só vez</strong>: uma vez, * quantidade, * peso, * grupo e %. Os que estão definidos com o valor 0 não influenciam o cálculo. </p>
+<p class="img"><a href="../img/simple-composite-costs-5.png" target="_blank"><img src="../img/simple-composite-costs-5.png" width="615" height="225" alt="Custos de envio simples ou compostos"/></a></p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Gamas&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+<p>Com esta funcionalidade avançada, podes definir preços com base no peso, volume, volumetria, quantidade ou dimensões, definindo facilmente intervalos de preços, parte fixa e muito mais. Inclui uma pré-visualização interactiva. </p>
+		 <p>Podes ler mais sobre este assunto nesta publicação: <a href="https://www.wp-centrics.com/shipping-rates-by-weight-chart-in-woocommerce/" target="_blank">Tabela de taxas de envio por peso: Torna os intervalos de peso mais fáceis</a></p>
+<p class="img"><a href="img/range-settings.png" target="_blank"><img src="../img/range-settings.png" width="700" height="435" alt="Definições de alcance"/></a></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Tem atenção à definição de grupo por:</strong><br/> Tem em atenção que a definição de grupo por (global ou em cada regra) actuará apenas para as condições de seleção (regras do lado esquerdo), não para o cálculo do custo de envio, exceto para o <strong>* [group]</strong>, claro. (vê a secção de ajuda <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">do group-by</a> ). </p>
+<p>Não deve ser confundido com a configuração de grupo por <strong>dentro da caixa de diálogo Configurações de intervalo</strong>: Isto terá o efeito esperado no cálculo do preço por intervalos.</p>
+</div>
+
+
+<h2>Mais!</h2>
+<p>Os diferentes critérios de agrupamento dar-te-ão a flexibilidade necessária para cobrir qualquer possibilidade:</p>
+<p class="fns_do_actions"><a href="group_by.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="group_by">Agrupar por</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

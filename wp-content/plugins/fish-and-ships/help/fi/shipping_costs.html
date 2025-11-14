@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Toimituskulujen laskeminen - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Toimituskulujen laskeminen</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Main</a><a href="sel_conditions.html" data-fns-tip="sel_conditions">Valintaehdot</a><strong><a href="shipping_costs.html" data-fns-tip="shipping_costs">Toimituskustannukset</a></strong><a href="group_by.html" data-fns-tip="group_by">Group-by</a><a href="special_actions.html" data-fns-tip="special_actions">Erityistoiminnot</a><a href="other_fields.html" data-fns-tip="other_fields">Muut kentät ja lokit</a><a href="pro.html" data-fns-tip="pro">Ilmainen vs PRO</a><a href="help.html" data-fns-tip="help">Apua ja tukea</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Basic / Per vaihteluväli laskenta</h2>
+
+<p>Toimituskulut sovelletaan <strong>jokaiseen sääntöön, joka vastaa</strong> valintaperusteita.</p>
+
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>(kerran):</h3></td>
+		<td>
+<p>Kustannusta sovelletaan <strong>kerran</strong>, riippumatta siitä, kuinka monta tuotetta vastaa sääntöä.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [qty]:</h3></td>
+		<td>
+<p>Lasketut kustannukset saadaan kertomalla valintaperusteita vastaavien <strong>tuotteiden määrä</strong> syötetyllä arvolla.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* paino:</h3></td>
+		<td>
+<p>Lasketut kustannukset saadaan kertomalla valintaperusteita vastaavien <strong>tuotteiden paino</strong> syötetyllä arvolla.</p>
+<p>Huomaa: jos tarvitset pyöristettyä painoa laskennassa, sinun on käytettävä vaihteluvälejä (katso alla).</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [group]:</h3></td>
+		<td>
+<p>Lasketut kustannukset saadaan kertomalla vastaavien ryhmien määrä (katso ohjeen kohta <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> ) syötetyllä arvolla.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>% (prosenttiosuus):</h3></td>
+		<td>
+<p>Prosenttiosuus lasketaan tuotteen hinnan perusteella. Jos tuotteessa on myyntihinta, sitä käytetään sen sijaan. </p>
+<p>Riippumatta WooCommerce-asetuksesta "Hinnat syötetty verolla" (voi olla vero mukana tai ilman veroa), hintatuotteet <strong>otetaan sellaisina kuin ne on syötetty</strong> painosivulle.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Komposiitti:</h3></td>
+		<td>
+<p>Voimme asettaa <strong>viisi edellistä laskutoimitusta kerralla</strong>: kerran, * määrä, * paino, * ryhmä ja %. Ne, joiden arvoksi on asetettu 0, eivät vaikuta laskentaan. </p>
+<p class="img"><a href="../img/simple-composite-costs-5.png" target="_blank"><img src="../img/simple-composite-costs-5.png" width="615" height="225" alt="Yksinkertaiset tai yhdistetyt toimituskustannukset"/></a></p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Alueet&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+<p>Tämän kehittyneen ominaisuuden avulla voit asettaa hinnat painon, tilavuuden, tilavuusmitan, määrän tai mittojen perusteella, asettaa helposti hinta-alueet, kiinteän osan ja paljon muuta. Siinä on interaktiivinen esikatselu. </p>
+		 <p>Voit lukea lisää tästä postauksesta: <a href="https://www.wp-centrics.com/shipping-rates-by-weight-chart-in-woocommerce/" target="_blank">Painon mukaan määräytyvät kuljetusmaksut: Painoluokat helposti</a></p>
+<p class="img"><a href="img/range-settings.png" target="_blank"><img src="../img/range-settings.png" width="700" height="435" alt="Alueen asetukset"/></a></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Ole tietoinen group-by-asetuksista:</strong><br/> Muista, että group-by-asetus (globaali tai jokaisessa säännössä) vaikuttaa vain valintaehtoihin (vasemmanpuoleiset säännöt), ei toimituskulujen laskentaan, paitsi tietysti <strong>* [group] -</strong>asetuksessa. (katso <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by-ohje</a> ). </p>
+<p>Ei pidä sekoittaa <strong>Alueasetukset-valintaikkunan</strong> Group-by-asetukseen: Tällä on odotettu vaikutus hintalaskentaan alueittain.</p>
+</div>
+
+
+<h2>Lisää!</h2>
+<p>Erilaiset ryhmittelyperusteet antavat sinulle tarvittavaa joustavuutta, jotta voit kattaa kaikki mahdollisuudet:</p>
+<p class="fns_do_actions"><a href="group_by.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="group_by">Group-by</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

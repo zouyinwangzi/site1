@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Conditional selection methods - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+	<h1>Conditional selection methods</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Main</a>
+					<strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Selection conditions</a></strong>
+					<a href="shipping_costs.html" data-fns-tip="shipping_costs">Shipping costs</a>
+					<a href="group_by.html" data-fns-tip="group_by">Group-by</a>
+					<a href="special_actions.html" data-fns-tip="special_actions">Special Actions</a>
+					<a href="other_fields.html" data-fns-tip="other_fields">Other fields & logs</a>
+					<a href="pro.html" data-fns-tip="pro">Free vs PRO</a>
+					<a href="help.html" data-fns-tip="help">Help and Support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<div class="float_img">
+	<a href="img/selection-options.png" target="_blank">
+		<img src="img/selection-options.jpg" width="313" height="410" alt="The selection conditions" />
+	</a>
+</div>
+<h2>32 conditional selection methods on shipping rules</h2>
+<p>Advanced Shipping Rates for WooCommerce comes with a large range of <strong>selection methods</strong>, these are:</p>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Product-data based selectors</th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Price:</h3></td>
+		<td>
+			<p>Price of the product. If there is a sale price, it will be used.</p>
+			<p>Regardless of the "Prices entered with tax" WooCommerce setting (can be tax included or tax excluded), price products <strong>will be taken as entered</strong> in the edition page.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title">
+			<h3>Weight:</h3>
+		</td>
+		<td>
+			<p>If the products haven't weight set, 0 will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Volume:</h3></td>
+		<td>
+			<p>The taken value will be the multiplication of <strong>Width x Height x Length</strong>. If size has not been seet, 0 will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Volumetric&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br>Volumetric set&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+<p>For the <strong>volumetric weight</strong> based methods, two values will be considered: real weight and volumetric weight, and the highest value will be used. When selecting volumetric weight, a <a href="#volumetric">new field appears</a> below the rules table so that you can enter the <strong>volumetric weight factor</strong>, you should get it from your transport agency.</p>
+		<p>NOTE: Volumetric set will considere all volume products vs all weight products of the group, unlike volumetric, that will compare weight vs volume product per product and SUM the result after that.</p>
+		 <p>You can read more about <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/" target="_blank">Volumetric weight rates</a> in this post.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Min dimension, <br />Mid dimension, <br />Max dimension:</h3></td>
+		<td>
+			<p>Each of them will consider, respectively, the <strong>small, middle and large dimension</strong> of the products. It does not matter if the sizes have been entered from small to large, or from large to small, in a product of: 10x15x1 or 15x1x10, the max dimension will always be 15, the mid 10, and the min 1. This method always take the products one by one, regardless of the grouping method chosen. If a product have not size set, the value 0 will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Length+Width +Height&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>The value taken will be the sum of the dimensions. In a product of: 10x15x1, it will be: <strong>10+15+1 = 26</strong>. This method always take the products one by one, regardless of the grouping method chosen. If a product have not size set, the value 0 will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Length+Girth&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>The value taken will be the formula result: <strong>Length + 2 * Width + 2 * Height</strong> of product dimensions. In a product of: 10x15x1, it will be: <strong>10+2x15+2x1 = 42</strong>. This method always take the products one by one, regardless of the grouping method chosen. If a product have not size set, the value 0 will be taken.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Product-kind based selectors</th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>In Category,<br /> NOT In Category&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+		<p>You can set which products will match the rule, based on his <strong>product category</strong>. Category will be taken, not <strong>his childs</strong>. You should include also the childs if you want it matches. <br />This method always take the products one by one, regardless of the grouping method chosen.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Tagged as, <br /> NOT Tagged as&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+		<p>You can set which products will match the rule, based on his <strong>product tag/s</strong>. <br />This method always take the products one by one, regardless of the grouping method chosen.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>In shipping class, <br /> NOT In shipping class:</h3></td>
+		<td>
+		<p>You can set which products will match the rule, based on his <strong>shipping class</strong>. <br />This method always take the products one by one, regardless of the grouping method chosen.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Advanced selectors</th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Cart items:</h3></td>
+		<td>
+			<p>The <strong>number of products</strong> in cart will be taken, except if you have used the special action that excludes products from the following rules, or this option within Shipping Boxes: In this case, the quantity will be decreased.</p>
+			<p>Note that the group-by criteria can be confusing here! For example: if you set to non-group then products will be taken one by one, so quantity becomes always&nbsp;1 for comparison. (see <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a>).</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Cart total&nbsp;<span class="fns-pro-icon darker">PRO</span><br>(tax incl./excl.):</h3></td>
+		<td>
+			<p><strong>The subtotal price.</strong> The difference between using Products Price (with a gruped-all strategy) and this selector, is here we can get the subtotal price after coupons application, there is: the real amount of the cart before shipping rates.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Number of groups:</h3></td>
+		<td>
+			<p>The number of groups, depending on the group-by strategy. For example: if there is 10 products in cart of two distinct shipping classes, if you set the group-by per shipping class the value will be 2. If you set it to no group, the value will be 10, and if you set group-by to all grouped together, the value will be 1.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>User role&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can set which user roles will match this rule (also non-logged users).</p>
+			 <p>You can read more about <a href="https://www.wp-centrics.com/shipping-rates-by-user-roles-in-woocommerce/" target="_blank">Shipping rates by user roles</a> in this post.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Date &amp; Time selectors</th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Day of the week&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br>Month&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can select in which days of the week / months of the year the rule will meet.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Day of the month&nbsp;<span class="fns-pro-icon darker">PRO</span><br>(tax incl./excl.):</h3></td>
+		<td>
+			<p>You can set a day/s of the month range where the rule will meet.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Year&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can set a years range where the rule will meet.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Date&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can set a dates range where the rule will meet.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Day of the year&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can set a day range where the rule will meet. Unlike the Date selector, this selector will cover a yearly period.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Time&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can set a time range where the rule will meet.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Shipping address selectors</th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>In zone regions&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br>NOT In zone regions&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can use it in the same way as WooCommerce shipping zones. Useful to avoid the creation of too many shipping zones.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>In ZIP/Postcodes&nbsp;<span class="fns-pro-icon darker">PRO</span><br>NOT In ZIP/Postcodes&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>You can use it in the same way as WooCommerce shipping zones does. Useful for establishing rules by proximity.</p>
+			<p>You can use wildcards and ranges in the same way as WC does. You can read more about <a href="https://www.wp-centrics.com/shipping-rates-by-zip-postcode-on-woocommerce/" target="_blank">rates by ZIP/Postcodes</a> in this post.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+
+<h2>Greater than / Greater than or equal to &amp; Less than / Less than or equal to</h2>
+				
+<p>Most selector methods uses fields of minimum and maximum value.</p>
+
+<p>For all this selectors, you can choose how the MIN and MAX values will be compared, switching to the appropiate symbol on every rule as you need.</p>
+
+<p>In the following table, we are set MIN comparison as <strong>GREATER THAN OR EQUAL TO</strong> $5, and MAX comparison as <strong>LESS THAN OR EQUAL TO</strong> $30</p>
+				
+<p><img src="img/min-max-new-1.png" width="700" height="101" alt="GREATER THAN OR EQUAL TO" /></p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		<td class="rule"><span class="dashicons dashicons-dismiss"></span> $4.99</td>
+		<td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span> <strong>$5.00</strong></td>
+		<td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span> <strong>$30.00</strong></td>
+		<td class="rule"><span class="dashicons dashicons-dismiss"></span> $30.01</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>In the second table, we are set MIN comparison as <strong>GREATER THAN</strong> $30, and MAX comparison as <strong>LESS THAN</strong> $100, there is: the equal values will not match this rule:</p>
+
+<p><img src="img/min-max-new-2.png" width="700" height="101" alt="GREATER THAN" /></p>
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		<td class="rule"><span class="dashicons dashicons-dismiss"></span> $30.00</td>
+		<td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span> <strong>$30.01</strong></td>
+		<td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span> <strong>$99.99</strong></td>
+		<td class="rule"><span class="dashicons dashicons-dismiss"></span> $100.00</td>
+	</tr>
+	</tbody>
+</table>				
+
+<p>Note that <strong>$30.00</strong> match on rule #1 because the MAX field comparison is <strong>LESS THAN OR EQUAL TO</strong>, and not match rule #2 because the MIN does the comparison with <strong>GREATER THAN</strong>.</p>
+
+<p>On the other side, <strong>$100</strong> not match rule #2 because the MAX field comparison is <strong>LESS THAN</strong>.</p>
+
+<p>You can read more about <a href="https://www.wp-centrics.com/comparison-operators-on-shipping-rules/" target="_blank">comparison operators</a> in this post.</p>
+				
+<h2 id="volumetric">The volumetric calculations</h2>
+
+			<p class="img">
+			<a href="img/volumetric.png" target="_blank"><img src="img/volumetric.png" width="659" height="245" alt="Volumetric weight factor" /></a></p>
+			<p>How it works? Let's say a volumetric weight factor of 3.5 lb/ft<sup>3</sup>. Our shop example is configured to work with pounds and inches, converted, is: 0.002 pounds per cubic inch, (here you have <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/#volumetric-weight-conversor" target="_blank">volumetric weight conversor units</a> for volume/weight):</p>
+			
+			<table class="wp-list-table widefat striped tags" style="max-width:800px">
+				<thead>
+				<tr>
+					<th>Product</th>
+					<th>Weight</th>
+					<th>Size</th>
+					<th>Volume</th>
+					<th>Volumetric weight</th>
+					<th class="align_center">Taken value</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Coat</td>
+					<td class="align_center">3 lbs</td>
+					<td>20x20x5 in</td>
+					<td>2000 in<sup>3</sup></td>
+					<td class="grouped last_right">2000 * 0.002 = <br /><strong>4 lbs</strong></td>
+					<td class="align_center"><strong>4 lbs</strong></td>
+				</tr>
+				<tr>
+					<td>Laptop</td>
+					<td class="grouped last_right"><strong>5 lbs</strong></td>
+					<td>16x18x5 in</td>
+					<td>1440 in<sup>3</sup></td>
+					<td class="align_center">1440 * 0.002 = <br />2.88 lbs</td>
+					<td class="align_center"><strong>5 lbs</strong></td>
+				</tr>
+				</tbody>
+			</table>
+			<p>On lightweight products, the taken value will be the calculated volumetric weight. In heavy products, the weight value will be taken. <strong>Always the highest value</strong>.</p>
+<h2>And ... now?</h2>
+<p>We just saw the selection methods. Now, by learning how shipping costs work, we can make a basic use of Advanced Shipping Rates for WooCommerce:</p>
+<p class="fns_do_actions"><a href="shipping_costs.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="shipping_costs">Shipping costs</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

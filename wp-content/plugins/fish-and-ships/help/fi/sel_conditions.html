@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Ehdolliset valintamenetelmät - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Ehdolliset valintamenetelmät</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Main</a><strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Valintaehdot</a></strong><a href="shipping_costs.html" data-fns-tip="shipping_costs">Toimituskustannukset</a><a href="group_by.html" data-fns-tip="group_by">Group-by</a><a href="special_actions.html" data-fns-tip="special_actions">Erityistoiminnot</a><a href="other_fields.html" data-fns-tip="other_fields">Muut kentät ja lokit</a><a href="pro.html" data-fns-tip="pro">Ilmainen vs PRO</a><a href="help.html" data-fns-tip="help">Apua ja tukea</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<div class="float_img">
+	<a href="../img/selection-options.png" target="_blank">
+		<img src="../img/selection-options.png" width="313" height="410" alt="Valintaehdot"/>
+	</a>
+</div>
+<h2>32 ehdolliset valintamenetelmät toimitussääntöjä varten</h2>
+<p>Advanced Shipping Rates for WooCommerce sisältää laajan valikoiman <strong>valintamenetelmiä</strong>, nämä ovat:</p>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Tuotetietoihin perustuvat valitsimet</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Hinta:</h3></td>
+		<td>
+			<p>Tuotteen hinta. Jos on olemassa myyntihinta, sitä käytetään. </p>
+			<p>Riippumatta WooCommerce-asetuksesta "Hinnat syötetty verolla" (voi olla vero mukana tai ilman veroa), hintatuotteet <strong>otetaan sellaisina kuin ne on syötetty</strong> painosivulle.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title">
+			<h3>Paino:</h3>
+		</td>
+		<td>
+			<p>Jos tuotteille ei ole asetettu painoa, otetaan 0.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Tilavuus:</h3></td>
+		<td>
+			<p>Otettu arvo on <strong>Leveys x Korkeus x Pituus</strong>-kertoimen kerrottuna. Jos kokoa ei ole määritetty, arvoksi otetaan 0. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Volumetric&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br/>Volumetric set&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+<p><strong>Tilavuuspainoon</strong> perustuvissa menetelmissä tarkastellaan kahta arvoa: todellista painoa ja tilavuuspainoa, ja käytetään suurinta arvoa. Kun valitset tilavuuspainon, sääntötaulukon alapuolelle <a href="#volumetric">ilmestyy uusi kenttä</a>, johon voit syöttää <strong>tilavuuspainokertoimen</strong>, joka sinun on saatava kuljetuslaitokseltasi. </p>
+		<p>HUOMAUTUS: Volumetrinen sarja ottaa huomioon kaikki tilavuustuotteet verrattuna kaikkiin ryhmän painotuotteisiin, toisin kuin volumetrinen, joka vertaa painoa ja tilavuustuotetta tuotteittain ja summaa tuloksen sen jälkeen.</p>
+		 <p>Voit lukea lisää <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/" target="_blank">tilavuuspainoista</a> tästä viestistä.</p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Min-mitta, <br/>Mid-mitta, <br/>Max-mitta:</h3></td>
+		<td>
+			<p>Kukin niistä ottaa huomioon tuotteiden <strong>pienen, keskisuuren ja suuren ulottuvuuden</strong>. Ei ole väliä, onko koot syötetty pienestä suureen vai suuresta pieneen, tuotteessa of: 10x15x1 tai 15x1x10, suurin ulottuvuus on aina 15, keskimmäinen 10 ja pienin 1. Tämä tarkoittaa, että suurin ulottuvuus on aina 15, keskimmäinen 10 ja pienin 1.  Tämä menetelmä ottaa tuotteet aina yksitellen riippumatta valitusta ryhmittelymenetelmästä. Jos tuotteen kokoa ei ole määritetty, otetaan arvo 0. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Pituus + leveys + korkeus&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Otettu arvo on mittojen summa. Tuotteessa: 10x15x1, se on: <strong>10+15+1 = 26</strong>.  Tämä menetelmä ottaa tuotteet aina yksitellen riippumatta valitusta ryhmittelymenetelmästä. Jos tuotteen kokoa ei ole määritetty, otetaan arvo 0. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Pituus+Ympärysmitta&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Otettu arvo on kaavan tulos: <strong>Pituus + 2 * Leveys + 2 * Korkeus</strong> tuotteen mitoista. Tuotteessa, jonka: 10x15x1, se on: <strong>10+2x15+2x1 = 42</strong>.  Tämä menetelmä ottaa tuotteet aina yksitellen riippumatta valitusta ryhmittelymenetelmästä. Jos tuotteen kokoa ei ole määritetty, otetaan arvo 0. </p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Tuotelajiin perustuvat valitsijat</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>In Category,<br/> NOT In Category&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+		<p>Voit määrittää, mitkä tuotteet vastaavat sääntöä <strong>tuoteryhmänsä</strong> perusteella. Kategoria otetaan, ei <strong>hänen lapsensa</strong>. Sinun pitäisi sisällyttää myös lapsikategoriat, jos haluat, että se täsmää.    <br/>Tämä menetelmä ottaa tuotteet aina yksitellen riippumatta valitusta ryhmittelymenetelmästä.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Tagged as, <br/> EI Tagged as&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+		<p>Voit määrittää, mitkä tuotteet sopivat sääntöön <strong>tuotetunnisteen tai -tunnisteiden</strong> perusteella. <br/>Tämä menetelmä ottaa tuotteet aina yksi kerrallaan riippumatta valitusta ryhmittelymenetelmästä.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Toimitusluokassa, <br/> EI Toimitusluokassa:</h3></td>
+		<td>
+		<p>Voit määrittää, mitkä tuotteet vastaavat sääntöä, perustuen niiden <strong>lähetysluokkaan</strong>. <br/>Tämä menetelmä ottaa tuotteet aina yksi kerrallaan riippumatta valitusta ryhmittelymenetelmästä.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Edistyneet valitsijat</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Ostoskorin tuotteet:</h3></td>
+		<td>
+			<p>Ostoskorissa olevien <strong>tuotteiden määrä</strong> otetaan huomioon, paitsi jos olet käyttänyt erikoistoimintoa, joka sulkee tuotteet seuraavien sääntöjen ulkopuolelle, tai tätä vaihtoehtoa Toimituslaatikot-kohdassa: Tässä tapauksessa määrää vähennetään.</p>
+			<p>Huomaa, että group-by-kriteerit voivat olla hämmentäviä tässä tapauksessa! Esimerkiksi: jos asetat ei-ryhmää -asetukseksi, tuotteet otetaan yksi kerrallaan, joten määrä on aina 1 vertailussa. (katso <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a>).  </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Ostoskorin loppusumma&nbsp;<span class="fns-pro-icon darker">PRO</span><br/>(vero sis./ei sis.):</h3></td>
+		<td>
+			<p><strong>Välisummahinta.</strong>  Ero Tuotteiden hinta (ryhmitetyn strategian kanssa) ja tämän valitsijan käytön välillä on se, että täällä voimme saada osahinnan kuponkien soveltamisen jälkeen, eli: ostoskorin todellinen määrä ennen toimituskuluja.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Ryhmien lukumäärä:</h3></td>
+		<td>
+			<p>Ryhmien lukumäärä group-by-strategian mukaan. Esimerkiksi: jos ostoskorissa on 10 tuotetta kahdesta eri lähetysluokasta, jos asetat group-by:n lähetysluokittain, arvo on 2. Jos asetat sen arvoksi ei ryhmää, arvo on 10, ja jos asetat group-by:n arvoksi kaikki yhdessä, arvo on 1.  </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Käyttäjän rooli&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit määrittää, mitkä käyttäjäroolit vastaavat tätä sääntöä (myös kirjautumattomat käyttäjät).</p>
+			 <p>Voit lukea lisää <a href="https://www.wp-centrics.com/shipping-rates-by-user-roles-in-woocommerce/" target="_blank">lähetysmaksuista käyttäjäroolien mukaan</a> tästä viestistä.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Päivämäärän ja kellonajan valitsimet</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Viikonpäivä&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br/>Month&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit valita, minä viikonpäivinä/vuosikuukausina sääntö täyttyy.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Kuukauden päivä&nbsp;<span class="fns-pro-icon darker">PRO</span><br/>(sis./ulk. vero):</h3></td>
+		<td>
+			<p>Voit määrittää kuukauden päivän/päivät, jolloin sääntö täyttyy.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Vuosi&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit asettaa vuosien vaihteluvälin, jonka sääntö täyttää.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Päivämäärä&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit määrittää päivämäärät, joiden välillä sääntö on voimassa.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Vuoden päivä&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit asettaa päivävälin, jolloin sääntö täyttyy. Päiväysvalitsimesta poiketen tämä valitsija kattaa vuosijakson. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Aika&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit asettaa aikaväli, jonka sääntö täyttää.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Toimitusosoitteen valitsijat</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h3>Vyöhykealueilla&nbsp;<span class="fns-pro-icon darker">PRO</span>, <br/>EI Vyöhykealueilla&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit käyttää sitä samalla tavalla kuin WooCommercen toimitusalueita. Hyödyllinen, kun haluat välttää liian monen toimitusalueen luomisen. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>In ZIP/Postcodes&nbsp;<span class="fns-pro-icon darker">PRO</span><br/>NOT In ZIP/Postcodes&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+			<p>Voit käyttää sitä samalla tavalla kuin WooCommercen toimitusalueita. Hyödyllinen sääntöjen laatimiseen läheisyyden mukaan. </p>
+			<p>Voit käyttää jokerimerkkejä ja alueita samalla tavalla kuin WC:ssä. Voit lukea lisää <a href="" target="">postinumeroittain määritetyistä hinnoista</a> tästä viestistä. </p>
+		</td>
+	</tr>
+</tbody></table>
+				
+				
+<h2>Suurempi kuin / Suurempi tai yhtä suuri kuin & Pienempi kuin / Pienempi tai yhtä suuri kuin</h2>
+				
+<p>Useimmissa valintamenetelmissä käytetään minimi- ja maksimiarvokenttiä.</p>
+
+<p>Kaikissa näissä valinnoissa voit valita, miten MIN- ja MAX-arvoja verrataan, ja vaihtaa sopivaan symboliin jokaisessa säännössä tarpeen mukaan.</p>
+
+<p>Seuraavassa taulukossa MIN-vertailun arvoksi on asetettu <strong>SUUREMPI KUIN TAI YHTÄ HYVÄSTI</strong> 5 € ja MAX-vertailun arvoksi <strong>VÄHEMPI KUIN TAI YHTÄ HYVÄSTI</strong> 30 €.</p>
+				
+<p><img src="../img/min-max-new-1-euros.png" width="700" height="101" alt="SUUREMPI TAI YHTÄ SUURI KUIN"/></p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		 <td class="rule"><span class="dashicons dashicons-dismiss"></span> 4.99€</td><td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span> <strong>5.00€</strong></td><td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span> <strong>30.00€</strong></td><td class="rule"><span class="dashicons dashicons-dismiss"></span> 30.01€</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>Toisessa taulukossa asetetaan MIN-vertailun arvoksi <strong>SUUREMPI KUIN</strong> 30 € ja MAX-vertailun arvoksi <strong>VÄHEMPI KUIN</strong> 100 €, on: yhtäläiset arvot eivät vastaa tätä sääntöä:</p>
+
+<p><img src="../img/min-max-new-2-euros.png" width="700" height="101" alt="SUUREMPI KUIN"/></p>
+<table class="wp-list-table widefat striped tags" style="max-width:700px">
+	<tbody>
+	<tr>
+		 <td class="rule"><span class="dashicons dashicons-dismiss"></span> 30.00€</td><td class="rule grouped match"><span class="dashicons dashicons-yes-alt"></span> <strong>30.01€</strong></td><td class="rule grouped last_right match"><span class="dashicons dashicons-yes-alt"></span> <strong>99.99€</strong></td><td class="rule"><span class="dashicons dashicons-dismiss"></span> 100.00€</td>
+	</tr>
+	</tbody>
+</table>				
+
+<p>Huomaa, että <strong>30,00€</strong> vastaa sääntöä #1, koska MAX-kentän vertailu on <strong>LESS THAN OR EQUAL TO</strong>, eikä vastaa sääntöä #2, koska MIN tekee vertailun <strong>GREATER THAN</strong>.</p>
+
+<p>Toisaalta <strong>100€</strong> ei vastaa sääntöä nro 2, koska MAX-kentän vertailu on <strong>LESS THAN</strong>.</p>
+				
+<p>Voit lukea lisää <a href="https://www.wp-centrics.com/comparison-operators-on-shipping-rules/" target="_blank">vertailuoperaattoreista</a> tästä kirjoituksesta.</p>
+
+<h2 id="volumetric">Tilavuuslaskelmat</h2>
+
+			<p class="img">
+			<a href="../img/volumetric-mks.png" target="_blank"><img src="../img/volumetric-mks.png" width="659" height="245" alt="Tilavuuspainokerroin"/></a></p>
+			<p>Miten se toimii? Oletetaan, että tilavuuspainokerroin on 50 <sup>kg/m3</sup>. Myymälämme esimerkki on konfiguroitu toimimaan senttimetreillä ja grammoilla, muunnettuna, on: 0,05 grammaa kuutiosenttimetriä kohti, (tässä sinulla on <a href="https://www.wp-centrics.com/volumetric-weight-rates-shipping-calculator-woocommerce/#volumetric-weight-conversor" target="_blank">online-konvertteriyksiköt</a> tilavuudelle/painolle):  </p>
+			
+			<table class="wp-list-table widefat striped tags" style="max-width:800px">
+				<thead>
+				<tr>
+					<th>Tuote</th>
+					<th>Paino</th>
+					<th>Koko</th>
+					<th>Volume</th>
+					<th>Tilavuuspaino</th>
+					<th class="align_center">Otettu arvo</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Takki</td>
+					<td class="align_center">1500 g.</td>
+					<td>50x50x14 cm</td>
+					<td>35000 cm<sup>3</sup></td>
+					<td class="grouped last_right">35000 * 0,05 = <br/><strong>1750 g.</strong></td>
+					<td class="align_center"><strong>1750 g.</strong></td>
+				</tr>
+				<tr>
+					<td>Kannettava tietokone</td>
+					<td class="grouped last_right"><strong>2500 g.</strong></td>
+					<td>40x46x18 cm</td>
+					<td>33120 cm<sup>3</sup></td>
+					<td class="align_center">33120 * 0,05 = <br/>1656 g.</td>
+					<td class="align_center"><strong>2500 g.</strong></td>
+				</tr>
+				</tbody>
+			</table>
+			<p>Kevyiden tuotteiden osalta arvo on laskettu tilavuuspaino. Raskaissa tuotteissa otetaan painoarvo. <strong>Aina suurin arvo</strong>. </p>
+<h2>Ja ... nyt?</h2>
+<p>Näimme juuri valintamenetelmät. Nyt, kun opimme, miten toimituskulut toimivat, voimme tehdä peruskäytön Advanced Shipping Rates for WooCommerce: </p>
+<p class="fns_do_actions"><a href="shipping_costs.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="shipping_costs">Toimituskulut</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

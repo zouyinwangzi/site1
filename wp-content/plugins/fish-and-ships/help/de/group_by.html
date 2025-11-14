@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Gruppieren Sie (den Warenkorb) Produkte nach - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Gruppieren Sie (den Warenkorb) Produkte nach</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Haupt</a><a href="sel_conditions.html" data-fns-tip="sel_conditions">Bedingungen für die Auswahl</a><a href="shipping_costs.html" data-fns-tip="shipping_costs">Versandkosten</a><strong><a href="group_by.html" data-fns-tip="group_by">Gruppieren nach</a></strong><a href="special_actions.html" data-fns-tip="special_actions">Besondere Aktionen</a><a href="other_fields.html" data-fns-tip="other_fields">Andere Felder & Protokolle</a><a href="pro.html" data-fns-tip="pro">Kostenlos vs. PRO</a><a href="help.html" data-fns-tip="help">Hilfe und Support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Das Gruppieren von Produkten verändert die Versandkosten</h2>
+
+<p>Wir können <strong>nach verschiedenen Kriterien gruppierte</strong> Produkte im Warenkorb analysieren, um festzustellen, ob sie über eine Regel übereinstimmen und somit für die Versandkostenberechnung anwendbar sind.</p>
+
+<p class="img"><a href="../img/group-by-4.png" target="_blank"><img src="../img/group-by-4.png" width="634" height="205" alt="Warenkorbartikel gruppieren nach Optionen"/></a></p>
+<p>Die möglichen Kriterien für die Gruppierung sind:</p>
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>Keine [no grouping]:</h3></td>
+		<td>
+<p>Jedes Produkt wird <strong>einzeln</strong> analysiert, auch wenn sie die gleiche Referenz haben</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Pro ID / SKU:</h3></td>
+		<td>
+<p>Die Produkte mit der <strong>gleichen Referenz</strong> werden gruppiert</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Pro Produkt [group variations]:</h3></td>
+		<td>
+<p>Alle <strong>enthaltenen Produktvarianten</strong> werden gruppiert</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Pro Versandklasse:</h3></td>
+		<td>
+<p>Alle Produkte mit <strong>der gleichen Versandklasse</strong> werden gruppiert</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Alle in einer Gruppe:</h3></td>
+		<td>
+<p>Die gesamten Produkte des Warenkorbs <strong>werden zu einer einzigen Gruppe zusammengefasst</strong></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<h2>Ein weiteres einfaches Beispiel</h2>
+
+<p>Lassen Sie uns zeigen, wie die verschiedenen Gruppierungskriterien die Verarbeitung des Warenkorbs zur Berechnung der Versandkosten beeinflussen:</p>
+
+<p>Nehmen wir an, wir möchten für Produkte, die <strong>500 g</strong> oder mehr <strong>wiegen</strong>, <strong>1€</strong> Versandkosten berechnen:</p>
+
+<p class="img"><a href="../img/group-by-1b-mks.png" target="_blank"><img src="../img/group-by-1b-mks.png" width="930" height="182" alt="Set 1€ für ein halbes Pfund Gewicht"/></a></p>
+<p>Betrachten wir diesen Wagen:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produkt</th><th>Menge</th><th>Gewicht</th><th>Versandklasse</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Hemd (Variante Größe S)</td><td>1</td><td>225 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Hemd (Größe L Variante)</td><td>2</td><td>280 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Externes Festplattenlaufwerk</td><td>1</td><td>425 g.</td><td>Computer</td>
+	</tr>
+	</tbody>
+</table>
+
+<h2>Gruppierung Keine  [no grouping]</h2>
+
+<p>Jeder Warenkorbartikel wird separat analysiert:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produkt</th><th>Menge</th><th>Gewicht</th><th class="align_center">Regel #1</th><th class="align_center">Kosten</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Hemd (Variante Größe S)</td><td>1</td><td>225 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Externes Festplattenlaufwerk</td><td>1</td><td>425 g.</td><td class="rule">Min. 500 g.: <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th>Regel Nr. 1: Kosten:</th>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="rule stop"><span class="dashicons dashicons-dismiss"></span></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Beachten Sie, dass sogar die beiden Hemden in Größe L separat analysiert werden. <strong class="abort">Diese Regel wird nicht beachtet</strong>, weil kein Produkt dem Auswahlkriterium entspricht.</p>
+
+<p><strong>Wichtig:</strong> Wenn keine Regeln gelten, weil kein Produkt den Auswahlkriterien entspricht, wird die Versandmethode für diesen Warenkorb deaktiviert.</p>
+
+<h2>Gruppierung pro ID / SKU</h2>
+
+<p>Mit dem Kriterium ID / SKU werden die Variationen immer noch separat analysiert, aber die Produkte, die <strong>identisch </strong> sind, gruppiert:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produkt</th>
+		<th>Menge</th>
+		<th>Gewicht</th>
+		<th class="align_center">Gruppiertes Gewicht</th>
+		<th class="align_center">Regel #1</th>
+		<th class="align_center">Kosten</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Hemd (Variante Größe S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td class="align_center">225 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Hemd (Größe L Variante)</td>
+		<td>1</td>
+		<td>280 g.</td>
+		<td rowspan="2" class="grouped last_right">560 g.</td>
+		<td class="rule match gray_grouped" rowspan="2">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="2" class="rule gray_grouped last_right">1€ * 2 = <br/> 2€</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Polo</td>
+		<td>1</td>
+		<td>360 g.</td>
+		<td class="align_center">360 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Externes Festplattenlaufwerk</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="5">Regel 1 Kosten:</th><td class="rule"><strong>2€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Beachten Sie, dass <strong>sich</strong> nur Produkte, die den Auswahlkriterien entsprechen <strong>, auf die Kosten</strong> der Regel <strong>auswirken</strong>.</p>
+
+<p>Wenn ein oder mehrere Produkte (in diesem Fall Gruppen) mit der Auswahl übereinstimmen, wird die Regel angewendet und die Versandmethode für diesen Warenkorb <strong>aktiviert</strong>.</p>
+
+<h2>Gruppierung pro Produkt  [group variations]</h2>
+
+<p>Mit dem Kriterium Pro Produkt [group variations] werden Produkte, die gleich sind, <strong>einschließlich Variationen</strong>, in Gruppen zusammengefasst:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produkt</th>
+		<th>Menge</th>
+		<th>Gewicht</th>
+		<th class="align_center">Gruppiertes Gewicht</th>
+		<th class="align_center">Regel #1</th>
+		<th class="align_center">Kosten</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Hemd (Variante Größe S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td rowspan="3" class="grouped last_right">785 g.</td>
+		<td class="rule match gray_grouped" rowspan="3">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="3" class="rule gray_grouped last_right">1€ * 3 = <br/> 3€</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Polo</td>
+		<td>1</td>
+		<td>360 g.</td>
+		<td class="align_center">360 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Externes Festplattenlaufwerk</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="5">Regel 1 Kosten:</th><td class="rule"><strong>3€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+<p>Beachten Sie, dass das Hemd in Größe S selbst nicht dem Auswahlkriterium entspricht, aber wenn es mit den beiden anderen Hemden in Größe L gruppiert wird, schon.</p>
+
+<h2>Gruppierung pro Versandklasse</h2>
+
+<p>Mit dem Kriterium Pro Versandklasse werden <strong>alle Kleidungsstücke</strong> als eine Gruppe und die Festplatte als eine zweite Gruppe analysiert:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produkt</th>
+		<th>Menge</th>
+		<th>Gewicht</th>
+		<th>Versandklasse</th>
+		<th class="align_center">Gruppiertes Gewicht</th>
+		<th class="align_center">Regel #1</th>
+		<th class="align_center">Kosten</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Hemd (Variante Größe S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td>Kleidung</td>
+		<td rowspan="4" class="grouped last_right">1145 g.</td>
+		<td class="rule match gray_grouped" rowspan="4">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="4" class="rule gray_grouped last_right">1€ * 4 = <br/> 4€</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Externes Festplattenlaufwerk</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td>Computer</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g.:  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="6">Regel 1 Kosten:</th><td class="rule"><strong>4€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<h2>Gruppierung Alle gruppiert als eine Gruppe</h2>
+<p>Und schließlich wird mit dem Kriterium Alle zu einer Gruppe zusammengefasst <strong>der gesamte Warenkorb</strong> zu einer Gruppe zusammengefasst:</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produkt</th>
+		<th>Menge</th>
+		<th>Gewicht</th>
+		<th>Versandklasse</th>
+		<th class="align_center">Gruppiertes Gewicht</th>
+		<th class="align_center">Regel #1</th>
+		<th class="align_center">Kosten</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Hemd (Variante Größe S)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td>Kleidung</td>
+		<td rowspan="5" class="grouped last_right">1570 g.</td>
+		<td class="rule match gray_grouped" rowspan="5">Min. 500 g.:  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="5" class="rule gray_grouped last_right">1€ * 5 = <br/> 5€</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Hemd (Variante Größe L)</td><td>1</td><td>280 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Kleidung</td>
+	</tr>
+	<tr>
+		<td>Externes Festplattenlaufwerk</td><td>1</td><td>425 g.</td><td>Computer</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="6">Regel 1 Kosten:</th><td class="rule"><strong>5€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<h2>Und ... was ist mit den anderen Auswahlmethoden?</h2>
+
+<table class="wp-list-table widefat tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th style="background:#f9f9f9;"><p>Produkte können in <strong>der gleichen Weise</strong> gruppiert werden, wie wir es beim Gewicht gesehen haben:</p></th>
+		<th class="left_border" style="background:#f9f9f9;"><p>Und <strong>können nicht gruppiert werden</strong> (nehmen Sie die Produkte immer einzeln) die nächsten:</p></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td style="width:50%;">
+			<p><strong>Produktdaten:</strong></p>
+			<ul>
+			<li>Preis</li>
+			<li>Gewicht</li>
+			<li>Band</li>
+			<li>Volumetrisch&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			<li>Volumetrisches Set&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			</ul>
+			<p><strong>Fortgeschrittene:</strong></p>
+			<ul>
+			<li>Artikel im Warenkorb</li>
+			<li>Anzahl der Gruppen</li>
+			</ul>
+		</td>
+		<td class="left_border">
+			<p><strong>Produktdaten:</strong></p>
+			<ul>
+			<li>Min / Mid / Max Dimension</li>
+			<li>Länge+Breite+Höhe&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			<li>Länge+Größe (L + 2W + 2H)&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			</ul>
+			<p><strong>Alle Produktartenselektoren</strong></p>
+			<p><strong>Fortgeschrittene:</strong></p>
+			<ul>
+			<li>Warenkorb gesamt</li>
+			<li>Benutzer-Rollen</li>
+			</ul>
+			<p><strong>Alle Daten&Zeit-Selektoren</strong></p>
+			<p><strong>Alle Selektoren für Lieferadressen</strong></p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>Warum können sie nicht gruppiert werden? Nun, in Bezug auf die Größe wäre es nicht sinnvoll, die Abmessungen der Produkte zu addieren. Und was die Taxonomien betrifft, so können verschiedene Produkte zu unterschiedlichen Taxonomien gehören, so dass sie nicht zusammen betrachtet werden können. <strong>In jedem Fall wird das Produkt für jedes Produkt genommen</strong>.  </p>
+
+<h2>Unterschiedliche Gruppierungskriterien für jede Bedingung&nbsp;<span class="fns-pro-icon darker">PRO</span></h2>
+<p>In der PRO-Version kann <strong>für jede Bedingung</strong> eine <strong>andere Gruppierung</strong> festgelegt werden.</p>
+<p>Nehmen wir an, wir möchten eine Versandkostenpauschale von <strong>10€</strong> festlegen, wenn der Einkaufswagen mehr als 4 Produkte enthält, wobei Produkte mit einem Gewicht von mehr als 500g nicht berücksichtigt werden:</p>
+<p>Sie müssen zunächst die Option zur globalen Gruppierung deaktivieren:</p>
+<p class="img"><a href="../img/group-by-3.png" target="_blank"><img src="../img/group-by-3.png" width="686" height="56" alt="Deaktivieren Sie global group-by"/></a></p>
+<p>Und dies wäre die Tabelle mit den Versandregeln, mit <strong>differenzierten</strong> Gruppierungsoptionen:</p>
+<p class="img"><a href="../img/group-by-2-mks.png" target="_blank"><img src="../img/group-by-2-mks.png" width="1047" height="306" alt="Versandregeln mit differenzierten Gruppierungsoptionen"/></a></p>
+<h2>Die gesamte Kontrolle</h2>
+<p>Spezielle Aktionen ermöglichen es Ihnen, die Ausführung der Regeln zu ändern oder Nachrichten an Ihre Kunden zu senden:</p>
+<p class="fns_do_actions"><a href="special_actions.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="special_actions">Besondere Aktionen</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

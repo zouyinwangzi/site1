@@ -186,3 +186,13 @@ function disable_cart_scroll_js() {
         <?php
     }
 }
+
+
+
+
+// 禁用 YITH 插件仪表盘小工具
+// add_action( 'plugins_loaded', function() {
+//     // 移除 YITH 注册到仪表盘的动作
+//     remove_action( 'wp_dashboard_setup', 'YITH_Dashboard::dashboard_widget_setup' );
+//     remove_action( 'admin_enqueue_scripts', 'YITH_Dashboard::enqueue_scripts', 20 );
+// }, 20 );

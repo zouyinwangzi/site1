@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Regrouper (le panier) les produits par - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Regrouper (le panier) les produits par</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Principale</a><a href="sel_conditions.html" data-fns-tip="sel_conditions">Conditions de sélection</a><a href="shipping_costs.html" data-fns-tip="shipping_costs">Frais d'expédition</a><strong><a href="group_by.html" data-fns-tip="group_by">Groupe par</a></strong><a href="special_actions.html" data-fns-tip="special_actions">Actions spéciales</a><a href="other_fields.html" data-fns-tip="other_fields">Autres champs et journaux</a><a href="pro.html" data-fns-tip="pro">Gratuit vs PRO</a><a href="help.html" data-fns-tip="help">Aide et support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Le regroupement de produits modifie les frais d'expédition</h2>
+
+<p>Nous pouvons analyser les produits du panier <strong>regroupés selon différents critères</strong>, afin de déterminer s'ils correspondent à une règle et s'ils sont donc applicables au calcul des frais de port.</p>
+
+<p class="img"><a href="../img/group-by-4.png" target="_blank"><img src="../img/group-by-4.png" width="634" height="205" alt="Options de regroupement des articles du panier"/></a></p>
+<p>Les critères de regroupement possibles sont les suivants :</p>
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>Aucun [no grouping]:</h3></td>
+		<td>
+<p>Chaque produit sera analysé <strong>individuellement</strong>, même s'il a la même référence.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Par ID / SKU :</h3></td>
+		<td>
+<p>Les produits ayant la <strong>même référence</strong> seront regroupés</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Par produit [group variations]:</h3></td>
+		<td>
+<p>Toutes les <strong>variations de</strong> produits <strong>incluses</strong> seront regroupées</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Par classe d'expédition :</h3></td>
+		<td>
+<p>Tous les produits ayant <strong>la même classe d'expédition</strong> seront regroupés.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Tous regroupés en un seul :</h3></td>
+		<td>
+<p>L'ensemble des produits du panier constituera <strong>un seul groupe</strong></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<h2>Un autre exemple simple</h2>
+
+<p>Nous allons voir comment les différents critères de regroupement modifient la façon dont le panier est traité pour calculer les frais d'expédition :</p>
+
+<p>Supposons que nous souhaitions facturer des frais d'expédition de <strong>1 €</strong> pour les produits <strong>pesant 500 g</strong> ou plus :</p>
+
+<p class="img"><a href="../img/group-by-1b-mks.png" target="_blank"><img src="../img/group-by-1b-mks.png" width="930" height="182" alt="Set 1€ par demi-livre de poids"/></a></p>
+<p>Considérons ce chariot :</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produit</th><th>Quantité</th><th>Poids</th><th>Classe d'expédition</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Chemise (variation de la taille S)</td><td>1</td><td>225 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>2</td><td>280 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Disque dur externe</td><td>1</td><td>425 g.</td><td>Ordinateurs</td>
+	</tr>
+	</tbody>
+</table>
+
+<h2>Groupement Aucun  [no grouping]</h2>
+
+<p>Chaque article du panier sera analysé séparément :</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produit</th><th>Quantité</th><th>Poids</th><th class="align_center">Règle n° 1</th><th class="align_center">Coût</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Chemise (variation de la taille S)</td><td>1</td><td>225 g.</td><td class="rule">Min. 500 g. : <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td><td class="rule">Min. 500 g. : <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td><td class="rule">Min. 500 g. : <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td class="rule">Min. 500 g. : <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Disque dur externe</td><td>1</td><td>425 g.</td><td class="rule">Min. 500 g. : <br/><span class="dashicons dashicons-dismiss"></span></td><td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th>Règle n° 1 des coûts :</th>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="rule stop"><span class="dashicons dashicons-dismiss"></span></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Notez que même les deux chemises de taille L sont analysées séparément. <strong class="abort">Cette règle ne sera pas appliquée</strong> car aucun produit ne correspond au critère de sélection.</p>
+
+<p><strong>Important :</strong> si aucune règle ne s'applique, parce qu'aucun produit ne correspond aux critères de sélection, la méthode d'expédition sera désactivée pour ce panier.</p>
+
+<h2>Regroupement par ID / UGS</h2>
+
+<p>Avec le critère ID / SKU, les variations sont toujours analysées séparément, mais les produits <strong>identiques </strong> sont regroupés :</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produit</th>
+		<th>Quantité</th>
+		<th>Poids</th>
+		<th class="align_center">Poids groupé</th>
+		<th class="align_center">Règle n° 1</th>
+		<th class="align_center">Coût</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Chemise (taille S variante)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td class="align_center">225 g.</td>
+		<td class="rule">Min. 500 g. :  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td>
+		<td>1</td>
+		<td>280 g.</td>
+		<td rowspan="2" class="grouped last_right">560 g.</td>
+		<td class="rule match gray_grouped" rowspan="2">Min. 500 g. :  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="2" class="rule gray_grouped last_right">1€ * 2 = <br/> 2€</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Polo</td>
+		<td>1</td>
+		<td>360 g.</td>
+		<td class="align_center">360 g.</td>
+		<td class="rule">Min. 500 g. :  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Disque dur externe</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g. :  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="5">Coût de la règle n°1 :</th><td class="rule"><strong>2€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Notez que seuls les produits correspondant aux critères de sélection <strong>ont un impact sur le coût de</strong> la règle.</p>
+
+<p>Si un ou plusieurs produits (groupe dans ce cas) correspondent à la sélection, la règle s'applique et <strong>active la</strong> méthode d'expédition pour ce panier.</p>
+
+<h2>Regroupement Par produit  [group variations]</h2>
+
+<p>Avec le critère Per product [group variations], les produits identiques, <strong>y compris les variations</strong>, sont regroupés :</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produit</th>
+		<th>Quantité</th>
+		<th>Poids</th>
+		<th class="align_center">Poids groupé</th>
+		<th class="align_center">Règle n° 1</th>
+		<th class="align_center">Coût</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Chemise (taille S variante)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td rowspan="3" class="grouped last_right">785 g.</td>
+		<td class="rule match gray_grouped" rowspan="3">Min. 500 g. :  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="3" class="rule gray_grouped last_right">1€ * 3 = <br/> 3€</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td>
+	</tr>
+	<tr>
+		<td>Polo</td>
+		<td>1</td>
+		<td>360 g.</td>
+		<td class="align_center">360 g.</td>
+		<td class="rule">Min. 500 g. :  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	<tr>
+		<td>Disque dur externe</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g. :  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="5">Coût de la règle n°1 :</th><td class="rule"><strong>3€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+<p>Notez que la chemise de taille S en elle-même ne correspond pas au critère de sélection, mais si elle est regroupée avec les deux autres de taille L, elle y répond.</p>
+
+<h2>Regroupement Par classe d'expédition</h2>
+
+<p>Avec le critère de la classe d'expédition, <strong>tous les vêtements</strong> seront analysés comme un seul groupe, et le disque dur comme un second groupe :</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produit</th>
+		<th>Quantité</th>
+		<th>Poids</th>
+		<th>Classe d'expédition</th>
+		<th class="align_center">Poids groupé</th>
+		<th class="align_center">Règle n° 1</th>
+		<th class="align_center">Coût</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Chemise (taille S variante)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td>Vêtements</td>
+		<td rowspan="4" class="grouped last_right">1145 g.</td>
+		<td class="rule match gray_grouped" rowspan="4">Min. 500 g. :  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="4" class="rule gray_grouped last_right">1€ * 4 = <br/> 4€</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Disque dur externe</td>
+		<td>1</td>
+		<td>425 g.</td>
+		<td>Ordinateurs</td>
+		<td class="align_center">425 g.</td>
+		<td class="rule">Min. 500 g. :  <br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td class="align_center">/</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="6">Coût de la règle n°1 :</th><td class="rule"><strong>4€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<h2>Groupement Tous regroupés en un seul groupe</h2>
+<p>Enfin, avec le critère Tous regroupés en un seul, l'<strong>ensemble du panier</strong> sera regroupé en un seul :</p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Produit</th>
+		<th>Quantité</th>
+		<th>Poids</th>
+		<th>Classe d'expédition</th>
+		<th class="align_center">Poids groupé</th>
+		<th class="align_center">Règle n° 1</th>
+		<th class="align_center">Coût</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Chemise (taille S variante)</td>
+		<td>1</td>
+		<td>225 g.</td>
+		<td>Vêtements</td>
+		<td rowspan="5" class="grouped last_right">1570 g.</td>
+		<td class="rule match gray_grouped" rowspan="5">Min. 500 g. :  <br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="5" class="rule gray_grouped last_right">1€ * 5 = <br/> 5€</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Chemise (variation de la taille L)</td><td>1</td><td>280 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Polo</td><td>1</td><td>360 g.</td><td>Vêtements</td>
+	</tr>
+	<tr>
+		<td>Disque dur externe</td><td>1</td><td>425 g.</td><td>Ordinateurs</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="6">Coût de la règle n°1 :</th><td class="rule"><strong>5€</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<h2>Et ... qu'en est-il des autres méthodes de sélection ?</h2>
+
+<table class="wp-list-table widefat tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th style="background:#f9f9f9;"><p>Les produits peuvent être regroupés, de <strong>la même manière</strong> que nous l'avons vu pour le poids, pour :</p></th>
+		<th class="left_border" style="background:#f9f9f9;"><p>Et <strong>ne peuvent pas être regroupés</strong> (toujours prendre les produits un par un) avec les suivants :</p></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td style="width:50%;">
+			<p><strong>Données du produit :</strong></p>
+			<ul>
+			<li>Prix</li>
+			<li>Poids</li>
+			<li>Volume</li>
+			<li>Volumétrique&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			<li>Set volumétrique&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			</ul>
+			<p><strong>Avancée :</strong></p>
+			<ul>
+			<li>Éléments du panier</li>
+			<li>Nombre de groupes</li>
+			</ul>
+		</td>
+		<td class="left_border">
+			<p><strong>Données du produit :</strong></p>
+			<ul>
+			<li>Dimension minimale / moyenne / maximale</li>
+			<li>Longueur+Largeur+Hauteur&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			<li>Longueur+taille (L + 2L + 2H)&nbsp;<span class="fns-pro-icon darker">PRO</span></li>
+			</ul>
+			<p><strong>Tous les sélecteurs de type de produit</strong></p>
+			<p><strong>Avancée :</strong></p>
+			<ul>
+			<li>Total du panier</li>
+			<li>Rôles des utilisateurs</li>
+			</ul>
+			<p><strong>Tous les sélecteurs de données et de temps</strong></p>
+			<p><strong>Tous les sélecteurs d'adresse de livraison</strong></p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<p>Pourquoi ne peuvent-ils pas être regroupés ? Eh bien, en ce qui concerne la taille, cela n'aurait pas de sens d'additionner les dimensions des produits. En ce qui concerne les taxonomies, des produits différents peuvent appartenir à des taxonomies différentes et ne peuvent donc pas être considérés ensemble. <strong>Quoi qu'il en soit, il faudra prendre les produits les uns après les autres</strong>.  </p>
+
+<h2>Critères de regroupement différents pour chaque condition&nbsp;<span class="fns-pro-icon darker">PRO</span></h2>
+<p>Dans la version PRO, il est possible de définir un <strong>groupe différent pour chaque condition</strong>.</p>
+<p>Supposons que nous voulions fixer des frais d'expédition forfaitaires de <strong>10 €</strong> si le panier contient plus de 4 produits, en écartant ceux qui pèsent plus de 500 g.. :</p>
+<p>Vous devez d'abord décocher l'option de regroupement global :</p>
+<p class="img"><a href="../img/group-by-3.png" target="_blank"><img src="../img/group-by-3.png" width="686" height="56" alt="Désélectionner le group-by global"/></a></p>
+<p>Il s'agit du tableau des règles d'expédition, avec des options de regroupement <strong>différenciées</strong>:</p>
+<p class="img"><a href="../img/group-by-2-mks.png" target="_blank"><img src="../img/group-by-2-mks.png" width="1047" height="306" alt="Règles d'expédition avec des options de regroupement différenciées"/></a></p>
+<h2>Tous les contrôles</h2>
+<p>Les actions spéciales vous permettent de modifier l'exécution des règles ou d'envoyer des messages à vos clients :</p>
+<p class="fns_do_actions"><a href="special_actions.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="special_actions">Actions spéciales</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

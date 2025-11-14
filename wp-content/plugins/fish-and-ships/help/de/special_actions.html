@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Besondere Aktionen zu Versandregeln - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Besondere Aktionen zu Versandregeln</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Haupt</a>
+					<a href="sel_conditions.html" data-fns-tip="sel_conditions">Bedingungen für die Auswahl</a>
+					<a href="shipping_costs.html" data-fns-tip="shipping_costs">Kosten für den Versand</a>
+					<a href="group_by.html" data-fns-tip="group_by">Gruppieren nach</a>
+					<strong><a href="special_actions.html" data-fns-tip="special_actions">Besondere Aktionen</a></strong>
+					<a href="other_fields.html" data-fns-tip="other_fields">Andere Felder & Protokolle</a>
+					<a href="pro.html" data-fns-tip="pro">Kostenlos vs. PRO</a>
+					<a href="help.html" data-fns-tip="help">Hilfe und Unterstützung</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>14 Besondere Aktionen</h2>
+<div class="float_img">
+	<a href="../img/special-actions.png" target="_blank">
+		<img src="../img/special-actions.png" width="313" height="298" alt="Die besonderen Aktionen für Regeln"/>
+	</a>
+</div>
+
+<p>Spezielle Aktionen ermöglichen es Ihnen, <strong>das Verhalten</strong> der Regeltabelle <strong>zu ändern</strong> und/oder die Informationen zu <strong>ergänzen</strong>, die Ihr Kunde auf der Grundlage seines Warenkorbs und seiner Versandkosten erhält.</p>
+
+<p>Diese Informationen können verwendet werden, um unserem Kunden zu helfen, die anfallenden Versandkosten <strong>zu verstehen</strong>, oder warum wir einen bestimmten Warenkorb nicht an seine Adresse schicken können, <strong>ihn zu ermutigen, mehr Produkte in seinen Warenkorb zu legen</strong>, ihn über die Lieferzeit oder den Namen des Paketdienstes zu informieren, usw.</p>
+
+<p>Spezielle Aktionen sind immer <strong>mit einer Regel verbunden</strong> und werden ausgeführt, wenn mindestens ein Produkt den Auswahlkriterien der Regel entspricht, zu der sie gehören.</p>
+
+<p>Im Folgenden erklären wir sie:</p>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Aktionen zur Flusskontrolle</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Stopp (ignorieren Sie die folgenden Regeln):</h2></td>
+		<td>
+<p>Die folgenden Regeln <strong>werden nicht analysiert</strong>, aber die Versandmethode wird nicht abgebrochen und wird dem Kunden für den aktuellen Warenkorb angeboten.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Abbrechen der Versandmethode:</h2></td>
+		<td>
+<p>Diese Aktion bedeutet, dass die Versandmethode <strong>deaktiviert</strong> wird. Auch wenn eine andere Regel erfüllt wurde, wird sie unserem Kunden in keinem Fall angeboten. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Überspringen Sie N-Regeln:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Diese Aktion ermöglicht es uns, N Regeln <strong>zu überspringen</strong> (zu ignorieren). Sie wird verwendet, um eine bedingte Ausführungslogik festzulegen, zum Beispiel: Wenn Regel A angewandt wird, kann B niemals angewandt werden (die direkt darunter liegt).  </p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Text / Information Aktionen</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Nachricht anzeigen:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Sie können eine Nachricht <strong>für unsere Kunden</strong> auf die gleiche Weise wie die WooCommerce-Nachrichten eingeben (das Aussehen hängt von Ihrem Theme ab). Mehr Informationen finden Sie <a href="" target="">hier</a>. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Benennen Sie den Titel der Methode um:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Sie können <strong>die Versandmethode umbenennen</strong>. Legen Sie z.B. den Namen eines Paketdienstes fest, unter bestimmten Bedingungen der Regeln. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Untertitel hinzufügen (unter dem Text):&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Es ermöglicht Ihnen, <strong>zusätzliche Informationen</strong> unter dem Namen der Versandmethode hinzuzufügen. Zum Beispiel: Lieferzeit. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Warenkorb-Summenmeldungen ändern:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Aktionen zur Kostenberechnung</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Setzen Sie die bisherigen Kosten zurück:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Es ignoriert alle <strong>vorhergehenden Regeln</strong>, die Kosten berechnet haben, und beginnt mit der aktuellen Regel von neuem.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Legen Sie die minimalen/maximalen Regelkosten fest:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Sie legt die Mindest- und Höchstkosten <strong>für diese Regel</strong> fest (nicht für die anderen). Sehr nützlich bei der Berechnung von Versandkosten auf der Basis von % (Prozentsatz) oder * <wpcodeself wptype="">. </wpcodeself></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Mathematischer Ausdruck:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Weitere Informationen finden Sie <a href="https://www.wp-centrics.com/auto-apply-coupons-cart-based-on-woocommerce/" target="_blank">hier</a>.</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Erweitert / Andere Aktionen</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Übereinstimmende Prods überspringen die folgenden Regeln:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Die Produkte, die die Auswahlkriterien für die aktuelle Regel erfüllt haben <strong>, werden</strong> bei den folgenden Regeln <strong>nicht berücksichtigt</strong>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Automatische Anwendung von Coupons:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Es ermöglicht Ihnen die <strong>automatische Anwendung von Rabattcoupons</strong>, die Anpassung der Nachrichten zum Anwenden/Entfernen und mehr. Mehr Informationen erhalten Sie <a href="" target="">hier</a>. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Andere Versandarten ausblenden:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Weitere Informationen finden Sie <a href="https://www.wp-centrics.com/hide-shipping-methods-on-woocommerce/" target="_blank">hier</a>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Versandkartons:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Versandkartons Bin Packer (Versandkartons zum Pauschalpreis). Mehr Informationen erhalten Sie <a href="https://www.wp-centrics.com/shipping-boxes-flat-rate/" target="_blank">hier</a>. </p>
+		</td>
+	</tr>
+</tbody></table>
+
+<h2>Ein weiteres Beispiel</h2>
+
+<p>Stellen Sie sich vor, Sie möchten Ihren Kunden unter bestimmten Bedingungen darüber informieren, dass seine Versandkosten eine Versicherung beinhalten, über einen bekannten Paketdienstleister verschickt werden und innerhalb von 24 Stunden beim Kunden eintreffen:</p>
+
+<p class="img"><a href="../img/special-actions-1.png" target="_blank">
+	<img src="../img/special-actions-1.png" width="986" height="410" alt="Benutzerdefinierte Nachrichten zur Versandmethode einstellen"/>
+</a></p>
+
+<p>Und hier ist das Ergebnis: (das Erscheinungsbild hängt von Ihrem Theme ab), Advanced Shipping Rates for WooCommerce wird auf die gleiche Weise gedruckt wie WooCommerce):</p>
+
+<p class="img"><a href="../img/special-actions-2.png" target="_blank">
+	<img src="../img/special-actions-2.png" width="986" height="450" alt="Benutzerdefinierte Nachrichten im Einkaufswagen"/>
+</a></p>
+<h2>Letzte Dinge</h2>
+<p>Die restlichen Felder außerhalb der Tabellenregeln und das Protokollsystem müssen wir noch sehen:</p>
+<p class="fns_do_actions"><a href="other_fields.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="other_fields">Andere Felder & Protokolle</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

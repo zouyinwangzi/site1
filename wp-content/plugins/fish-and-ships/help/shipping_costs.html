@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shipping costs calculation - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+	<h1>Shipping costs calculation</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Main</a>
+					<a href="sel_conditions.html" data-fns-tip="sel_conditions">Selection conditions</a>
+					<strong><a href="shipping_costs.html" data-fns-tip="shipping_costs">Shipping costs</a></strong>
+					<a href="group_by.html" data-fns-tip="group_by">Group-by</a>
+					<a href="special_actions.html" data-fns-tip="special_actions">Special Actions</a>
+					<a href="other_fields.html" data-fns-tip="other_fields">Other fields & logs</a>
+					<a href="pro.html" data-fns-tip="pro">Free vs PRO</a>
+					<a href="help.html" data-fns-tip="help">Help and Support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>Basic / Per ranges calculation</h2>
+
+<p>The shipping costs will be applied <strong>for each rule that matches</strong> the selection criteria.</p>
+
+<table class="methods striped"><tbody>
+	<tr>
+		<td class="td_title"><h3>(once):</h3></td>
+		<td>
+<p>The cost will be applied <strong>once</strong>, no matter how many products match the rule.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [qty]:</h3></td>
+		<td>
+<p>The calculated cost will be the result of multiplying the <strong>amount of products</strong> that matches the selection criteria by the value entered.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* weight:</h3></td>
+		<td>
+<p>The calculated cost will be the result of multiplying the <strong>weight of products</strong> that matches the selection criteria by the value entered.</p>
+<p>Be aware: if you need use rounded weight for calculatio, you must use ranges (see below).</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>* [group]:</h3></td>
+		<td>
+<p>The calculated cost will be the result of multiplying the number of matching groups (see the help section <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> by the value entered.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>% (percentage):</h3></td>
+		<td>
+<p>The percentage will be calculated based on the product price. If there is a sale price, it will be used instead.</p>
+<p>Regardless of the "Prices entered with tax" WooCommerce setting (can be tax included or tax excluded), price products <strong>will be taken as entered</strong> in the edition page.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Composite:</h3></td>
+		<td>
+<p>We can set the <strong>five previous calculations at once</strong>: once, * qty, * weight, * group and %. Those that are set with value 0 will not influence the calculation.</p>
+<p class="img"><a href="img/simple-composite-costs-5.png" target="_blank"><img src="img/simple-composite-costs-5.png" width="615" height="225" alt="Simple or composite shipping costs" /></a></p>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h3>Ranges&nbsp;<span class="fns-pro-icon darker">PRO</span>:</h3></td>
+		<td>
+<p>With this advanced feature, you can set prices based on weight, volume, volumetric, quantity or dimensions, setting easily ranges of price, flat part and much more. It comes with an interactive preview.</p>
+		 <p>You can read more about in this post: <a href="https://www.wp-centrics.com/shipping-rates-by-weight-chart-in-woocommerce/" target="_blank">Shipping Rates by Weight Chart: Weight Ranges Made Easy</a></p>
+<p class="img"><a href="img/range-settings.png" target="_blank"><img src="img/range-settings.png" width="700" height="435" alt="Range settings" /></a></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Be aware with group-by setting:</strong><br />
+Keep in mind that the group-by setting (global or in each rule) will act only for the selection conditions (left side rules), not for shipping cost calculation, except for the <strong>* [group]</strong>, of course. (see the <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a> help section).</p>
+<p>Not to be confused with the group-by setting <strong>within the Range settings dialog box</strong>: This will have the expected  effect on the price calculation by ranges.</p>
+</div>
+
+
+<h2>More!</h2>
+<p>The different grouping criteria will give you the flexibility you need, to cover any possibility:</p>
+<p class="fns_do_actions"><a href="group_by.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="group_by">Group-by</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

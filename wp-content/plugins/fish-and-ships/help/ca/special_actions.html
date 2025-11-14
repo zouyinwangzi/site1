@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Accions especials sobre normes d'enviament - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Accions especials sobre normes d'enviament</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Principal</a>
+					<a href="sel_conditions.html" data-fns-tip="sel_conditions">Condicions de selecció</a>
+					<a href="shipping_costs.html" data-fns-tip="shipping_costs">Despeses d'enviament</a>
+					<a href="group_by.html" data-fns-tip="group_by">Grup per</a>
+					<strong><a href="special_actions.html" data-fns-tip="special_actions">Accions especials</a></strong>
+					<a href="other_fields.html" data-fns-tip="other_fields">Altres camps i registres</a>
+					<a href="pro.html" data-fns-tip="pro">Gratuït vs PRO</a>
+					<a href="help.html" data-fns-tip="help">Ajuda i Suport</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<h2>14 Accions especials</h2>
+<div class="float_img">
+	<a href="../img/special-actions.png" target="_blank">
+		<img src="../img/special-actions.png" width="313" height="298" alt="Les accions especials per a les normes"/>
+	</a>
+</div>
+
+<p>Les Accions Especials li permeten <strong>modificar el comportament</strong> de la taula de regles i/o <strong>complementar</strong> la informació que rep el seu client en funció del seu carretó i despeses d'enviament.</p>
+
+<p>Aquesta informació es pot utilitzar per ajudar el nostre client a <strong>entendre</strong> les despeses d'enviament aplicades, o per què no podem enviar un carretó determinat a la seva adreça, <strong>animar-lo a posar més productes al seu carretó</strong> , informar sobre el termini de lliurament o el nom de l'empresa de paquets, etc.</p>
+
+<p>Les accions especials sempre <strong>s'associen a una regla</strong> i s'executaran si almenys un producte coincideix amb els criteris de selecció de la regla on pertanyen.</p>
+
+<p>A continuació els expliquem:</p>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Accions de control de flux</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Atura (ignora les regles següents):</h2></td>
+		<td>
+<p><strong>No s'analitzaran</strong> les següents regles, però no s'avortarà el mètode d'enviament i s'oferirà al client pel carretó actual.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Mètode d'enviament avortat:</h2></td>
+		<td>
+<p>Aquesta acció significa que el mètode d'enviament es <strong>desactivarà</strong> . Tot i que s'ha coincidit qualsevol altra norma, no s'ofereix al nostre client en cap cas. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Omet les regles N:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Aquesta acció ens permetrà <strong>ometre</strong> (ignorar) N regles a continuació. S'utilitza per establir la lògica d'execució condicional, per exemple: si s'aplica la regla A, mai no es pot aplicar B (que està just a sota).  </p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Accions de text/informació</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Mostra el missatge d'avís:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Podeu introduir un missatge <strong>per al nostre client</strong> de la mateixa manera que els missatges de WooCommerce (l'aparença dependrà del vostre tema). Obteniu més informació <a href="" target="">aquí</a> . </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Canvia el nom del títol del mètode:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Podeu <strong>canviar el nom del mètode d'enviament</strong> . Per exemple, establiu el nom d'una empresa de paquets, en determinades condicions de les normes. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Afegeix subtítol (sota el text):&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Us permet afegir <strong>informació addicional</strong> sota el nom del mètode d'enviament. Per exemple: termini de lliurament. </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Missatges de canvi de totals del carretó:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Accions de càlcul de costos</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Restablir costos anteriors:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Ignorarà tots els costos calculats de les <strong>regles anteriors</strong> i començarà a calcular-los de nou, començant per la regla actual.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Estableix els costos mínims/màx. de les regles:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Establirà el cost mínim i màxim <strong>per a aquesta regla</strong> (no per a les altres). Molt útil per calcular les despeses d'enviament en funció del % (percentatge) o *<wpcodeself wptype=""> . </wpcodeself></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Expressió matemàtica:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Obteniu més informació <a href="https://www.wp-centrics.com/auto-apply-coupons-cart-based-on-woocommerce/" target="_blank">aquí</a> .</p>
+		</td>
+	</tr>
+</tbody></table>
+
+<table class="methods striped">
+<thead><tr><th colspan="2"><p class="subtitle">Avançat / Altres accions</p></th></tr></thead>
+<tbody>
+	<tr>
+		<td class="td_title"><h2>Els productes coincidents salten les següents regles:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Els productes que hagin superat els criteris de selecció de la normativa vigent <strong>no seran considerats</strong> en les bases següents.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Aplicació automàtica de cupons:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Us permet <strong>aplicar automàticament cupons de descompte</strong> , personalitzar els missatges d'aplicació/eliminació i molt més. Obteniu més informació <a href="" target="">aquí</a> . </p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Amaga altres mètodes d'enviament:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Obteniu més informació <a href="https://www.wp-centrics.com/hide-shipping-methods-on-woocommerce/" target="_blank">aquí</a> .</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="td_title"><h2>Caixes d'enviament:&nbsp;<span class="fns-pro-icon darker">PRO</span></h2></td>
+		<td>
+<p>Empaquetador de caixes d'enviament (caixes d'enviament de tarifa plana). Obteniu més informació <a href="https://www.wp-centrics.com/shipping-boxes-flat-rate/" target="_blank">aquí</a> . </p>
+		</td>
+	</tr>
+</tbody></table>
+
+<h2>Un altre exemple</h2>
+
+<p>Imagineu que sota determinades condicions, voleu informar al vostre client que les seves despeses d'enviament inclouen una assegurança, s'enviaran a través d'una empresa de paquets coneguda i arribaran al client en 24 hores:</p>
+
+<p class="img"><a href="../img/special-actions-1.png" target="_blank">
+	<img src="../img/special-actions-1.png" width="986" height="410" alt="Configuració de missatges personalitzats en el mètode d'enviament"/>
+</a></p>
+
+<p>I aquí teniu el resultat: (l'aparença dependrà del vostre tema), les Advanced Shipping Rates for WooCommerce s'imprimiran de la mateixa manera que ho fa WooCommerce):</p>
+
+<p class="img"><a href="../img/special-actions-2.png" target="_blank">
+	<img src="../img/special-actions-2.png" width="986" height="450" alt="Missatges personalitzats al carretó del client"/>
+</a></p>
+<h2>Últimes coses</h2>
+<p>Ens queda veure la resta de camps, fora de les regles de la taula, i el sistema de registre:</p>
+<p class="fns_do_actions"><a href="other_fields.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="other_fields">Altres camps i registres</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>

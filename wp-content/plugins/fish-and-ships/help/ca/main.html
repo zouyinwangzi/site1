@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Ajuda principal - Advanced Shipping Rates for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+<h1>Ajuda principal</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<strong><a href="main.html" data-fns-tip="main">Principal</a></strong> <a href="sel_conditions.html" data-fns-tip="sel_conditions">Condicions de selecció</a> <a href="shipping_costs.html" data-fns-tip="shipping_costs">Despeses d'enviament</a> <a href="group_by.html" data-fns-tip="group_by">Agrupació per</a> <a href="special_actions.html" data-fns-tip="special_actions">Accions especials</a> <a href="other_fields.html" data-fns-tip="other_fields">Altres camps i registres</a> <a href="help.html" data-fns-tip="help">Ajuda i suport</a> <a href="pro.html" data-fns-tip="pro">gratuït vs PRO</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"></nav>
+
+<!-- translators: here start text content -->
+<div class="help_note" style="margin-top:2em;">
+<p><strong>Nota:</strong><br/> Aquesta documentació suposa que ja sabeu com funciona <strong>les zones d'enviament de WooCommerce</strong> , si no, llegiu primer aquest article: <a href="https://www.wp-centrics.com/how-to-configure-zone-shipping-in-woocommerce/" target="_blank">Configuració de zones d'enviament</a></p>
+</div>
+
+<h2>Breument, en poques paraules</h2>
+
+<p>Advanced Shipping Rates for WooCommerce és un connector per calcular els costos d'enviament de manera fàcil i flexible per a les botigues que funcionen amb <strong>WooCommerce</strong> .</p>
+
+<p><strong>Basats en regles</strong> , s'analitzen consecutivament, de dalt a baix.</p>
+
+<p>Cada regla es divideix en <strong>tres seccions</strong> : Condicions de selecció, Costos d'enviament i Accions especials. Si es compleixen les condicions de selecció, s'aplicaran els costos de la selecció i es desencadenaran les accions especials, si n'hi hagués. </p>
+
+<p>Tant si una norma s'aplica com si no, s'analitzaran les següents:</p>
+
+<p class="img"><a href="../img/main-1.png" target="_blank"><img src="../img/main-1.png" width="918" height="295" alt="Les normes ordenen l'execució"/></a></p>
+
+<h3>Videotutorials</h3>
+<p><a href="https://www.youtube.com/watch?v=wRsoUYiHQRY&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-1.png" width="232" height="130"/><span>Visió general</span></a><a href="https://www.youtube.com/watch?v=sjQKbt2Nn7k&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-2.png" width="232" height="130"/><span>Tutorial breu</span></a><a href="https://www.youtube.com/watch?v=y2EJFluXx9Q&ab_channel=WpCentricsFishAndShips" target="_blank" class="fns-video-link"><img src="../../assets/img/video-3.png" width="232" height="130"/><span>Caixes d'enviament</span></a></p>
+				
+<h3>Un exemple senzill</h3>
+<p>Imaginem una botiga de roba. Volem establir els costos d'enviament en funció del pes i el volum total del carretó. Aquestes són les condicions per als càlculs:  </p>
+
+<table class="wp-list-table widefat striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th></th>
+		<th>Pes màxim:</th> <th>Volum màxim:</th> <th style="width:45%">Cost</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>#1</td> <td>Fins a 2000 g.</td> <td>Qualsevol volum</td> <td>5€</td>
+	</tr>
+	<tr>
+		<td>#2</td>
+		<td>2000 g. o més </td>
+		<td>Fins a 20000 cm<sup>3</sup></td> <td>10€</td>
+	</tr>
+	<tr>
+		<td>#3</td>
+		<td>2000 g. o més </td>
+		<td>Entre 20000 i 40000 cm<sup>3</sup></td> <td>15€</td>
+	</tr>
+	<tr>
+		<td>#4</td> <td>Qualsevol pes</td> <td>Més de 40000 cm<sup>3</sup></td>
+		<td><strong class="abort">30€</strong> . Aquest transportista es fa massa car i no volem oferir aquest mètode d'enviament. </td>
+	</tr>
+	</tbody>
+	</table>
+
+<p>Cada condició exposada es pot transformar en una regla. Les regles <strong>2</strong> i <strong>3</strong> necessiten dues condicions: una per al pes i una altra per al volum (tingueu en compte que tenen un <strong>ON</strong> i un <strong>AND</strong> ): </p>
+
+<p class="img"><a href="../img/main-3-mks.png" target="_blank"><img src="../img/main-3-mks.png" width="1670" height="555" alt="Normes per a la botiga de roba"/></a></p>
+<p>Imaginem aquest carretó de la compra:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Producte</th>
+		<th>Quantitat</th>
+		<th>Pes</th>
+		<th>Volum</th>
+		<th class="align_center">Pes total:</th>
+		<th class="align_center">Volum total:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="2" class="grouped">1350 g.</td>
+		<td rowspan="2" class="grouped last_right">15000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Pantalons</td> <td>1</td> <td>900 g.</td> <td>11000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>Amb un pes inferior a 2000 g., només compleix la regla <strong>#1</strong> :</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Producte</th>
+		<th class="align_center">Pes total:</th>
+		<th class="align_center">Volum total:</th>
+		<th class="align_center">Regla #1</th>
+		<th class="align_center">Regla #2</th>
+		<th class="align_center">Regla #3</th>
+		<th class="align_center">Regla #4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td> <td rowspan="2" class="grouped">1350 g.</td> <td rowspan="2" class="grouped last_right">15000 cm<sup>3</sup></td> <td rowspan="2" class="gray_grouped rule match">màx. 2000 g.:<br/><span class="dashicons dashicons-yes-alt"></span></td>
+		<td rowspan="2" class="gray_grouped rule">  min. 2000 g.:  <br/><span class="dashicons dashicons-dismiss"></span><br/>  màx. 20000 cm<sup>3</sup> :   <br/><span class="dashicons dashicons-yes-alt"></span>
+		</td>
+		 <td rowspan="2" class="gray_grouped rule">min. 2000 g.:<br/><span class="dashicons dashicons-dismiss"></span><br/> min. 20000 cm<sup>3</sup> :<br/><span class="dashicons dashicons-dismiss"></span></td> <td rowspan="2" class="gray_grouped rule">min. 40000 cm<sup>3</sup><br/><span class="dashicons dashicons-dismiss"></span><br/></td>
+	</tr>
+	<tr>
+		<td>Pantalons</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Despeses d'enviament:</th> <td class="align_center"><strong>5€</strong></td> <td class="align_center">(no aplicable)</td> <td class="align_center">(no aplicable)</td> <td class="align_center">(no aplicable)</td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Cost total: <strong>5€</strong></p>
+
+<h3>Afegim un segon pantalon</h3>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Producte</th>
+		<th>Quantitat</th>
+		<th>Pes</th>
+		<th>Volum</th>
+		<th class="align_center">Pes total:</th>
+		<th class="align_center">Volum total:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="2" class="grouped">2250 g.</td>
+		<td rowspan="2" class="grouped last_right">26000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Pantalons</td> <td>2</td> <td>900 g.</td> <td>11000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>El nou pes impedeix complir la regla núm. 1 i el nou volum impedeix complir la regla núm. 2:</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Producte</th>
+		<th class="align_center">Pes total:</th>
+		<th class="align_center">Volum total:</th>
+		<th class="align_center">Regla #1</th>
+		<th class="align_center">Regla #2</th>
+		<th class="align_center">Regla #3</th>
+		<th class="align_center">Regla #4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td> <td rowspan="2" class="grouped">2250 g.</td> <td rowspan="2" class="grouped last_right">26000 cm<sup>3</sup></td> <td rowspan="2" class="gray_grouped rule">màx. 2000 g.:<br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td rowspan="2" class="gray_grouped rule">  min. 2000 g.:  <br/><span class="dashicons dashicons-yes-alt"></span><br/>  màx. 20000 cm<sup>3</sup> :   <br/><span class="dashicons dashicons-dismiss"></span>
+		</td>
+		 <td rowspan="2" class="gray_grouped rule match">min. 2000 g.:<br/><span class="dashicons dashicons-yes-alt"></span><br/> min. 20000 cm<sup>3</sup> :<br/><span class="dashicons dashicons-yes-alt"></span></td> <td rowspan="2" class="gray_grouped rule">min. 40000 cm<sup>3</sup> :<br/><span class="dashicons dashicons-dismiss"></span><br/></td>
+	</tr>
+	<tr>
+		<td>Pantalons</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Despeses d'enviament:</th> <td class="align_center">(no aplicable)</td> <td class="align_center">(no aplicable)</td> <td class="align_center"><strong>15€</strong></td> <td class="align_center">(no aplicable)</td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Cost total: <strong>15€</strong></p>
+
+<h3>Afegim un producte voluminós</h3>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Producte</th>
+		<th>Quantitat</th>
+		<th>Pes</th>
+		<th>Volum</th>
+		<th class="align_center">Pes total:</th>
+		<th class="align_center">Volum total:</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td>
+		<td>2</td>
+		<td>225 g.</td>
+		<td>2000 cm<sup>3</sup></td>
+		<td rowspan="3" class="grouped">3600 g.</td>
+		<td rowspan="3" class="grouped last_right">56000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Pantalons</td> <td>2</td> <td>900 g.</td> <td>11000 cm<sup>3</sup></td>
+	</tr>
+	<tr>
+		<td>Abric</td> <td>1</td> <td>1350 g.</td> <td>30000 cm<sup>3</sup></td>
+	</tr>
+	</tbody>
+</table>
+<p>El nou volum farà que es compleixi la regla <strong>4</strong> :</p>
+<table class="wp-list-table widefat fixed striped tags" style="max-width:800px">
+	<thead>
+	<tr>
+		<th>Producte</th>
+		<th class="align_center">Pes total:</th>
+		<th class="align_center">Volum total:</th>
+		<th class="align_center">Regla #1</th>
+		<th class="align_center">Regla #2</th>
+		<th class="align_center">Regla #3</th>
+		<th class="align_center">Regla #4</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>Camisa</td> <td rowspan="3" class="grouped">3600 g.</td> <td rowspan="3" class="grouped last_right">56000 cm<sup>3</sup></td> <td rowspan="3" class="gray_grouped rule">màx. 2000 g.:<br/><span class="dashicons dashicons-dismiss"></span></td>
+		<td rowspan="3" class="gray_grouped rule">  min. 2000 g.:  <br/><span class="dashicons dashicons-yes-alt"></span><br/>  màx. 20000 cm<sup>3</sup> :   <br/><span class="dashicons dashicons-dismiss"></span>
+		</td>
+		 <td rowspan="3" class="gray_grouped rule">min. 2000 g.:<br/><span class="dashicons dashicons-yes-alt"></span><br/> min. 20000 cm<sup>3</sup> :<br/><span class="dashicons dashicons-yes-alt"></span></td> <td rowspan="3" class="gray_grouped rule stop">min. 40000 cm<sup>3</sup> :<br/><span class="dashicons dashicons-yes-alt"></span><br/></td>
+	</tr>
+	<tr><td>Abric</td></tr> <tr><td>pantalons</td></tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="3">Despeses d'enviament:</th> <td class="align_center off">(no aplicable)</td> <td class="align_center off">(no aplicable)</td> <td class="align_center off">15€</td>
+		<td class="align_center"><strong class="abort">[ABORT]</strong></td>
+	</tr>
+	</tfoot>
+</table>
+
+<p>Tot i que la Regla núm. 3 encara es compleix, la Regla núm. 4 adopta el <strong class="abort">mètode d'enviament Avorta</strong> l'acció especial, anul·lant qualsevol altra regla. Aquest mètode d'enviament <strong>no s'oferirà al client</strong> . </p>
+
+<h2>Fins aquí... fàcil?</h2>
+
+<p>Esperem que sí... a <strong>Wp-Centrics</strong> hem estat treballant dur per desenvolupar una eina senzilla però potent... Potser encara no sembla prou... llegiu la següent secció sobre mètodes de selecció, per començar a veure tot el seu potencial: </p>
+
+<p class="fns_do_actions"><a href="sel_conditions.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="sel_conditions">Condicions de selecció</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+	<p class="signature"><a href="https://www.wp-centrics.com/" target="_blank">Wp-Centrics | Advanced Shipping Rates for WooCommerce</a></p>
+</body>
+</html>
