@@ -10,3 +10,14 @@ Text Domain:  astra-child
 */
 
 /* 注意："Template" 的值必须与父主题的目录名完全一致 */
+
+
+
+
+
+.single-product .product-advantage {
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+    padding: 20px 0 0 0;
+    margin: 10px 0;
+}
