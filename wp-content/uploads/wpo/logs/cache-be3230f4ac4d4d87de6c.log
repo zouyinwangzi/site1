@@ -46,3 +46,102 @@
 [2025-11-15 03:22:53 : INFO] - Cache for author page URL: http://www.site1.com/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
 [2025-11-15 03:22:56 : INFO] - Cache for URL: http://www.site1.com/ has been purged, triggered by action: save_post 
 [2025-11-15 03:22:56 : INFO] - Cache for author page URL: http://www.site1.com/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-15 03:33:56 : INFO] - Cache for term page with URL: http://www.site1.com/product-category/used-summer-clothes-wholesale/  have been purged, triggered by action: edit_terms 
+[2025-11-15 03:33:56 : INFO] - Cache for associated posts for term with URL: http://www.site1.com/product-category/used-summer-clothes-wholesale/ have been purged, triggered by action: edit_terms 
+[2025-11-15 03:46:42 : INFO] - Cache for URL: http://www.site1.com/collections/ has been purged, triggered by action: save_post 
+[2025-11-15 03:46:42 : INFO] - Cache for author page URL: http://www.site1.com/author/admin/ associated with post_type: page and Title: "All Collections" has been purged, triggered by action: save_post 
+[2025-11-15 03:46:47 : INFO] - Cache for URL: http://www.site1.com/collections/ has been purged, triggered by action: save_post 
+[2025-11-15 03:46:47 : INFO] - Cache for author page URL: http://www.site1.com/author/admin/ associated with post_type: page and Title: "All Collections" has been purged, triggered by action: save_post 
+[2025-11-15 06:45:55 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:45:55 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:46:00 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:46:00 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:46:00 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:46:00 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:46:43 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:46:43 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:46:43 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:46:43 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:46:43 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:46:43 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:47:31 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:47:31 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:47:31 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:47:31 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 06:47:31 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 06:47:31 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 07:15:47 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:15:47 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:15:57 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:15:57 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:15:58 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:15:58 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:18:13 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:18:13 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:18:25 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:18:25 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:18:32 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:18:32 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:24:00 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:24:00 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:24:01 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:24:01 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:24:08 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:24:08 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:24:21 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=float-contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:24:21 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "float-contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:24:22 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=float-contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:24:22 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "float-contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:24:38 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=float-contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:24:38 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "float-contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:25:16 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=float-contact-buttons has been purged, triggered by action: wp_trash_post 
+[2025-11-15 07:26:56 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=float-contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:26:56 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "float-contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:27:07 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=float-contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:27:07 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "float-contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:27:13 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=float-contact-buttons has been purged, triggered by action: save_post 
+[2025-11-15 07:27:13 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "float-contact-buttons" has been purged, triggered by action: save_post 
+[2025-11-15 07:49:23 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:49:23 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:49:34 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:49:34 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:49:39 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:49:39 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:49:55 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:49:55 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:49:58 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:49:58 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 07:50:00 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-15 07:50:00 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-15 10:02:58 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-15 10:03:20 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-15 10:46:01 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:46:01 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:46:04 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:46:04 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:46:06 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:46:06 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:46:43 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:46:43 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:46:46 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:46:46 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:46:49 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:46:49 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:48:25 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:48:25 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:48:27 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:48:27 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:48:30 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:48:30 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:51:44 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:51:44 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:51:47 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:51:47 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:51:50 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:51:50 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:55:12 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:55:12 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:55:14 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:55:14 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-15 10:55:17 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-15 10:55:17 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 

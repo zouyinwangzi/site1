@@ -281,7 +281,7 @@ function swf_add_line_share_button()
 
 
 
-
+/******************************    询盘表单联动  Start   ****************************/
 
 
 /*************** 国家地区联动选择 Start *************/
@@ -347,3 +347,146 @@ add_action('wp_footer', 'output_continents_countries_data');
 // }, 10, 2);
 
 /*************** 国家地区联动选择 End *************/
+
+
+/*************** 产品加入到询盘 Start *************/
+add_action('woocommerce_share', function () {
+    // 只在产品页面显示
+    if (!is_product()) {
+        return;
+    }
+
+    $product_id = get_the_ID();
+    $product = wc_get_product($product_id);
+
+    if (!$product) {
+        return;
+    }
+
+    // 获取产品数据
+    $product_title = htmlspecialchars($product->get_name(), ENT_QUOTES, 'UTF-8');
+    $product_url = esc_url(get_permalink($product_id));
+
+    // 获取产品特色图
+    $featured_image_url = '';
+    $image_id = $product->get_image_id();
+    if ($image_id) {
+        $featured_image_url = esc_url(wp_get_attachment_image_url($image_id, 'woocommerce_single'));
+    }
+
+    // 备用：使用中等尺寸图片
+    if (empty($featured_image_url) && $image_id) {
+        $featured_image_url = esc_url(wp_get_attachment_image_url($image_id, 'medium'));
+    }
+
+    // 构建数据属性
+    $data_attributes = sprintf(
+        'data-product-id="%d" data-product-title="%s" data-product-url="%s" data-product-image="%s"',
+        $product_id,
+        $product_title,
+        $product_url,
+        $featured_image_url
+    );
+
+    // 输出按钮
+    printf(
+        '<a href="#%s" id="reservation-now-btn" class="reservation-now-btn button" %s>Reservation Now</a>',
+        urlencode(sprintf('elementor-action:action=popup:open&settings=%s', base64_encode('{"id":"667","toggle":false}'))),
+        $data_attributes
+    );
+}, 1);
+
+
+
+
+// 在footer输出数据
+function output_query_product_js_css()
+{
+    if (!is_admin() && function_exists('is_product') && is_product()) {
+        echo '<script type="text/javascript">';
+        $_js = file_get_contents(__DIR__ . '/js/query-product.js');
+        echo $_js;
+        echo '</script>';
+    }
+
+    if (!is_admin() && function_exists('is_product') && is_product()) {
+        echo '<style type="text/css">';
+        $_css = file_get_contents(__DIR__ . '/css/query-product.css');
+        echo $_css;
+        echo '</style>';
+    }
+}
+add_action('wp_footer', 'output_query_product_js_css');
+
+
+
+
+
+//后端处理JSON数据的PHP代码
+// add_action('elementor_pro/forms/new_record', function($record, $handler) {
+//     $raw_fields = $record->get('fields');
+    
+//     // 查找包含产品数据的字段
+//     foreach ($raw_fields as $field) {
+//         if ($field['id'] === 'query_product' && !empty($field['value'])) {
+//             $product_data = json_decode($field['value'], true);
+            
+//             if (json_last_error() === JSON_ERROR_NONE && is_array($product_data)) {
+//                 error_log('Inquiry Products (JSON):');
+//                 error_log('Total products: ' . count($product_data));
+                
+//                 foreach ($product_data as $index => $product) {
+//                     error_log(sprintf(
+//                         "Product %d: %s (ID: %s, URL: %s)",
+//                         $index + 1,
+//                         $product['title'],
+//                         $product['id'],
+//                         $product['url']
+//                     ));
+//                 }
+//             } else {
+//                 // 如果不是JSON，按原文本处理
+//                 error_log('Inquiry Products (Text): ' . $field['value']);
+//             }
+//             break;
+//         }
+//     }
+// }, 10, 2);
+
+
+
+// function send_custom_webhook( $record, $handler ) {
+
+// 	$form_name = $record->get_form_settings( 'form_name' );
+
+//     error_log('Form Name: ' . $form_name);
+
+// 	// Replace MY_FORM_NAME with the name you gave your form
+// 	if ( 'Query Form' !== $form_name ) {
+// 		return;
+// 	}
+
+// 	$raw_fields = $record->get( 'fields' );
+// 	$fields = [];
+// 	foreach ( $raw_fields as $id => $field ) {
+// 		$fields[ $id ] = $field['value'];
+// 	}
+
+// 	wp_remote_post(
+// 		'https://api.example.com/',
+// 		[
+// 			'body' => $fields,
+// 		]
+// 	);
+// }
+// add_action( 'elementor_pro/forms/new_record', 'send_custom_webhook', 10, 2 );
+
+
+
+
+/*************** 产品加入到询盘 End *************/
+
+
+
+
+/******************************    询盘表单联动  End   ****************************/

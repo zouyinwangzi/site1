@@ -1,0 +1,8 @@
+#query-form-fields.has-products{
+    width: 70%;
+}
+#query-form-product-list.has-products{
+    width: 30%;
+    padding: 0 20px;
+    overflow-y: scroll;
+}
