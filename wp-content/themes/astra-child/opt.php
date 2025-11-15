@@ -196,3 +196,12 @@ function disable_cart_scroll_js() {
 //     remove_action( 'wp_dashboard_setup', 'YITH_Dashboard::dashboard_widget_setup' );
 //     remove_action( 'admin_enqueue_scripts', 'YITH_Dashboard::enqueue_scripts', 20 );
 // }, 20 );
+if(class_exists('\Wpmet\Libs\Stories')) {
+    add_action( 'wp_dashboard_setup', function() {
+        $Wpmet_instance = \Wpmet\Libs\Stories::instance();
+        remove_action( 'wp_dashboard_setup', array( $Wpmet_instance, 'show_story_widget' ), 111 );
+    }, 1 );
+
+}
+// $Wpmet_instance = \Wpmet\Libs\Stories::instance();
+// remove_action( 'wp_dashboard_setup', array( $Wpmet_instance, 'show_story_widget' ), 111 );

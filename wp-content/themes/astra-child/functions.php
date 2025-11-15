@@ -75,7 +75,7 @@ add_action('woocommerce_share', function () {
 
     //打开弹窗查询表单按钮
     // echo '<a rel="nofollow" class="button" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjU2MyIsInRvZ2dsZSI6ZmFsc2V9">Query Form</a>';
-},20);
+}, 20);
 
 
 
@@ -276,3 +276,74 @@ function swf_add_line_share_button()
     
 //     return false;
 // }
+
+
+
+
+
+
+
+
+/*************** 国家地区联动选择 Start *************/
+// 洲和国家数据
+function get_continents_countries_data()
+{
+    require_once get_stylesheet_directory() . '/continents_countries_data.php';
+
+    return $continents_countries_data;
+}
+
+// 在footer输出数据
+function output_continents_countries_data()
+{
+    if (!is_admin()) {
+        $data = get_continents_countries_data();
+        echo '<script type="text/javascript">';
+        echo 'var continentsCountriesData = ' . json_encode($data) . ';';
+        echo "\n";
+        $_js = file_get_contents(__DIR__ . '/js/continents-countries.js');
+        echo $_js;
+        echo '</script>';
+    }
+}
+add_action('wp_footer', 'output_continents_countries_data');
+
+
+
+
+
+
+
+// 调试Elementor表单提交数据
+// 确保字符编码正确处理
+// add_action('elementor_pro/forms/new_record', function($record, $handler) {
+//     $raw_fields = $record->get('fields');
+    
+//     // 调试：记录原始数据
+//     error_log('Raw form fields: ' . print_r($raw_fields, true));
+    
+//     // 如果有编码问题，尝试转换
+//     foreach ($raw_fields as $id => $field) {
+//         if ($id === 'country') {
+//             // 确保UTF-8编码
+//             $country_value = mb_convert_encoding($field['value'], 'UTF-8', 'auto');
+//             error_log('Country field after encoding: ' . $country_value);
+//         }
+//     }
+// }, 10, 2);
+
+
+
+// 在保存前处理表单数据
+// add_filter('elementor_pro/forms/process', function($record, $handler) {
+//     $fields = $record->get_field([]);
+    
+//     // 确保国家字段被正确处理
+//     if (isset($fields['country'])) {
+//         error_log('Processing country field: ' . $fields['country']);
+//     }
+    
+//     return $record;
+// }, 10, 2);
+
+/*************** 国家地区联动选择 End *************/
