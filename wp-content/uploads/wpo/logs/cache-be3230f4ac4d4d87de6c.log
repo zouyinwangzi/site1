@@ -415,3 +415,131 @@
 [2025-11-17 05:35:10 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
 [2025-11-17 05:35:10 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
 [2025-11-17 05:53:32 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-17 06:06:14 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-17 06:06:14 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-17 06:16:09 : INFO] - Cache for term page with URL: http://www.site1.test/product-category/used-brand-shoes/  have been purged, triggered by action: edit_terms 
+[2025-11-17 06:19:32 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:19:32 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:19:32 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:19:32 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:19:37 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:19:37 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:19:37 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:19:37 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:19:42 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:19:42 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:19:42 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:19:42 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:19:47 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:19:47 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item" has been purged, triggered by action: save_post 
+[2025-11-17 06:19:54 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:19:54 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:20:01 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:20:01 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:20:11 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:20:11 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:20:11 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:20:11 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:20:15 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item-2 has been purged, triggered by action: save_post 
+[2025-11-17 06:20:15 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item" has been purged, triggered by action: save_post 
+[2025-11-17 06:20:18 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:20:18 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:20:18 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:20:18 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:20:20 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item-2 has been purged, triggered by action: save_post 
+[2025-11-17 06:20:20 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #859" has been purged, triggered by action: save_post 
+[2025-11-17 06:20:23 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:20:23 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:20:23 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:20:23 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:20:25 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item-2 has been purged, triggered by action: save_post 
+[2025-11-17 06:20:25 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #859" has been purged, triggered by action: save_post 
+[2025-11-17 06:22:14 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:22:14 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:22:19 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:22:19 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:22:26 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:22:26 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:22:34 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:22:34 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:22:38 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:22:38 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:22:45 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:22:45 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Elementor Loop Item #856" has been purged, triggered by action: save_post 
+[2025-11-17 06:24:20 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:24:20 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Home-PRODUCTS_CATEGORIES-Loop" has been purged, triggered by action: save_post 
+[2025-11-17 06:24:58 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:24:58 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:24:58 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:24:58 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:25:02 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:25:02 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:25:02 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:25:02 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:25:07 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:25:07 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:25:07 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:25:07 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:26:15 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:26:15 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:26:15 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:26:15 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:26:20 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:26:20 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:26:20 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:26:20 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:26:26 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:26:26 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:26:26 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:26:26 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:27:37 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:27:37 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Home-PRODUCTS_CATEGORIES-Loop" has been purged, triggered by action: save_post 
+[2025-11-17 06:27:46 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:27:46 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Home-PRODUCTS_CATEGORIES-Loop" has been purged, triggered by action: save_post 
+[2025-11-17 06:27:51 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:27:51 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Home-PRODUCTS_CATEGORIES-Loop" has been purged, triggered by action: save_post 
+[2025-11-17 06:29:09 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:29:09 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Home-PRODUCTS_CATEGORIES-Loop" has been purged, triggered by action: save_post 
+[2025-11-17 06:29:14 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:29:14 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Home-PRODUCTS_CATEGORIES-Loop" has been purged, triggered by action: save_post 
+[2025-11-17 06:29:18 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=elementor-loop-item has been purged, triggered by action: save_post 
+[2025-11-17 06:29:18 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "Home-PRODUCTS_CATEGORIES-Loop" has been purged, triggered by action: save_post 
+[2025-11-17 06:40:47 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:40:47 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:40:47 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:40:47 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:40:59 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:40:59 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:40:59 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:40:59 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:41:04 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:41:04 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:41:04 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:41:04 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:46:29 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:46:29 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:46:29 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:46:29 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:46:35 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:46:35 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:46:35 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:46:35 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:46:42 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:46:42 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:46:42 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:46:42 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:56:21 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-17 06:56:25 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-17 06:56:33 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-17 06:56:50 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:56:50 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:56:50 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:56:50 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:56:57 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:56:57 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:56:57 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:56:57 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 06:57:03 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 06:57:03 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 06:57:03 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 06:57:03 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
