@@ -27,28 +27,47 @@ add_filter( 'pre_site_transient_update_themes', 'remove_core_updates' );
 /**
  * 禁用 Yoast SEO 的远程请求和许可证检查
  */
-add_filter( 'pre_http_request', 'disable_yoast_remote_requests', 10, 3 );
+// add_filter( 'pre_http_request', 'disable_yoast_remote_requests', 10, 3 );
 
-function disable_yoast_remote_requests( $preempt, $args, $url ) {
-    // 检查是否是 Yoast 的 API 请求
-    if ( strpos( $url, 'my.yoast.com/api/sites/current' ) !== false ) {
-        // 返回一个模拟的成功响应来阻止实际请求
-        return array(
-            'response' => array( 'code' => 200 ),
-            'body'     => json_encode( array( 'success' => true ) )
-        );
-    }
+// function disable_yoast_remote_requests( $preempt, $args, $url ) {
+//     // 检查是否是 Yoast 的 API 请求
+//     if ( strpos( $url, 'my.yoast.com/api/sites/current' ) !== false ) {
+//         // 返回一个模拟的成功响应来阻止实际请求
+//         return array(
+//             'response' => array( 'code' => 200 ),
+//             'body'     => json_encode( array( 'success' => true ) )
+//         );
+//     }
     
-    // 拦截其他 Yoast API 请求（可选）
-    if ( strpos( $url, 'my.yoast.com/api/' ) !== false ) {
-        return array(
-            'response' => array( 'code' => 200 ),
-            'body'     => json_encode( array( 'success' => true ) )
-        );
-    }
+//     // 拦截其他 Yoast API 请求（可选）
+//     if ( strpos( $url, 'my.yoast.com/api/' ) !== false ) {
+//         return array(
+//             'response' => array( 'code' => 200 ),
+//             'body'     => json_encode( array( 'success' => true ) )
+//         );
+//     }
     
-    return $preempt;
-}
+//     return $preempt;
+// }
+
+
+// // 禁用Yoast SEO的API请求
+// add_filter('yoast_seo_development_mode', '__return_true');
+
+// // 或者更具体地阻止站点信息请求
+// add_filter('pre_http_request', 'block_yoast_api_requests', 10, 3);
+// function block_yoast_api_requests($preempt, $args, $url)
+// {
+//     // 阻止对my.yoast.com的API请求
+//     if (strpos($url, 'my.yoast.com/api/sites/current') !== false) {
+//         return array(
+//             'response' => array('code' => 403, 'message' => 'Forbidden'),
+//             'body' => '',
+//         );
+//     }
+//     return $preempt;
+// }
+
 
 /**
  * 全面禁用 Yoast SEO 的远程功能

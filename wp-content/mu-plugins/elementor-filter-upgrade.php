@@ -16,7 +16,7 @@ add_filter( 'pre_http_request', function( $preempt, $args, $url ) {
     }
 
     // 仅针对 elementor info API 拦截（精确匹配）
-    if ( false === strpos( $url, 'my.elementor.com/api/v2/info/' ) ) {
+    if ( false !== strpos( $url, 'my.elementor.com/api/v2/info/' ) ) {
         return $preempt;
     }
 

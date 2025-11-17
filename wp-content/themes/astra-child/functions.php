@@ -48,22 +48,6 @@ require_once get_stylesheet_directory() . '/opt.php';
 
 
 
-// 禁用Yoast SEO的API请求
-add_filter('yoast_seo_development_mode', '__return_true');
-
-// 或者更具体地阻止站点信息请求
-add_filter('pre_http_request', 'block_yoast_api_requests', 10, 3);
-function block_yoast_api_requests($preempt, $args, $url)
-{
-    // 阻止对my.yoast.com的API请求
-    if (strpos($url, 'my.yoast.com/api/sites/current') !== false) {
-        return array(
-            'response' => array('code' => 403, 'message' => 'Forbidden'),
-            'body' => '',
-        );
-    }
-    return $preempt;
-}
 
 
 
