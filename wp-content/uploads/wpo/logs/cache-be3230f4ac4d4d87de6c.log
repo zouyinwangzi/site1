@@ -145,3 +145,273 @@
 [2025-11-15 10:55:14 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
 [2025-11-15 10:55:17 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
 [2025-11-15 10:55:17 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-17 01:34:47 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-17 01:36:48 : INFO] - Cache for term page with URL: http://www.site1.test/?lang=zh  have been purged, triggered by action: edit_terms 
+[2025-11-17 01:36:52 : INFO] - Cache for term page with URL: http://www.site1.test/?lang=es  have been purged, triggered by action: edit_terms 
+[2025-11-17 01:36:52 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=term_translations&term=pll_691a7c30334b2  have been purged, triggered by action: edit_terms 
+[2025-11-17 01:38:56 : INFO] - Cache for term page with URL: http://www.site1.test/?lang=en  have been purged, triggered by action: edit_terms 
+[2025-11-17 01:38:56 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=term_translations&term=pll_691a7cb094957  have been purged, triggered by action: edit_terms 
+[2025-11-17 01:38:56 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=term_translations&term=pll_691a7c30334b2  have been purged, triggered by action: edit_terms 
+[2025-11-17 01:39:34 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 01:39:34 : INFO] - Cache for URL: http://www.site1.test/home-2-2/ has been purged, triggered by action: save_post 
+[2025-11-17 01:39:34 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 01:39:41 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 01:39:41 : INFO] - Cache for URL: http://www.site1.test/home-2-2/ has been purged, triggered by action: save_post 
+[2025-11-17 01:39:41 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 01:39:41 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=post_translations&term=pll_691a7cd64409f  have been purged, triggered by action: edit_terms 
+[2025-11-17 01:39:41 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 01:39:41 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 01:39:41 : INFO] - Cache for associated posts for term with URL: http://www.site1.test/?taxonomy=post_translations&term=pll_691a7cd64409f have been purged, triggered by action: edit_terms 
+[2025-11-17 01:41:27 : INFO] - Cache for associated Polylang translation posts for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 01:41:27 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 01:41:27 : INFO] - Cache for URL: http://www.site1.test/ has been purged, triggered by action: save_post 
+[2025-11-17 01:41:27 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home &#8211; 中文 (中国)" has been purged, triggered by action: save_post 
+[2025-11-17 01:41:37 : INFO] - Cache for associated Polylang translation posts for Title: "Home &#8211; Español" have been purged 
+[2025-11-17 01:41:37 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home &#8211; Español" have been purged 
+[2025-11-17 01:41:37 : INFO] - Cache for URL: http://www.site1.test/es/home/ has been purged, triggered by action: save_post 
+[2025-11-17 01:41:37 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home &#8211; Español" has been purged, triggered by action: save_post 
+[2025-11-17 01:41:47 : INFO] - Cache for associated Polylang translation posts for Title: "Home" have been purged 
+[2025-11-17 01:41:47 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home" have been purged 
+[2025-11-17 01:41:47 : INFO] - Cache for URL: http://www.site1.test/en/home/ has been purged, triggered by action: save_post 
+[2025-11-17 01:41:47 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Home" has been purged, triggered by action: save_post 
+[2025-11-17 02:08:34 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 02:08:34 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 02:08:34 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 02:08:37 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 02:08:37 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 02:08:37 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 02:08:41 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 02:08:41 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 02:08:41 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 02:11:28 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 02:11:28 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 02:11:28 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 02:11:32 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 02:11:32 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 02:11:32 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 02:11:36 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 02:11:36 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 02:11:36 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 02:28:10 : INFO] - Cache for associated Polylang translation posts for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 02:28:10 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 02:28:10 : INFO] - Cache for URL: http://www.site1.test/zh/home/ has been purged, triggered by action: save_post 
+[2025-11-17 02:28:10 : INFO] - Cache for author page URL: http://www.site1.test/zh/author/admin/ associated with post_type: page and Title: "Home &#8211; 中文 (中国)" has been purged, triggered by action: save_post 
+[2025-11-17 02:28:15 : INFO] - Cache for associated Polylang translation posts for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 02:28:15 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 02:28:15 : INFO] - Cache for URL: http://www.site1.test/zh/home/ has been purged, triggered by action: save_post 
+[2025-11-17 02:28:15 : INFO] - Cache for author page URL: http://www.site1.test/zh/author/admin/ associated with post_type: page and Title: "Home &#8211; 中文 (中国)" has been purged, triggered by action: save_post 
+[2025-11-17 02:28:19 : INFO] - Cache for associated Polylang translation posts for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 02:28:19 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "Home &#8211; 中文 (中国)" have been purged 
+[2025-11-17 02:28:19 : INFO] - Cache for URL: http://www.site1.test/zh/home/ has been purged, triggered by action: save_post 
+[2025-11-17 02:28:19 : INFO] - Cache for author page URL: http://www.site1.test/zh/author/admin/ associated with post_type: page and Title: "Home &#8211; 中文 (中国)" has been purged, triggered by action: save_post 
+[2025-11-17 02:30:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-17 02:30:38 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=post_translations&term=pll_691a88cb158c1  have been purged, triggered by action: edit_terms 
+[2025-11-17 02:30:38 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 02:30:38 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 02:30:38 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 02:30:38 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 02:31:09 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 02:31:09 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 02:31:09 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 02:31:09 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 02:31:13 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 02:31:13 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 02:31:13 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 02:31:13 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 02:31:17 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 02:31:17 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 02:31:17 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 02:31:17 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 02:34:20 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-17 02:34:30 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=post_translations&term=pll_691a88cb158c1  have been purged, triggered by action: edit_terms 
+[2025-11-17 02:34:36 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=post_translations&term=pll_691a88cb158c1  have been purged, triggered by action: edit_terms 
+[2025-11-17 02:34:36 : INFO] - Cache for associated Polylang translation posts for Title: "top-main-es" have been purged 
+[2025-11-17 02:34:36 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-main-es" have been purged 
+[2025-11-17 02:34:36 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 02:34:36 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-main-es" has been purged, triggered by action: save_post 
+[2025-11-17 02:34:50 : INFO] - Cache for term page with URL: http://www.site1.test/?taxonomy=post_translations&term=pll_691a88cb158c1  have been purged, triggered by action: edit_terms 
+[2025-11-17 02:34:50 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 02:34:50 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 02:34:50 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 02:34:50 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 02:35:17 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 02:35:17 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 02:35:17 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 02:35:17 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 02:35:21 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 02:35:21 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 02:35:21 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 02:35:21 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 02:35:24 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 02:35:24 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 02:35:24 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 02:35:24 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:42:21 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 03:42:21 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 03:42:21 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 03:42:21 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 03:42:25 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 03:42:25 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 03:42:25 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 03:42:25 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 03:42:28 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 03:42:28 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 03:42:28 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 03:42:28 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 03:43:46 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:43:46 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:43:46 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:43:46 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:43:51 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:43:51 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:43:51 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:43:51 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:43:53 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:43:53 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:43:53 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:43:53 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:43:56 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:43:56 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:43:56 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:43:56 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:43:58 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:43:58 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:43:58 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:43:58 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:44:01 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:01 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:01 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:44:01 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:44:41 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:41 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:41 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:44:41 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:44:48 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:48 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:48 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:44:48 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:44:52 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:52 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:44:52 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:44:52 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:01 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:01 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:01 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:45:01 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:05 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:05 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:05 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:45:05 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:06 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:45:06 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:45:06 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:45:06 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:10 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:10 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:10 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:45:10 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:11 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:45:11 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:45:11 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:45:11 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:17 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:45:17 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:45:17 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:45:17 : INFO] - Cache for author page URL: http://www.site1.test/es/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:54 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:54 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:54 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:45:54 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:45:59 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:59 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:45:59 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:45:59 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:46:03 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:46:03 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:46:03 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:46:03 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:46:14 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 03:46:14 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 03:46:14 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 03:46:14 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 03:46:19 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 03:46:19 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 03:46:19 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 03:46:19 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 03:46:25 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 03:46:25 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 03:46:25 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 03:46:25 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 03:47:19 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:47:19 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:47:19 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:47:19 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:47:27 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:47:27 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:47:27 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:47:27 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:47:32 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:47:32 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:47:32 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:47:32 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:48:00 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:48:00 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:48:00 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:48:00 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:48:04 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:48:04 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:48:04 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:48:04 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:48:09 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 03:48:09 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 03:48:09 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 03:48:09 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 03:48:12 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:48:12 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:48:12 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:48:12 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:48:17 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:48:17 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:48:17 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:48:17 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 03:48:21 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 03:48:21 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 03:48:21 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 03:48:21 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 05:34:41 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 05:34:41 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 05:34:41 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 05:34:41 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 05:34:44 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 05:34:44 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 05:34:44 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 05:34:44 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 05:34:45 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 05:34:45 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 05:34:45 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 05:34:45 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 05:34:50 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-zh" have been purged 
+[2025-11-17 05:34:50 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-zh" have been purged 
+[2025-11-17 05:34:50 : INFO] - Cache for URL: http://www.site1.test/zh/?elementskit_template=top-header-zh has been purged, triggered by action: save_post 
+[2025-11-17 05:34:50 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-zh" has been purged, triggered by action: save_post 
+[2025-11-17 05:34:50 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 05:34:50 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 05:34:50 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 05:34:50 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 05:34:56 : INFO] - Cache for associated Polylang translation posts for Title: "top-header-es" have been purged 
+[2025-11-17 05:34:56 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header-es" have been purged 
+[2025-11-17 05:34:56 : INFO] - Cache for URL: http://www.site1.test/es/?elementskit_template=top-main-es has been purged, triggered by action: save_post 
+[2025-11-17 05:34:56 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header-es" has been purged, triggered by action: save_post 
+[2025-11-17 05:34:57 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 05:34:57 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 05:34:57 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 05:34:57 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 05:35:03 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 05:35:03 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 05:35:03 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 05:35:03 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 05:35:10 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-17 05:35:10 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-17 05:35:10 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-17 05:35:10 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-17 05:53:32 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 

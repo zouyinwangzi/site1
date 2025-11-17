@@ -474,3 +474,31 @@ add_action('wp_footer', 'output_query_product_js_css');
 
 
 /******************************    询盘表单联动  End   ****************************/
+
+
+
+
+
+/******************************    多语言  Start   ****************************/
+
+
+add_shortcode( 'language_switcher', function( $atts ) {
+    if ( ! function_exists( 'pll_the_languages' ) ) {
+        return '';
+    }
+    $atts = shortcode_atts( array(
+        'dropdown'      => 1,
+        'show_names'    => 0,
+        'show_flags'    => 1,
+        'hide_if_empty' => 1,
+    ), $atts, 'language_switcher' );
+
+    // pll_the_languages 支持 echo 参数，设置为 0 返回字符串
+    $atts['echo'] = 0;
+    return pll_the_languages( $atts );
+} );
+/******************************    多语言  End   ****************************/
+
+
+
+
