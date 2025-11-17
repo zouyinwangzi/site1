@@ -678,3 +678,9 @@
 [2025-11-17 09:42:02 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "MORE PRODUCT" has been purged, triggered by action: save_post 
 [2025-11-17 09:42:07 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=more-product has been purged, triggered by action: save_post 
 [2025-11-17 09:42:07 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "MORE PRODUCT" has been purged, triggered by action: save_post 
+[2025-11-17 11:44:33 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=more-product has been purged, triggered by action: save_post 
+[2025-11-17 11:44:33 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "MORE PRODUCT" has been purged, triggered by action: save_post 
+[2025-11-17 11:44:40 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=more-product has been purged, triggered by action: save_post 
+[2025-11-17 11:44:40 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "MORE PRODUCT" has been purged, triggered by action: save_post 
+[2025-11-17 11:44:46 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=more-product has been purged, triggered by action: save_post 
+[2025-11-17 11:44:46 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "MORE PRODUCT" has been purged, triggered by action: save_post 

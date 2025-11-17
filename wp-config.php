@@ -17,6 +17,10 @@
  *
  * @package WordPress
  */
+define( 'WP_HOME',  ((int)$_SERVER['SERVER_PORT'] == 443 ? 'https' : 'http') . '://' .$_SERVER['SERVER_NAME'] );
+define( 'WP_SITEURL', ((int)$_SERVER['SERVER_PORT'] == 443 ? 'https' : 'http') . '://' .$_SERVER['SERVER_NAME'] );
+
+
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
