@@ -213,12 +213,12 @@ function updateProductListInContactForm() {
             let readableText = `=== INQUIRY PRODUCTS (${productList.length}) ===\n\n`;
 
             productList.forEach((product, index) => {
-                readableText += `PRODUCT ${index + 1}:\n<br>`;
-                readableText += `Title: ${product.title}\n<br>`;
-                readableText += `URL: ${product.url}\n<br>`;
-                readableText += `ID: ${product.id}\n<br>`;
-                readableText += `Added: ${new Date(product.timestamp).toLocaleString()}\n<br>`;
-                readableText += `----------------------------\n\n<br>`;
+                readableText += `PRODUCT ${index + 1}:\n`;
+                readableText += `Title: ${product.title}\n`;
+                readableText += `URL: ${product.url}\n`;
+                readableText += `ID: ${product.id}\n`;
+                readableText += `Added: ${new Date(product.timestamp).toLocaleString()}\n`;
+                readableText += `----------------------------\n\n`;
             });
 
             hiddenTextarea.val(readableText);

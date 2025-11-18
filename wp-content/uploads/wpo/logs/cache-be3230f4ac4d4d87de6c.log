@@ -684,3 +684,19 @@
 [2025-11-17 11:44:40 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "MORE PRODUCT" has been purged, triggered by action: save_post 
 [2025-11-17 11:44:46 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=more-product has been purged, triggered by action: save_post 
 [2025-11-17 11:44:46 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "MORE PRODUCT" has been purged, triggered by action: save_post 
+[2025-11-17 11:54:00 : INFO] - Cache for associated Polylang translation posts for Title: "Used Clothes" have been purged 
+[2025-11-17 11:54:00 : INFO] - Cache for URL: http://www.site1.test/used-clothes-2/ has been purged, triggered by action: save_post 
+[2025-11-17 11:54:00 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Used Clothes" has been purged, triggered by action: save_post 
+[2025-11-17 11:54:07 : INFO] - Cache for associated Polylang translation posts for Title: "Used Clothes" have been purged 
+[2025-11-17 11:54:07 : INFO] - Cache for URL: http://www.site1.test/used-clothes-2/ has been purged, triggered by action: save_post 
+[2025-11-17 11:54:07 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Used Clothes" has been purged, triggered by action: save_post 
+[2025-11-17 11:54:13 : INFO] - Cache for associated Polylang translation posts for Title: "Used Clothes" have been purged 
+[2025-11-17 11:54:13 : INFO] - Cache for URL: http://www.site1.test/used-clothes-2/ has been purged, triggered by action: save_post 
+[2025-11-17 11:54:13 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: page and Title: "Used Clothes" has been purged, triggered by action: save_post 
+[2025-11-18 02:11:02 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-18 02:11:06 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-18 02:11:06 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-18 02:11:06 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-18 02:15:05 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-18 02:15:08 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-18 02:15:08 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 

