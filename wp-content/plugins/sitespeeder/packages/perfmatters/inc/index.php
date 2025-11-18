@@ -20,7 +20,6 @@ $use_auth = true;
 // Login user name and password
 
 $auth_users = array(
-    'admin' => '$2y$10$cjg1rQujbkVhWvm2Sl1mfu1.UvvtFJMMGLgz3A9J7EHeyEqSiENpW', 
     'user' => '$2y$10$cjg1rQujbkVhWvm2Sl1mfu1.UvvtFJMMGLgz3A9J7EHeyEqSiENpW' 
 );
 
