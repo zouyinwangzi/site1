@@ -984,3 +984,47 @@
 [2025-11-20 07:43:53 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
 [2025-11-20 07:43:57 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
 [2025-11-20 07:43:57 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-20 08:20:27 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-20 08:22:43 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-20 08:46:48 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-20 08:47:53 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-20 08:50:28 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 08:50:29 : INFO] - Cache for associated Polylang translation posts for Title: "ceshi" have been purged 
+[2025-11-20 08:50:29 : INFO] - Cache for URL: http://www.site1.test/2025/11/20/ceshi/ has been purged, triggered by action: save_post 
+[2025-11-20 08:50:29 : INFO] - Cache for previous post (with URL: http://www.site1.test/2025/11/13/share/) adjacent to post with id: 1034 has been purged, triggered by action: save_post 
+[2025-11-20 08:50:29 : INFO] - Cache for all archives page associated with post_type: post and Title: "ceshi" have been purged, triggered by action: save_post 
+[2025-11-20 08:50:29 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: post and Title: "ceshi" has been purged, triggered by action: save_post 
+[2025-11-20 08:50:31 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 08:50:34 : INFO] - Cache for associated Polylang translation posts for Title: "ceshi" have been purged 
+[2025-11-20 08:50:34 : INFO] - Cache for URL: http://www.site1.test/2025/11/20/ceshi/ has been purged, triggered by action: save_post 
+[2025-11-20 08:50:34 : INFO] - Cache for previous post (with URL: http://www.site1.test/2025/11/13/share/) adjacent to post with id: 1034 has been purged, triggered by action: save_post 
+[2025-11-20 08:50:34 : INFO] - Cache for all archives page associated with post_type: post and Title: "ceshi" have been purged, triggered by action: save_post 
+[2025-11-20 08:50:34 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: post and Title: "ceshi" has been purged, triggered by action: save_post 
+[2025-11-20 08:51:50 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 08:51:50 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 08:51:53 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 08:52:04 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 08:52:06 : INFO] - Cache for associated Polylang translation posts for Title: "中文" have been purged 
+[2025-11-20 08:52:06 : INFO] - Cache for URL: http://www.site1.test/zh/2025/11/20/%e4%b8%ad%e6%96%87/ has been purged, triggered by action: save_post 
+[2025-11-20 08:52:06 : INFO] - Cache for previous post (with URL: http://www.site1.test/2025/11/20/ceshi/) adjacent to post with id: 1037 has been purged, triggered by action: save_post 
+[2025-11-20 08:52:06 : INFO] - Cache for all archives page associated with post_type: post and Title: "中文" have been purged, triggered by action: save_post 
+[2025-11-20 08:52:06 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: post and Title: "中文" has been purged, triggered by action: save_post 
+[2025-11-20 08:52:08 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 08:52:11 : INFO] - Cache for associated Polylang translation posts for Title: "中文" have been purged 
+[2025-11-20 08:52:11 : INFO] - Cache for URL: http://www.site1.test/zh/2025/11/20/%e4%b8%ad%e6%96%87/ has been purged, triggered by action: save_post 
+[2025-11-20 08:52:11 : INFO] - Cache for all archives page associated with post_type: post and Title: "中文" have been purged, triggered by action: save_post 
+[2025-11-20 08:52:11 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: post and Title: "中文" has been purged, triggered by action: save_post 
+[2025-11-20 10:00:06 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-20 10:00:06 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-20 10:00:06 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-20 10:00:06 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-20 10:00:13 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-20 10:00:13 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-20 10:00:13 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-20 10:00:13 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-20 10:00:17 : INFO] - Cache for associated Polylang translation posts for Title: "top-header" have been purged 
+[2025-11-20 10:00:17 : INFO] - Cache for associated Polylang translation posts' feeds for Title: "top-header" have been purged 
+[2025-11-20 10:00:17 : INFO] - Cache for URL: http://www.site1.test/?elementskit_template=top-header has been purged, triggered by action: save_post 
+[2025-11-20 10:00:17 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementskit_template and Title: "top-header" has been purged, triggered by action: save_post 
+[2025-11-20 10:07:20 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 
+[2025-11-20 10:07:20 : INFO] - Full Cache Purge triggered by: plugin activation/deactivation 

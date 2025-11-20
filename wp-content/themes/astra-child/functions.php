@@ -558,7 +558,148 @@ add_shortcode( 'language_switcher', function( $atts ) {
     $atts['echo'] = 0;
     return pll_the_languages( $atts );
 } );
+
+
+// // 一次性执行，刷新重写规则
+// function refresh_rewrite_rules() {
+//     flush_rewrite_rules(true);
+// }
+// add_action('init', 'refresh_rewrite_rules');
+
+// // 直接干预搜索查询
+// function polylang_search_sql_fix($search, $wp_query) {
+//     global $wpdb;
+    
+//     if (!$wp_query->is_search() || !function_exists('pll_current_language')) {
+//         return $search;
+//     }
+    
+//     $current_lang = pll_current_language();
+//     $default_lang = pll_default_language();
+    
+//     // 如果是默认语言且隐藏了语言信息
+//     if ($current_lang === $default_lang) {
+//         // 确保查询包含语言条件
+//         $term = $wp_query->query_vars['s'];
+//         $search = " AND ({$wpdb->posts}.post_title LIKE '%{$term}%' OR {$wpdb->posts}.post_content LIKE '%{$term}%')";
+//     }
+    
+//     return $search;
+// }
+// add_filter('posts_search', 'polylang_search_sql_fix', 10, 2);
+
+
+
+// 重写搜索URL处理逻辑
+// class PolylangSearchLanguageFix {
+    
+//     public function __construct() {
+//         add_action('parse_request', array($this, 'intercept_search_request'), 1);
+//         add_filter('pll_preferred_language', array($this, 'fix_preferred_language'), 10, 2);
+//         add_filter('pll_set_language_from_query', array($this, 'set_language_from_search'), 10, 2);
+//     }
+    
+//     public function intercept_search_request($wp) {
+//         if (isset($wp->query_vars['s']) && !empty($wp->query_vars['s'])) {
+//             // 搜索请求，确保语言正确设置
+//             $this->ensure_correct_language();
+//         }
+//     }
+    
+//     public function fix_preferred_language($language, $context) {
+//         if ($context === 'locale' && is_search()) {
+//             // 在搜索页面，从URL检测语言
+//             return $this->detect_language_from_url() ?: $language;
+//         }
+//         return $language;
+//     }
+    
+//     public function set_language_from_search($lang, $query) {
+//         if (is_search()) {
+//             $detected_lang = $this->detect_language_from_url();
+//             if ($detected_lang) {
+//                 return $detected_lang;
+//             }
+//         }
+//         return $lang;
+//     }
+    
+//     private function ensure_correct_language() {
+//         global $polylang;
+        
+//         $detected_lang = $this->detect_language_from_url();
+//         if ($detected_lang && $polylang) {
+//             $polylang->curlang = $polylang->model->get_language($detected_lang);
+//         }
+//     }
+    
+//     private function detect_language_from_url() {
+//         $request_uri = $_SERVER['REQUEST_URI'];
+        
+//         // 从路径检测 /en/ 格式
+//         if (preg_match('#/([a-z]{2})/?#', $request_uri, $matches)) {
+//             return $matches[1];
+//         }
+        
+//         // 从查询参数检测
+//         if (isset($_GET['lang'])) {
+//             return sanitize_text_field($_GET['lang']);
+//         }
+        
+//         return false;
+//     }
+// }
+
+// new PolylangSearchLanguageFix();
+
+
+// 专门修复ElementsKit搜索组件
+function fix_elementskit_search_component() {
+    // 检查是否使用了ElementsKit
+    if (!class_exists('\ElementsKit_Lite')) {
+        return;
+    }
+    
+    // 方法3.1: 使用JavaScript动态修复
+    add_action('wp_footer', function() {
+        if (function_exists('pll_default_language')) {
+            $default_lang = pll_default_language();
+            $current_lang = pll_current_language();
+            
+            if ($current_lang === $default_lang) {
+                ?>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // 修复所有ElementsKit搜索表单
+                    var searchForms = document.querySelectorAll('form.ekit-search-group');
+                    searchForms.forEach(function(form) {
+                        if (form.action.includes('/<?php echo $default_lang; ?>')) {
+                            form.action = '<?php echo home_url("/"); ?>';
+                        }
+                    });
+                });
+                </script>
+                <?php
+            }
+        }
+    });
+    
+    // 方法3.2: 使用CSS选择器+数据属性
+    add_action('wp_head', function() {
+        ?>
+        <style>
+        /* 为修复后的表单添加视觉反馈（可选） */
+        form.ekit-search-group[data-fixed="true"] {
+            border-left: 3px solid #4CAF50;
+        }
+        </style>
+        <?php
+    });
+}
+add_action('init', 'fix_elementskit_search_component');
+
 /******************************    多语言  End   ****************************/
+
 
 
 
