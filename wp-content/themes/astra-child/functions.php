@@ -475,114 +475,7 @@ add_action('wp_footer', 'output_query_product_js_css');
 
 
 
-
-// 在后台展示时转换换行符
-// add_filter('e_form_submission_display_value', function($value, $field_id, $submission_id) {
-//     var_dump($field_id);
-//     if ($field_id === 'query_product') {
-//         // 对 textarea 字段的值应用换行符转换
-//         $value = nl2br($value); // 将 \n 转换为 <br>
-//     }
-//     return $value;
-// }, 10, 3);
-// add_filter('eform_submission_data', function($data, $submission_id) {
-//     // 假设 'query_product' 是您字段的名称
-//     var_dump($data);
-//     if (isset($data['query_product'])) {
-//         // 将 \n 转换为 <br>
-//         $data['query_product'] = nl2br($data['query_product']);
-//     }
-//     return $data;
-// }, 10, 2);
-// add_filter('eform_submission_data', function($data, $submission_id) {
-//     error_log(print_r($data, true)); // 打印提交的数据到日志
-//     if (isset($data['query_product'])) {
-//         $data['query_product'] = nl2br($data['query_product']);
-//     }
-//     return $data;
-// }, 10, 2);
-// add_action('rest_api_init', function() {
-//     register_rest_route('elementor/v1', '/form-submissions/(?P<id>\d+)', [
-//         'methods' => 'GET',
-//         'callback' => function($data) {
-//             $submission_id = $data['id'];
-
-//             // 记录请求的提交 ID
-//             error_log('Requested Submission ID: ' . $submission_id);
-
-//             // 获取表单提交的 post 数据
-//             $submission = get_post($submission_id);
-//             if (!$submission) {
-//                 error_log('No submission found with ID: ' . $submission_id);
-//                 return new WP_Error('no_submission', 'Form submission not found', ['status' => 404]);
-//             }
-
-//             // 获取与表单提交 ID 相关的所有 post_meta 数据
-//             $post_meta = get_post_meta($submission_id);
-//             error_log('All post_meta data: ' . print_r($post_meta, true));
-
-//             // 检查是否有 _elementor_form_data 数据
-//             if (isset($post_meta['_elementor_form_data'])) {
-//                 $form_data = $post_meta['_elementor_form_data'][0]; // 因为 get_post_meta 返回的是数组
-//             } else {
-//                 error_log('No _elementor_form_data found in post_meta for ID: ' . $submission_id);
-//                 return new WP_Error('no_form_data', 'No form data found', ['status' => 404]);
-//             }
-
-//             // 记录获取的表单数据
-//             error_log('Form Data: ' . print_r($form_data, true));
-
-//             // 处理换行符
-//             if (isset($form_data['query_product'])) {
-//                 $form_data['query_product'] = nl2br($form_data['query_product']);
-//             }
-
-//             return rest_ensure_response($form_data);
-//         },
-//     ]);
-// });
-
-
-// ...existing code...
-
-// add_filter( 'rest_post_dispatch', function( $result, $server, $request ) {
-//     $route = method_exists( $request, 'get_route' ) ? $request->get_route() : '';
-//     if ( 0 !== strpos( $route, '/elementor/v1/form-submissions' ) ) {
-//         return $result;
-//     }
-
-//     $walk_and_fix = function( &$node ) use ( & $walk_and_fix ) {
-//         if ( is_array( $node ) ) {
-//             // 如果这个数组代表一个字段（含 key/value）
-//             if ( isset( $node['key'] ) && 'query_product' === $node['key'] && isset( $node['value'] ) && is_string( $node['value'] ) ) {
-//                 $node['value'] = nl2br( esc_html( $node['value'] ) );
-//             }
-//             foreach ( $node as &$child ) {
-//                 $walk_and_fix( $child );
-//             }
-//         }
-//     };
-
-//     // 处理 WP_REST_Response
-//     if ( $result instanceof WP_REST_Response ) {
-//         $data = $result->get_data();
-//         $walk_and_fix( $data );
-//         $result->set_data( $data );
-//         return $result;
-//     }
-
-//     // 处理数组返回（某些 WP 版本/场景）
-//     if ( is_array( $result ) ) {
-//         $walk_and_fix( $result );
-//         return $result;
-//     }
-
-//     return $result;
-// }, 10, 3 );
-
-// ...existing code...
-
-// ...existing code...
+// 处理Elementor表单提交的REST API响应，确保换行符和HTML转义正确
 add_filter( 'rest_post_dispatch', function( $result, $server, $request ) {
     $route = method_exists( $request, 'get_route' ) ? $request->get_route() : '';
     if ( 0 !== strpos( $route, '/elementor/v1/form-submissions' ) ) {
@@ -618,6 +511,7 @@ add_filter( 'rest_post_dispatch', function( $result, $server, $request ) {
     return $result;
 }, 10, 3 );
 
+// 在Elementor表单提交管理页面添加自定义样式，确保表格内容换行显示
 add_action('admin_footer', function () {
     $screen = get_current_screen();
 
@@ -630,67 +524,7 @@ add_action('admin_footer', function () {
         </style>';
     }
 });
-// ...existing code...
 
-
-//后端处理JSON数据的PHP代码
-// add_action('elementor_pro/forms/new_record', function($record, $handler) {
-//     $raw_fields = $record->get('fields');
-    
-//     // 查找包含产品数据的字段
-//     foreach ($raw_fields as $field) {
-//         if ($field['id'] === 'query_product' && !empty($field['value'])) {
-//             $product_data = json_decode($field['value'], true);
-            
-//             if (json_last_error() === JSON_ERROR_NONE && is_array($product_data)) {
-//                 error_log('Inquiry Products (JSON):');
-//                 error_log('Total products: ' . count($product_data));
-                
-//                 foreach ($product_data as $index => $product) {
-//                     error_log(sprintf(
-//                         "Product %d: %s (ID: %s, URL: %s)",
-//                         $index + 1,
-//                         $product['title'],
-//                         $product['id'],
-//                         $product['url']
-//                     ));
-//                 }
-//             } else {
-//                 // 如果不是JSON，按原文本处理
-//                 error_log('Inquiry Products (Text): ' . $field['value']);
-//             }
-//             break;
-//         }
-//     }
-// }, 10, 2);
-
-
-
-// function send_custom_webhook( $record, $handler ) {
-
-// 	$form_name = $record->get_form_settings( 'form_name' );
-
-//     error_log('Form Name: ' . $form_name);
-
-// 	// Replace MY_FORM_NAME with the name you gave your form
-// 	if ( 'Query Form' !== $form_name ) {
-// 		return;
-// 	}
-
-// 	$raw_fields = $record->get( 'fields' );
-// 	$fields = [];
-// 	foreach ( $raw_fields as $id => $field ) {
-// 		$fields[ $id ] = $field['value'];
-// 	}
-
-// 	wp_remote_post(
-// 		'https://api.example.com/',
-// 		[
-// 			'body' => $fields,
-// 		]
-// 	);
-// }
-// add_action( 'elementor_pro/forms/new_record', 'send_custom_webhook', 10, 2 );
 
 
 
