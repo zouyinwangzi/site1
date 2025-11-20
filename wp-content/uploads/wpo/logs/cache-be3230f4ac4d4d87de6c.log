@@ -966,3 +966,9 @@
 [2025-11-20 02:38:34 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
 [2025-11-20 02:38:38 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
 [2025-11-20 02:38:38 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-20 05:58:27 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-20 05:58:27 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-20 05:58:31 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-20 05:58:31 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-20 05:58:36 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-20 05:58:36 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
