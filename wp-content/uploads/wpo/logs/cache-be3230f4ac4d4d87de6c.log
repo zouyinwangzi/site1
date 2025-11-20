@@ -700,3 +700,269 @@
 [2025-11-18 02:15:05 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
 [2025-11-18 02:15:08 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
 [2025-11-18 02:15:08 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-19 06:06:27 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:06:30 : INFO] - Cache for URL: http://www.site1.test/product/960/ has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:06:30 : INFO] - Cache for URL: http://www.site1.test/product/960/ has been purged, triggered by action: save_post 
+[2025-11-19 06:06:30 : INFO] - Cache for archive page associated with post_type: product and Title: "" has been purged, triggered by action: save_post 
+[2025-11-19 06:33:54 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt/ has been purged, triggered by action: save_post 
+[2025-11-19 06:33:54 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt" has been purged, triggered by action: save_post 
+[2025-11-19 06:33:54 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:33:54 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:34:10 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy/ has been purged, triggered by action: save_post 
+[2025-11-19 06:34:10 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt (Copy)" has been purged, triggered by action: save_post 
+[2025-11-19 06:34:10 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:34:10 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:35:36 : INFO] - Cache for URL: http://www.site1.test/product/960/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:35:47 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:38:12 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:38:12 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:38:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:38:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=964 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=965 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=966 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=967 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=968 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=969 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=970 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=971 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=972 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:39:24 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: save_post 
+[2025-11-19 06:39:24 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt" has been purged, triggered by action: save_post 
+[2025-11-19 06:39:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:26 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:42 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: save_post 
+[2025-11-19 06:39:42 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt (Copy)" has been purged, triggered by action: save_post 
+[2025-11-19 06:39:42 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:42 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:42 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:42 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:39:47 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:40:04 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-19 06:40:04 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-19 06:40:04 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:40:04 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:40:06 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:48:12 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:48:25 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:48:37 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:49:15 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:15 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=974 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:15 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:15 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=975 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:15 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:15 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=976 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:15 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:15 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=977 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:16 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:16 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=978 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:16 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:16 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=979 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:16 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:16 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=980 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:16 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:16 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=981 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:16 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:16 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=982 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:49:22 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: save_post 
+[2025-11-19 06:49:22 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt" has been purged, triggered by action: save_post 
+[2025-11-19 06:49:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:27 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:43 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: save_post 
+[2025-11-19 06:49:43 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt (Copy)" has been purged, triggered by action: save_post 
+[2025-11-19 06:49:43 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:43 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:44 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:44 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:49:46 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:50:03 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-19 06:50:03 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-19 06:50:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:50:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:50:06 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:52:48 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:53:01 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:53:14 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=984 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=985 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=986 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=987 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=988 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=989 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=990 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=991 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:09 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:09 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=992 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 06:54:18 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: save_post 
+[2025-11-19 06:54:18 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt" has been purged, triggered by action: save_post 
+[2025-11-19 06:54:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:20 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:37 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: save_post 
+[2025-11-19 06:54:37 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt (Copy)" has been purged, triggered by action: save_post 
+[2025-11-19 06:54:37 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:37 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:37 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:37 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:39 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:54 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-19 06:54:54 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-19 06:54:54 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:54 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:54:57 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 06:59:40 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 06:59:52 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:00:10 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=994 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=995 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=996 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=997 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=998 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=999 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1000 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1001 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:03 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:03 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1002 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:01:10 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: save_post 
+[2025-11-19 07:01:10 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt" has been purged, triggered by action: save_post 
+[2025-11-19 07:01:10 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:10 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:11 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:31 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: save_post 
+[2025-11-19 07:01:31 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt (Copy)" has been purged, triggered by action: save_post 
+[2025-11-19 07:01:31 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:31 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:31 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:31 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:34 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:51 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-19 07:01:51 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-19 07:01:51 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:51 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:01:53 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:49:15 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:49:28 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:49:39 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:50:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1004 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:50:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1005 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:50:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1006 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:50:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1007 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:50:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1008 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:50:17 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:17 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1009 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:50:22 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: save_post 
+[2025-11-19 07:50:22 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt" has been purged, triggered by action: save_post 
+[2025-11-19 07:50:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:22 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:39 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: save_post 
+[2025-11-19 07:50:39 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt (Copy)" has been purged, triggered by action: save_post 
+[2025-11-19 07:50:39 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:39 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:39 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:39 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:43 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:57 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-19 07:50:57 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-19 07:50:57 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:57 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:50:57 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:51:01 : INFO] - Cache for URL: http://www.site1.test/?product_variation=1011 has been purged, triggered by action: woocommerce_variation_set_stock 
+[2025-11-19 07:51:03 : INFO] - Cache for URL: http://www.site1.test/?product_variation=1012 has been purged, triggered by action: woocommerce_variation_set_stock 
+[2025-11-19 07:54:54 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:55:08 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:55:19 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: wp_trash_post 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1014 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1015 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1016 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1017 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1018 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1019 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1020 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1021 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:18 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:18 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1022 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-19 07:56:24 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-2/ has been purged, triggered by action: save_post 
+[2025-11-19 07:56:24 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt" has been purged, triggered by action: save_post 
+[2025-11-19 07:56:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:27 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:46 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt-copy-2/ has been purged, triggered by action: save_post 
+[2025-11-19 07:56:46 : INFO] - Cache for archive page associated with post_type: product and Title: "brand lady-t-shirt (Copy)" has been purged, triggered by action: save_post 
+[2025-11-19 07:56:46 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:46 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:46 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:46 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:56:48 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:57:05 : INFO] - Cache for URL: http://www.site1.test/product/brand-man-short/ has been purged, triggered by action: save_post 
+[2025-11-19 07:57:05 : INFO] - Cache for archive page associated with post_type: product and Title: "brand man short" has been purged, triggered by action: save_post 
+[2025-11-19 07:57:05 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:57:05 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 07:57:07 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-19 10:36:04 : INFO] - Cache for URL: http://www.site1.test/product/brand-lady-t-shirt/ has been purged, triggered by action: woocommerce_variation_set_stock 
+[2025-11-20 01:48:56 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 01:48:56 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1024 has been purged, triggered by action: woocommerce_product_set_stock 
+[2025-11-20 01:49:02 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1024&attribute_pa_quantity=45-kilobale has been purged, triggered by action: woocommerce_variation_set_stock 
+[2025-11-20 01:49:04 : INFO] - Cache for URL: http://www.site1.test/?post_type=product&p=1024&attribute_pa_quantity=90-kilobale has been purged, triggered by action: woocommerce_variation_set_stock 
+[2025-11-20 01:50:21 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 01:50:24 : INFO] - Cache for multiple term taxonomy have been purged due to post terms update, triggered by action: set_object_terms 
+[2025-11-20 01:50:24 : INFO] - Cache for URL: http://www.site1.test/product/children-sport/ has been purged, triggered by action: save_post 
+[2025-11-20 01:50:24 : INFO] - Cache for archive page associated with post_type: product and Title: "Children sport" has been purged, triggered by action: save_post 
+[2025-11-20 02:01:16 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-20 02:01:16 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-20 02:01:20 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-20 02:01:20 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-20 02:01:24 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=product-add-ok has been purged, triggered by action: save_post 
+[2025-11-20 02:01:24 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "product-add-ok" has been purged, triggered by action: save_post 
+[2025-11-20 02:38:30 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-20 02:38:30 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-20 02:38:34 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-20 02:38:34 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 
+[2025-11-20 02:38:38 : INFO] - Cache for URL: http://www.site1.test/?elementor_library=query-form has been purged, triggered by action: save_post 
+[2025-11-20 02:38:38 : INFO] - Cache for author page URL: http://www.site1.test/author/admin/ associated with post_type: elementor_library and Title: "query-form" has been purged, triggered by action: save_post 

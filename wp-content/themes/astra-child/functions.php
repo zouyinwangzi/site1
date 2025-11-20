@@ -50,7 +50,39 @@ require_once get_stylesheet_directory() . '/opt.php';
 
 
 
+// 全面的CSV MIME类型支持
+// function custom_upload_mimes($mimes = array()) {
+//     // CSV文件类型
+//     $mimes['csv'] = 'text/csv';
+//     $mimes['csv'] = 'text/x-csv';
+//     $mimes['csv'] = 'application/csv';
+//     $mimes['csv'] = 'application/x-csv';
+//     $mimes['csv'] = 'text/comma-separated-values';
+//     $mimes['csv'] = 'text/x-comma-separated-values';
+//     $mimes['csv'] = 'text/tab-separated-values';
+    
+//     return $mimes;
+// }
+// add_filter('upload_mimes', 'custom_upload_mimes');
 
+// 允许上传CSV文件
+// function add_csv_mime_type($mimes) {
+//     $mimes['csv'] = 'text/csv';
+//     $mimes['csv'] = 'application/vnd.ms-excel';
+//     $mimes['csv'] = 'text/plain';
+//     return $mimes;
+// }
+// add_filter('upload_mimes', 'add_csv_mime_type');
+
+// // 允许CSV文件通过安全检测
+// function allow_csv_upload($types, $file, $filename, $mimes) {
+//     if (false !== strpos($filename, '.csv')) {
+//         $types['ext'] = 'csv';
+//         $types['type'] = 'text/csv';
+//     }
+//     return $types;
+// }
+// add_filter('wp_check_filetype_and_ext', 'allow_csv_upload', 10, 4);
 
 
 add_action('woocommerce_share', function () {
@@ -381,19 +413,58 @@ add_action('woocommerce_share', function () {
 }, 1);
 
 
+add_action('woocommerce_after_shop_loop_item','add_inquiry_button_to_product_loop', 20);
+function add_inquiry_button_to_product_loop() {
+    global $product;
+
+    $product_id = $product->get_id();
+    
+    // 获取产品数据
+    $product_title = htmlspecialchars($product->get_name(), ENT_QUOTES, 'UTF-8');
+    $product_url = esc_url(get_permalink($product_id));
+
+    // 获取产品特色图
+    $featured_image_url = '';
+    $image_id = $product->get_image_id();
+    if ($image_id) {
+        $featured_image_url = esc_url(wp_get_attachment_image_url($image_id, 'woocommerce_single'));
+    }
+
+    // 备用：使用中等尺寸图片
+    if (empty($featured_image_url) && $image_id) {
+        $featured_image_url = esc_url(wp_get_attachment_image_url($image_id, 'medium'));
+    }
+
+    // 构建数据属性
+    $data_attributes = sprintf(
+        'data-product-id="%d" data-product-title="%s" data-product-url="%s" data-product-image="%s"',
+        $product_id,
+        $product_title,
+        $product_url,
+        $featured_image_url
+    );
+
+    // 输出按钮
+    printf(
+        '<a href="#%s" id="reservation-now-btn" class="reservation-now-btn button" %s>Reservation Now</a>',
+        urlencode(sprintf('elementor-action:action=popup:open&settings=%s', base64_encode('{"id":"667","toggle":false}'))),
+        $data_attributes
+    );
+}
+
 
 
 // 在footer输出数据
 function output_query_product_js_css()
 {
-    if (!is_admin() && function_exists('is_product') && is_product()) {
+    if (!is_admin() && (function_exists('is_product') && is_product() || function_exists('is_shop') && is_shop() || function_exists('is_product_category') && is_product_category())) {
         echo '<script type="text/javascript">';
         $_js = file_get_contents(__DIR__ . '/js/query-product.js');
         echo $_js;
         echo '</script>';
     }
 
-    if (!is_admin() && function_exists('is_product') && is_product()) {
+    if (!is_admin() && (function_exists('is_product') && is_product() || function_exists('is_shop') && is_shop() || function_exists('is_product_category') && is_product_category())) {
         echo '<style type="text/css">';
         $_css = file_get_contents(__DIR__ . '/css/query-product.css');
         echo $_css;

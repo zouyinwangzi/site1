@@ -1,8 +1,50 @@
 #query-form-fields.has-products{
     width: 70%;
 }
+#query-form-product-list{
+    display: none;;
+}
 #query-form-product-list.has-products{
     width: 30%;
     padding: 0 20px;
     overflow-y: scroll;
+    display: block;
+}
+
+
+#query-form-product-list .inquiry-products-list .inquiry-product-item{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+#query-form-product-list .inquiry-products-list .inquiry-product-item .product-image{
+    margin-right: 10px;
+}
+
+#query-form-product-list .inquiry-products-list .inquiry-product-item .product-info{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+#query-form-product-list .inquiry-products-list .inquiry-product-item .product-info .product-title{
+    flex-basis: 100%;
+    margin: 0;
+}
+#query-form-product-list .inquiry-products-list .inquiry-product-item .product-info .product-title a{
+    color:#333;
+
+}
+#query-form-product-list .inquiry-products-list .inquiry-product-item .product-info .remove-product{
+    flex-basis: 100%;
+    text-align: right;  
+}
+#query-form-product-list .inquiry-products-list .inquiry-product-item .remove-product-btn{
+
 }

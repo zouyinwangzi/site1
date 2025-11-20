@@ -1,0 +1,147 @@
+woocommerce-placeholder	http://www.site1.test/wp-content/uploads/woocommerce-placeholder.webp
+logo	http://www.site1.test/wp-content/uploads/2025/11/logo.png
+404Page.jpg	http://www.site1.test/wp-content/uploads/2025/11/404Page.jpg
+Alternative-Medicine-Acupuncture-One-Page-404.jpg	http://www.site1.test/wp-content/uploads/2025/11/Alternative-Medicine-Acupuncture-One-Page-404.jpg
+information_ico.svg	http://www.site1.test/wp-content/uploads/2025/11/information_ico.svg
+transparant-background-pat.svg	http://www.site1.test/wp-content/uploads/2025/11/transparant-background-pat.svg
+Alternative-Medicine-Acupuncture-One-Page-Global-Styles.jpg	http://www.site1.test/wp-content/uploads/2025/11/Alternative-Medicine-Acupuncture-One-Page-Global-Styles.jpg
+52_Alternative_Medicine_Acupuncture-Hero-Shape.png	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Hero-Shape.png
+placeholder.png	http://www.site1.test/wp-content/uploads/2025/11/placeholder.png
+52_Alternative_Medicine_Acupuncture-Hero.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Hero.jpg
+52_Alternative_Medicine_Acupuncture-ServicesIcon.svg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-ServicesIcon.svg
+52_Alternative_Medicine_Acupuncture-About.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-About.jpg
+52_Alternative_Medicine_Acupuncture-Patients_1.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Patients_1.jpg
+52_Alternative_Medicine_Acupuncture-Quotation.svg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Quotation.svg
+52_Alternative_Medicine_Acupuncture-Patients_2.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Patients_2.jpg
+52_Alternative_Medicine_Acupuncture-Patients_3.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Patients_3.jpg
+52_Alternative_Medicine_Acupuncture-Patients_4.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Patients_4.jpg
+52_Alternative_Medicine_Acupuncture-Gallery-img_1.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Gallery-img_1.jpg
+52_Alternative_Medicine_Acupuncture-Gallery-img_2.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Gallery-img_2.jpg
+52_Alternative_Medicine_Acupuncture-Gallery-img_3.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Gallery-img_3.jpg
+52_Alternative_Medicine_Acupuncture-Footer-Shape.png	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Footer-Shape.png
+52_Alternative_Medicine_Acupuncture-Footer.jpg	http://www.site1.test/wp-content/uploads/2025/11/52_Alternative_Medicine_Acupuncture-Footer.jpg
+Alternative-Medicine-Acupuncture-One-Page-Home.jpg	http://www.site1.test/wp-content/uploads/2025/11/Alternative-Medicine-Acupuncture-One-Page-Home.jpg
+ABUIABACGAAgxdyixwYovIPmXjCqBjimBA	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAgxdyixwYovIPmXjCqBjimBA.webp
+Elementor-post-screenshot_266_2025-11-11-06-45-09_20645788.png	http://www.site1.test/wp-content/uploads/elementor/screenshots/Elementor-post-screenshot_266_2025-11-11-06-45-09_20645788.png
+ABUIABACGAAg0eC7yAYotqvTvgQwwB843BE	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAg0eC7yAYotqvTvgQwwB843BE-scaled.webp
+ABUIABACGAAg2967yAYo6NLygQMwwB843BE	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAg2967yAYo6NLygQMwwB843BE-scaled.webp
+ABUIABAEGAAgy4KixwYowL_TCTDSCji1Aw.png	http://www.site1.test/wp-content/uploads/2025/11/ABUIABAEGAAgy4KixwYowL_TCTDSCji1Aw.png.webp
+ABUIABACGAAgl8qixwYogLu5lAQwsDA4oCA	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAgl8qixwYogLu5lAQwsDA4oCA.webp
+ABUIABACGAAgnsqixwYo8JrYtwUwzAM4swM	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAgnsqixwYo8JrYtwUwzAM4swM.webp
+ABUIABACGAAgrMqixwYoopeZrAYwzAM4swM	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAgrMqixwYoopeZrAYwzAM4swM.webp
+ABUIABACGAAgycqixwYowKywgAcwgCs4oCA	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAgycqixwYowKywgAcwgCs4oCA.webp
+ABUIABACGAAgssqixwYo7L2jlQUwzAM4swM	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAgssqixwYo7L2jlQUwzAM4swM.webp
+ABUIABACGAAg2MqixwYop56EtQYwsDA4oCA	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAg2MqixwYop56EtQYwsDA4oCA.webp
+ABUIABAEGAAgj_SixwYoqIiYvAQw0gI4xgI	http://www.site1.test/wp-content/uploads/2025/11/ABUIABAEGAAgj_SixwYoqIiYvAQw0gI4xgI.webp
+ABUIABAEGAAgk_SixwYomM752AIw3QI4vwI	http://www.site1.test/wp-content/uploads/2025/11/ABUIABAEGAAgk_SixwYomM752AIw3QI4vwI.webp
+ABUIABAEGAAgmeSixwYo6ZGtuQcw5AI4pQI	http://www.site1.test/wp-content/uploads/2025/11/ABUIABAEGAAgmeSixwYo6ZGtuQcw5AI4pQI.webp
+ABUIABAEGAAgn_SixwYo85Xk-AEw8QI4tQI	http://www.site1.test/wp-content/uploads/2025/11/ABUIABAEGAAgn_SixwYo85Xk-AEw8QI4tQI.webp
+imgi_1_ABUIABAEGAAgtLH8xwYogNCl8AIw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_1_ABUIABAEGAAgtLH8xwYogNCl8AIw8AE48AE.png
+imgi_2_ABUIABAEGAAgtLH8xwYotp_cqgMw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_2_ABUIABAEGAAgtLH8xwYotp_cqgMw8AE48AE.png
+imgi_3_ABUIABAEGAAgtLH8xwYolZu6fzDwATjwAQ	http://www.site1.test/wp-content/uploads/2025/11/imgi_3_ABUIABAEGAAgtLH8xwYolZu6fzDwATjwAQ.png
+imgi_4_ABUIABAEGAAgtLH8xwYoxe7FoQIw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_4_ABUIABAEGAAgtLH8xwYoxe7FoQIw8AE48AE.png
+imgi_5_ABUIABAEGAAgt7H8xwYousX4_Acw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_5_ABUIABAEGAAgt7H8xwYousX4_Acw8AE48AE.png
+imgi_6_ABUIABAEGAAgvrH8xwYo6tkWMPABOPAB	http://www.site1.test/wp-content/uploads/2025/11/imgi_6_ABUIABAEGAAgvrH8xwYo6tkWMPABOPAB.png
+imgi_7_ABUIABAEGAAgvrH8xwYozKiJ_Qcw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_7_ABUIABAEGAAgvrH8xwYozKiJ_Qcw8AE48AE.png
+imgi_8_ABUIABAEGAAgvrH8xwYotsKOkAYw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_8_ABUIABAEGAAgvrH8xwYotsKOkAYw8AE48AE.png
+imgi_9_ABUIABAEGAAgvrH8xwYo5tuG-QMw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_9_ABUIABAEGAAgvrH8xwYo5tuG-QMw8AE48AE.png
+imgi_10_ABUIABAEGAAgvrH8xwYovMG97AIw8AE48AE	http://www.site1.test/wp-content/uploads/2025/11/imgi_10_ABUIABAEGAAgvrH8xwYovMG97AIw8AE48AE.png
+wechat	http://www.site1.test/wp-content/uploads/2025/11/wechat.png
+ABUIABACGAAgoKTbyAYoyI3V9QcwgCs4oCA	http://www.site1.test/wp-content/uploads/2025/11/ABUIABACGAAgoKTbyAYoyI3V9QcwgCs4oCA.webp
+Basketball Jersey	http://www.site1.test/wp-content/uploads/2025/11/Basketball-Jersey.webp
+Brand Men's T-shirt	http://www.site1.test/wp-content/uploads/2025/11/Brand-Mens-T-shirt.webp
+oplus_262176	http://www.site1.test/wp-content/uploads/2025/11/Brand-Track-Pants-scaled.jpg
+Children's Pants	http://www.site1.test/wp-content/uploads/2025/11/Childrens-Pants.webp
+Children's Sportswear	http://www.site1.test/wp-content/uploads/2025/11/Childrens-Sportswear.webp
+Corduroy Pants	http://www.site1.test/wp-content/uploads/2025/11/Corduroy-Pants-scaled.jpg
+Long Workwear Pants	http://www.site1.test/wp-content/uploads/2025/11/Long-Workwear-Pants.webp
+Loose-fit Jeans	http://www.site1.test/wp-content/uploads/2025/11/Loose-fit-Jeans.webp
+Men's Cotton-padded Jacket	http://www.site1.test/wp-content/uploads/2025/11/Mens-Cotton-padded-Jacket-scaled.jpg
+Men's Jeans	http://www.site1.test/wp-content/uploads/2025/11/Mens-Jeans-scaled.jpg
+Men's Long-sleeved Shirt	http://www.site1.test/wp-content/uploads/2025/11/Mens-Long-sleeved-Shirt.webp
+Men's Plaid Shorts	http://www.site1.test/wp-content/uploads/2025/11/Mens-Plaid-Shorts.webp
+Men's Premium Brand	http://www.site1.test/wp-content/uploads/2025/11/Mens-Premium-Brand.webp
+Men's Short-sleeved T-shirt (2)	http://www.site1.test/wp-content/uploads/2025/11/Mens-Short-sleeved-T-shirt-2-scaled.jpg
+Men's Short-sleeved T-shirt	http://www.site1.test/wp-content/uploads/2025/11/Mens-Short-sleeved-T-shirt.webp
+Men's Sweater	http://www.site1.test/wp-content/uploads/2025/11/Mens-Sweater-scaled.jpg
+Second-hand BrandClothing	http://www.site1.test/wp-content/uploads/2025/11/Second-hand-BrandClothing.webp
+Sports Jersey	http://www.site1.test/wp-content/uploads/2025/11/Sports-Jersey.webp
+Summer Men's Casual Pants	http://www.site1.test/wp-content/uploads/2025/11/Summer-Mens-Casual-Pants.webp
+Summer Men's Jeans	http://www.site1.test/wp-content/uploads/2025/11/Summer-Mens-Jeans.webp
+oplus_262176	http://www.site1.test/wp-content/uploads/2025/11/Thin-Cotton-Sports-Pants-scaled.jpg
+Workwear Cargo Pants	http://www.site1.test/wp-content/uploads/2025/11/Workwear-Cargo-Pants-scaled.jpg
+Bra	http://www.site1.test/wp-content/uploads/2025/11/Bra-scaled.jpg
+Denim Skirt	http://www.site1.test/wp-content/uploads/2025/11/Denim-Skirt.webp
+Dress	http://www.site1.test/wp-content/uploads/2025/11/Dress-scaled.jpg
+Fur Coat	http://www.site1.test/wp-content/uploads/2025/11/Fur-Coat.webp
+Granular Velvet	http://www.site1.test/wp-content/uploads/2025/11/Granular-Velvet.webp
+Silk Scarf	http://www.site1.test/wp-content/uploads/2025/11/Silk-Scarf-scaled.jpg
+Spring Dress Below Knee	http://www.site1.test/wp-content/uploads/2025/11/Spring-Dress-Below-Knee.webp
+Summer Casual Blouse	http://www.site1.test/wp-content/uploads/2025/11/Summer-Casual-Blouse.webp
+Summer Cotton Below Knee Dress	http://www.site1.test/wp-content/uploads/2025/11/Summer-Cotton-Below-Knee-Dress.webp
+Summer Cotton Below Knee Skirt	http://www.site1.test/wp-content/uploads/2025/11/Summer-Cotton-Below-Knee-Skirt.webp
+Summer Women's Jeans	http://www.site1.test/wp-content/uploads/2025/11/Summer-Womens-Jeans.webp
+Thick Denim Jacket	http://www.site1.test/wp-content/uploads/2025/11/Thick-Denim-Jacket.webp
+Thick Fleece Clothing	http://www.site1.test/wp-content/uploads/2025/11/Thick-Fleece-Clothing.png
+Wide-leg Silk Pants	http://www.site1.test/wp-content/uploads/2025/11/Wide-leg-Silk-Pants-scaled.jpg
+Winter Skirt Above Knee	http://www.site1.test/wp-content/uploads/2025/11/Winter-Skirt-Above-Knee.webp
+Women's Brand T-shirt	http://www.site1.test/wp-content/uploads/2025/11/Womens-Brand-T-shirt.webp
+Women's Chiffon Top	http://www.site1.test/wp-content/uploads/2025/11/Womens-Chiffon-Top.webp
+Women's Cotton-padded Jacket	http://www.site1.test/wp-content/uploads/2025/11/Womens-Cotton-padded-Jacket-scaled.jpg
+Women's Short-sleeved T-shirt	http://www.site1.test/wp-content/uploads/2025/11/Womens-Short-sleeved-T-shirt.webp
+Women's Silk Blouse	http://www.site1.test/wp-content/uploads/2025/11/Womens-Silk-Blouse.webp
+Summer Children's Clothes	http://www.site1.test/wp-content/uploads/2025/11/Summer-Childrens-Clothes-scaled.jpg
+Summer Girls' Dress	http://www.site1.test/wp-content/uploads/2025/11/Summer-Girls-Dress.webp
+Children's Autumn Clothing	http://www.site1.test/wp-content/uploads/2025/11/Childrens-Autumn-Clothing-scaled.jpg
+Children's Winter (Mix and Match)	http://www.site1.test/wp-content/uploads/2025/11/Childrens-Winter-Mix-and-Match-scaled.jpg
+A+ Grade Slippers	http://www.site1.test/wp-content/uploads/2025/11/A-Grade-Slippers.webp
+A级品牌成人拖鞋	http://www.site1.test/wp-content/uploads/2025/11/A级品牌成人拖鞋.webp
+Brand AJ Shoes	http://www.site1.test/wp-content/uploads/2025/11/Brand-AJ-Shoes.webp
+Brand Slippers	http://www.site1.test/wp-content/uploads/2025/11/Brand-Slippers.webp
+Chinese Brand Women's Sports Shoes	http://www.site1.test/wp-content/uploads/2025/11/Chinese-Brand-Womens-Sports-Shoes.webp
+Chinese Men's Sports Shoes A	http://www.site1.test/wp-content/uploads/2025/11/Chinese-Mens-Sports-Shoes-A.webp
+International Brand Basketball Shoes	http://www.site1.test/wp-content/uploads/2025/11/International-Brand-Basketball-Shoes.webp
+International Brand Men's Running Shoes	http://www.site1.test/wp-content/uploads/2025/11/International-Brand-Mens-Running-Shoes.webp
+International Brand Women's Running Shoes	http://www.site1.test/wp-content/uploads/2025/11/International-Brand-Womens-Running-Shoes.webp
+International Children's Shoes	http://www.site1.test/wp-content/uploads/2025/11/International-Childrens-Shoes.webp
+New Designer Slippers	http://www.site1.test/wp-content/uploads/2025/11/New-Designer-Slippers.webp
+New Men's Sports Shoes - Mixed Designer Style	http://www.site1.test/wp-content/uploads/2025/11/New-Mens-Sports-Shoes-Mixed-Designer-Style.webp
+Premium Brand Children's Slippers	http://www.site1.test/wp-content/uploads/2025/11/Premium-Brand-Childrens-Slippers.webp
+Second-hand Crocs Shoes	http://www.site1.test/wp-content/uploads/2025/11/Second-hand-Crocs-Shoes.webp
+Slippers	http://www.site1.test/wp-content/uploads/2025/11/Slippers.webp
+Women's High-heeled Shoes	http://www.site1.test/wp-content/uploads/2025/11/Womens-High-heeled-Shoes.webp
+18kg of Slippers	http://www.site1.test/wp-content/uploads/2025/11/18kg-of-Slippers.webp
+A Grade Brand Adult Slippers	http://www.site1.test/wp-content/uploads/2025/11/A-Grade-Brand-Adult-Slippers.webp
+Women's Bags	http://www.site1.test/wp-content/uploads/2025/11/Womens-Bags.webp
+Bag Display	http://www.site1.test/wp-content/uploads/2025/11/Bag-Display-scaled.jpg
+Mom Bag	http://www.site1.test/wp-content/uploads/2025/11/Mom-Bag.webp
+PU and Leather Brand Bag (BBAG)	http://www.site1.test/wp-content/uploads/2025/11/PU-and-Leather-Brand-Bag-BBAG.webp
+Small Square Bag Display	http://www.site1.test/wp-content/uploads/2025/11/Small-Square-Bag-Display-scaled.jpg
+Factory Warehouse Display	http://www.site1.test/wp-content/uploads/2025/11/Factory-Warehouse-Display-scaled.jpg
+Forklift	http://www.site1.test/wp-content/uploads/2025/11/Forklift-scaled.jpg
+Goods Differentiation	http://www.site1.test/wp-content/uploads/2025/11/Goods-Differentiation-scaled.jpg
+Inspect Materials	http://www.site1.test/wp-content/uploads/2025/11/Inspect-Materials-scaled.jpg
+Loading	http://www.site1.test/wp-content/uploads/2025/11/Loading-scaled.jpg
+Online Sorting	http://www.site1.test/wp-content/uploads/2025/11/Online-Sorting-scaled.jpg
+Packaging Display	http://www.site1.test/wp-content/uploads/2025/11/Packaging-Display-scaled.jpg
+Packaging Machine	http://www.site1.test/wp-content/uploads/2025/11/Packaging-Machine-scaled.jpg
+Packed into Bundles	http://www.site1.test/wp-content/uploads/2025/11/Packed-into-Bundles-scaled.jpg
+Quality Control	http://www.site1.test/wp-content/uploads/2025/11/Quality-Control-scaled.jpg
+Raw Materials	http://www.site1.test/wp-content/uploads/2025/11/Raw-Materials-scaled.jpg
+Second-hand Clothes	http://www.site1.test/wp-content/uploads/2025/11/Second-hand-Clothes.webp
+Second-hand Shoes Display	http://www.site1.test/wp-content/uploads/2025/11/Second-hand-Shoes-Display-scaled.jpg
+Second-hand Shoes Inventory	http://www.site1.test/wp-content/uploads/2025/11/Second-hand-Shoes-Inventory-scaled.jpg
+Shoe Display	http://www.site1.test/wp-content/uploads/2025/11/Shoe-Display.webp
+Shoes	http://www.site1.test/wp-content/uploads/2025/11/Shoes.webp
+Sorting Workshop	http://www.site1.test/wp-content/uploads/2025/11/Sorting-Workshop-scaled.jpg
+Clothing Inventory Display	http://www.site1.test/wp-content/uploads/2025/11/Clothing-Inventory-Display-scaled.jpg
+Collect Data	http://www.site1.test/wp-content/uploads/2025/11/Collect-Data-scaled.jpg
+Hat (as an accessory)	http://www.site1.test/wp-content/uploads/2025/11/Hat-as-an-accessory.webp
+Bedding	http://www.site1.test/wp-content/uploads/2025/11/Bedding.webp
+Used Brand Shoes	http://www.site1.test/wp-content/uploads/2025/11/Used-Brand-Shoes.webp
+Used Mixed Shoes	http://www.site1.test/wp-content/uploads/2025/11/Used-Mixed-Shoes.webp
+Why You Should Choose Us	http://www.site1.test/wp-content/uploads/2025/11/Why-You-Should-Choose-Us.mp4
+Why You Should Choose Us-cover	http://www.site1.test/wp-content/uploads/2025/11/Why-You-Should-Choose-Us-cover.webp
+Why You Should Choose Us-2	http://www.site1.test/wp-content/uploads/2025/11/Why-You-Should-Choose-Us-2.mp4
+Why You Should Choose Us-2-cover	http://www.site1.test/wp-content/uploads/2025/11/Why-You-Should-Choose-Us-2-cover.jpg
+OUR USED CLOTHES FACTORY	http://www.site1.test/wp-content/uploads/2025/11/OUR-USED-CLOTHES-FACTORY.webp

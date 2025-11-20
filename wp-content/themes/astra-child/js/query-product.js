@@ -240,9 +240,8 @@ function updateProductListInContactForm() {
                         <img src="${product.image}" alt="${product.title}" style="max-width: 80px; height: auto;">
                     </div>
                     <div class="product-info">
-                        <h4>${product.title}</h4>
-                        <p><a href="${product.url}" target="_blank">View Product</a></p>
-                        <button class="remove-product-btn" data-product-id="${product.id}">× Remove</button>
+                        <p class="product-title"><a href="${product.url}" target="_blank">${product.title}</a></p>
+                        <div class="remove-product"><a href="javascript:return void();" class="remove-product-btn" data-product-id="${product.id}">× Remove</a></div>
                     </div>
                 </div>
             `;
